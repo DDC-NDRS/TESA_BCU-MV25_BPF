@@ -1,0 +1,1764 @@
+/*******************************************************************************
+ * File Name: cycfg_pins.h
+ *
+ * Description:
+ * Pin configuration
+ * This file was automatically generated and should not be modified.
+ * Configurator Backend 3.70.0
+ * device-db 4.34.0.9502
+ * mtb-dsl-pse8xxgp 1.1.1.824
+ *
+ *******************************************************************************
+ * Copyright 2026 Cypress Semiconductor Corporation (an Infineon company) or
+ * an affiliate of Cypress Semiconductor Corporation.
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ ******************************************************************************/
+
+#if !defined(CYCFG_PINS_H)
+#define CYCFG_PINS_H
+
+#include "cycfg_notices.h"
+#include "cy_gpio.h"
+#include "cycfg_routing.h"
+
+#if defined(__cplusplus)
+extern "C" {
+#endif /* defined(__cplusplus) */
+
+#define SCB3_SPI_CS0_PMIC_ENABLED 1U
+#define SCB3_SPI_CS0_PMIC_PORT GPIO_PRT0
+#define SCB3_SPI_CS0_PMIC_PORT_NUM 0U
+#define SCB3_SPI_CS0_PMIC_PIN 0U
+#define SCB3_SPI_CS0_PMIC_NUM 0U
+#define SCB3_SPI_CS0_PMIC_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define SCB3_SPI_CS0_PMIC_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_0_pin_0_HSIOM
+    #define ioss_0_port_0_pin_0_HSIOM HSIOM_SEL_GPIO
+#endif
+#define SCB3_SPI_CS0_PMIC_HSIOM ioss_0_port_0_pin_0_HSIOM
+#define SCB3_SPI_CS0_PMIC_IRQ ioss_interrupts_gpio_0_IRQn
+#define HYPER_RAM_SS_ENABLED 1U
+#define HYPER_RAM_SS_PORT GPIO_PRT0
+#define HYPER_RAM_SS_PORT_NUM 0U
+#define HYPER_RAM_SS_PIN 1U
+#define HYPER_RAM_SS_NUM 1U
+#define HYPER_RAM_SS_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define HYPER_RAM_SS_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_0_pin_1_HSIOM
+    #define ioss_0_port_0_pin_1_HSIOM HSIOM_SEL_GPIO
+#endif
+#define HYPER_RAM_SS_HSIOM ioss_0_port_0_pin_1_HSIOM
+#define HYPER_RAM_SS_IRQ ioss_interrupts_gpio_0_IRQn
+#define SMIF0_DATA0_ENABLED 1U
+#define SMIF0_DATA0_PORT (GPIO_PRT_Type*)SMIF0_CORE_SMIF_GPIO_SMIF_PRT0
+#define SMIF0_DATA0_PORT_NUM 1U
+#define SMIF0_DATA0_PIN 0U
+#define SMIF0_DATA0_NUM 0U
+#define SMIF0_DATA0_DRIVEMODE CY_GPIO_DM_STRONG
+#define SMIF0_DATA0_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_1_pin_0_HSIOM
+    #define ioss_0_port_1_pin_0_HSIOM HSIOM_SEL_ACT_15
+#endif
+#define SMIF0_DATA0_HSIOM ioss_0_port_1_pin_0_HSIOM
+#define SMIF0_DATA0_IRQ ioss_interrupts_gpio_1_IRQn
+#define SMIF0_DATA1_ENABLED 1U
+#define SMIF0_DATA1_PORT (GPIO_PRT_Type*)SMIF0_CORE_SMIF_GPIO_SMIF_PRT0
+#define SMIF0_DATA1_PORT_NUM 1U
+#define SMIF0_DATA1_PIN 1U
+#define SMIF0_DATA1_NUM 1U
+#define SMIF0_DATA1_DRIVEMODE CY_GPIO_DM_STRONG
+#define SMIF0_DATA1_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_1_pin_1_HSIOM
+    #define ioss_0_port_1_pin_1_HSIOM HSIOM_SEL_ACT_15
+#endif
+#define SMIF0_DATA1_HSIOM ioss_0_port_1_pin_1_HSIOM
+#define SMIF0_DATA1_IRQ ioss_interrupts_gpio_1_IRQn
+#define SMIF0_DATA2_ENABLED 1U
+#define SMIF0_DATA2_PORT (GPIO_PRT_Type*)SMIF0_CORE_SMIF_GPIO_SMIF_PRT0
+#define SMIF0_DATA2_PORT_NUM 1U
+#define SMIF0_DATA2_PIN 2U
+#define SMIF0_DATA2_NUM 2U
+#define SMIF0_DATA2_DRIVEMODE CY_GPIO_DM_STRONG
+#define SMIF0_DATA2_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_1_pin_2_HSIOM
+    #define ioss_0_port_1_pin_2_HSIOM HSIOM_SEL_ACT_15
+#endif
+#define SMIF0_DATA2_HSIOM ioss_0_port_1_pin_2_HSIOM
+#define SMIF0_DATA2_IRQ ioss_interrupts_gpio_1_IRQn
+#define SMIF0_DATA3_ENABLED 1U
+#define SMIF0_DATA3_PORT (GPIO_PRT_Type*)SMIF0_CORE_SMIF_GPIO_SMIF_PRT0
+#define SMIF0_DATA3_PORT_NUM 1U
+#define SMIF0_DATA3_PIN 3U
+#define SMIF0_DATA3_NUM 3U
+#define SMIF0_DATA3_DRIVEMODE CY_GPIO_DM_STRONG
+#define SMIF0_DATA3_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_1_pin_3_HSIOM
+    #define ioss_0_port_1_pin_3_HSIOM HSIOM_SEL_ACT_15
+#endif
+#define SMIF0_DATA3_HSIOM ioss_0_port_1_pin_3_HSIOM
+#define SMIF0_DATA3_IRQ ioss_interrupts_gpio_1_IRQn
+#define ENT_BTN_ENABLED 1U
+#define ENT_BTN_PORT (GPIO_PRT_Type*)SMIF0_CORE_SMIF_GPIO_SMIF_PRT0
+#define ENT_BTN_PORT_NUM 1U
+#define ENT_BTN_PIN 4U
+#define ENT_BTN_NUM 4U
+#define ENT_BTN_DRIVEMODE CY_GPIO_DM_PULLUP
+#define ENT_BTN_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_1_pin_4_HSIOM
+    #define ioss_0_port_1_pin_4_HSIOM HSIOM_SEL_ACT_15
+#endif
+#define ENT_BTN_HSIOM ioss_0_port_1_pin_4_HSIOM
+#define ENT_BTN_IRQ ioss_interrupts_gpio_1_IRQn
+#define RTC_TS_L_ENABLED 1U
+#define RTC_TS_L_PORT (GPIO_PRT_Type*)SMIF0_CORE_SMIF_GPIO_SMIF_PRT0
+#define RTC_TS_L_PORT_NUM 1U
+#define RTC_TS_L_PIN 5U
+#define RTC_TS_L_NUM 5U
+#define RTC_TS_L_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define RTC_TS_L_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_1_pin_5_HSIOM
+    #define ioss_0_port_1_pin_5_HSIOM HSIOM_SEL_ACT_15
+#endif
+#define RTC_TS_L_HSIOM ioss_0_port_1_pin_5_HSIOM
+#define RTC_TS_L_IRQ ioss_interrupts_gpio_1_IRQn
+#define RTC_INT_L_ENABLED 1U
+#define RTC_INT_L_PORT (GPIO_PRT_Type*)SMIF0_CORE_SMIF_GPIO_SMIF_PRT0
+#define RTC_INT_L_PORT_NUM 1U
+#define RTC_INT_L_PIN 6U
+#define RTC_INT_L_NUM 6U
+#define RTC_INT_L_DRIVEMODE CY_GPIO_DM_PULLUP
+#define RTC_INT_L_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_1_pin_6_HSIOM
+    #define ioss_0_port_1_pin_6_HSIOM HSIOM_SEL_ACT_15
+#endif
+#define RTC_INT_L_HSIOM ioss_0_port_1_pin_6_HSIOM
+#define RTC_INT_L_IRQ ioss_interrupts_gpio_1_IRQn
+#define SECURE_RST_L_ENABLED 1U
+#define SECURE_RST_L_PORT (GPIO_PRT_Type*)SMIF0_CORE_SMIF_GPIO_SMIF_PRT0
+#define SECURE_RST_L_PORT_NUM 1U
+#define SECURE_RST_L_PIN 7U
+#define SECURE_RST_L_NUM 7U
+#define SECURE_RST_L_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define SECURE_RST_L_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_1_pin_7_HSIOM
+    #define ioss_0_port_1_pin_7_HSIOM HSIOM_SEL_ACT_15
+#endif
+#define SECURE_RST_L_HSIOM ioss_0_port_1_pin_7_HSIOM
+#define SECURE_RST_L_IRQ ioss_interrupts_gpio_1_IRQn
+#define BMS_COM1_RST_ENABLED 1U
+#define BMS_COM1_RST_PORT GPIO_PRT2
+#define BMS_COM1_RST_PORT_NUM 2U
+#define BMS_COM1_RST_PIN 0U
+#define BMS_COM1_RST_NUM 0U
+#define BMS_COM1_RST_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define BMS_COM1_RST_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_2_pin_0_HSIOM
+    #define ioss_0_port_2_pin_0_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BMS_COM1_RST_HSIOM ioss_0_port_2_pin_0_HSIOM
+#define BMS_COM1_RST_IRQ ioss_interrupts_gpio_2_IRQn
+#define BSP_I3C_SCL_ENABLED 1U
+#define BSP_I3C_SCL_PORT GPIO_PRT3
+#define BSP_I3C_SCL_PORT_NUM 3U
+#define BSP_I3C_SCL_PIN 0U
+#define BSP_I3C_SCL_NUM 0U
+#define BSP_I3C_SCL_DRIVEMODE CY_GPIO_DM_CFGOUT3_STRONG_PULLUP_HIGHZ
+#define BSP_I3C_SCL_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_3_pin_0_HSIOM
+    #define ioss_0_port_3_pin_0_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BSP_I3C_SCL_HSIOM ioss_0_port_3_pin_0_HSIOM
+#define BSP_I3C_SCL_IRQ ioss_interrupts_gpio_3_IRQn
+#define BSP_I3C_SDA_ENABLED 1U
+#define BSP_I3C_SDA_PORT GPIO_PRT3
+#define BSP_I3C_SDA_PORT_NUM 3U
+#define BSP_I3C_SDA_PIN 1U
+#define BSP_I3C_SDA_NUM 1U
+#define BSP_I3C_SDA_DRIVEMODE CY_GPIO_DM_CFGOUT3_STRONG_PULLUP_HIGHZ
+#define BSP_I3C_SDA_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_3_pin_1_HSIOM
+    #define ioss_0_port_3_pin_1_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BSP_I3C_SDA_HSIOM ioss_0_port_3_pin_1_HSIOM
+#define BSP_I3C_SDA_IRQ ioss_interrupts_gpio_3_IRQn
+#define HYPERRAM_D0_ENABLED 1U
+#define HYPERRAM_D0_PORT (GPIO_PRT_Type*)SMIF1_CORE_SMIF_GPIO_SMIF_PRT0
+#define HYPERRAM_D0_PORT_NUM 4U
+#define HYPERRAM_D0_PIN 0U
+#define HYPERRAM_D0_NUM 0U
+#define HYPERRAM_D0_DRIVEMODE CY_GPIO_DM_STRONG
+#define HYPERRAM_D0_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_4_pin_0_HSIOM
+    #define ioss_0_port_4_pin_0_HSIOM HSIOM_SEL_ACT_15
+#endif
+#define HYPERRAM_D0_HSIOM ioss_0_port_4_pin_0_HSIOM
+#define HYPERRAM_D0_IRQ ioss_interrupts_gpio_4_IRQn
+#define HYPERRAM_D1_ENABLED 1U
+#define HYPERRAM_D1_PORT (GPIO_PRT_Type*)SMIF1_CORE_SMIF_GPIO_SMIF_PRT0
+#define HYPERRAM_D1_PORT_NUM 4U
+#define HYPERRAM_D1_PIN 1U
+#define HYPERRAM_D1_NUM 1U
+#define HYPERRAM_D1_DRIVEMODE CY_GPIO_DM_STRONG
+#define HYPERRAM_D1_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_4_pin_1_HSIOM
+    #define ioss_0_port_4_pin_1_HSIOM HSIOM_SEL_ACT_15
+#endif
+#define HYPERRAM_D1_HSIOM ioss_0_port_4_pin_1_HSIOM
+#define HYPERRAM_D1_IRQ ioss_interrupts_gpio_4_IRQn
+#define HYPERRAM_D2_ENABLED 1U
+#define HYPERRAM_D2_PORT (GPIO_PRT_Type*)SMIF1_CORE_SMIF_GPIO_SMIF_PRT0
+#define HYPERRAM_D2_PORT_NUM 4U
+#define HYPERRAM_D2_PIN 2U
+#define HYPERRAM_D2_NUM 2U
+#define HYPERRAM_D2_DRIVEMODE CY_GPIO_DM_STRONG
+#define HYPERRAM_D2_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_4_pin_2_HSIOM
+    #define ioss_0_port_4_pin_2_HSIOM HSIOM_SEL_ACT_15
+#endif
+#define HYPERRAM_D2_HSIOM ioss_0_port_4_pin_2_HSIOM
+#define HYPERRAM_D2_IRQ ioss_interrupts_gpio_4_IRQn
+#define HYPERRAM_D3_ENABLED 1U
+#define HYPERRAM_D3_PORT (GPIO_PRT_Type*)SMIF1_CORE_SMIF_GPIO_SMIF_PRT0
+#define HYPERRAM_D3_PORT_NUM 4U
+#define HYPERRAM_D3_PIN 3U
+#define HYPERRAM_D3_NUM 3U
+#define HYPERRAM_D3_DRIVEMODE CY_GPIO_DM_STRONG
+#define HYPERRAM_D3_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_4_pin_3_HSIOM
+    #define ioss_0_port_4_pin_3_HSIOM HSIOM_SEL_ACT_15
+#endif
+#define HYPERRAM_D3_HSIOM ioss_0_port_4_pin_3_HSIOM
+#define HYPERRAM_D3_IRQ ioss_interrupts_gpio_4_IRQn
+#define HYPERRAM_D4_ENABLED 1U
+#define HYPERRAM_D4_PORT (GPIO_PRT_Type*)SMIF1_CORE_SMIF_GPIO_SMIF_PRT0
+#define HYPERRAM_D4_PORT_NUM 4U
+#define HYPERRAM_D4_PIN 4U
+#define HYPERRAM_D4_NUM 4U
+#define HYPERRAM_D4_DRIVEMODE CY_GPIO_DM_STRONG
+#define HYPERRAM_D4_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_4_pin_4_HSIOM
+    #define ioss_0_port_4_pin_4_HSIOM HSIOM_SEL_ACT_15
+#endif
+#define HYPERRAM_D4_HSIOM ioss_0_port_4_pin_4_HSIOM
+#define HYPERRAM_D4_IRQ ioss_interrupts_gpio_4_IRQn
+#define HYPERRAM_D5_ENABLED 1U
+#define HYPERRAM_D5_PORT (GPIO_PRT_Type*)SMIF1_CORE_SMIF_GPIO_SMIF_PRT0
+#define HYPERRAM_D5_PORT_NUM 4U
+#define HYPERRAM_D5_PIN 5U
+#define HYPERRAM_D5_NUM 5U
+#define HYPERRAM_D5_DRIVEMODE CY_GPIO_DM_STRONG
+#define HYPERRAM_D5_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_4_pin_5_HSIOM
+    #define ioss_0_port_4_pin_5_HSIOM HSIOM_SEL_ACT_15
+#endif
+#define HYPERRAM_D5_HSIOM ioss_0_port_4_pin_5_HSIOM
+#define HYPERRAM_D5_IRQ ioss_interrupts_gpio_4_IRQn
+#define HYPERRAM_D6_ENABLED 1U
+#define HYPERRAM_D6_PORT (GPIO_PRT_Type*)SMIF1_CORE_SMIF_GPIO_SMIF_PRT0
+#define HYPERRAM_D6_PORT_NUM 4U
+#define HYPERRAM_D6_PIN 6U
+#define HYPERRAM_D6_NUM 6U
+#define HYPERRAM_D6_DRIVEMODE CY_GPIO_DM_STRONG
+#define HYPERRAM_D6_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_4_pin_6_HSIOM
+    #define ioss_0_port_4_pin_6_HSIOM HSIOM_SEL_ACT_15
+#endif
+#define HYPERRAM_D6_HSIOM ioss_0_port_4_pin_6_HSIOM
+#define HYPERRAM_D6_IRQ ioss_interrupts_gpio_4_IRQn
+#define HYPERRAM_D7_ENABLED 1U
+#define HYPERRAM_D7_PORT (GPIO_PRT_Type*)SMIF1_CORE_SMIF_GPIO_SMIF_PRT0
+#define HYPERRAM_D7_PORT_NUM 4U
+#define HYPERRAM_D7_PIN 7U
+#define HYPERRAM_D7_NUM 7U
+#define HYPERRAM_D7_DRIVEMODE CY_GPIO_DM_STRONG
+#define HYPERRAM_D7_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_4_pin_7_HSIOM
+    #define ioss_0_port_4_pin_7_HSIOM HSIOM_SEL_ACT_15
+#endif
+#define HYPERRAM_D7_HSIOM ioss_0_port_4_pin_7_HSIOM
+#define HYPERRAM_D7_IRQ ioss_interrupts_gpio_4_IRQn
+#define QSPI_FLASH_SS_ENABLED 1U
+#define QSPI_FLASH_SS_PORT GPIO_PRT5
+#define QSPI_FLASH_SS_PORT_NUM 5U
+#define QSPI_FLASH_SS_PIN 0U
+#define QSPI_FLASH_SS_NUM 0U
+#define QSPI_FLASH_SS_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define QSPI_FLASH_SS_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_5_pin_0_HSIOM
+    #define ioss_0_port_5_pin_0_HSIOM HSIOM_SEL_GPIO
+#endif
+#define QSPI_FLASH_SS_HSIOM ioss_0_port_5_pin_0_HSIOM
+#define QSPI_FLASH_SS_IRQ ioss_interrupts_gpio_5_IRQn
+#define BSP_SWJ_TDO_ENABLED 1U
+#define BSP_SWJ_TDO_PORT GPIO_PRT6
+#define BSP_SWJ_TDO_PORT_NUM 6U
+#define BSP_SWJ_TDO_PIN 0U
+#define BSP_SWJ_TDO_NUM 0U
+#define BSP_SWJ_TDO_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define BSP_SWJ_TDO_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_6_pin_0_HSIOM
+    #define ioss_0_port_6_pin_0_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BSP_SWJ_TDO_HSIOM ioss_0_port_6_pin_0_HSIOM
+#define BSP_SWJ_TDO_IRQ ioss_interrupts_gpio_6_IRQn
+#define BSP_SWJ_TDI_ENABLED 1U
+#define BSP_SWJ_TDI_PORT GPIO_PRT6
+#define BSP_SWJ_TDI_PORT_NUM 6U
+#define BSP_SWJ_TDI_PIN 1U
+#define BSP_SWJ_TDI_NUM 1U
+#define BSP_SWJ_TDI_DRIVEMODE CY_GPIO_DM_PULLUP
+#define BSP_SWJ_TDI_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_6_pin_1_HSIOM
+    #define ioss_0_port_6_pin_1_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BSP_SWJ_TDI_HSIOM ioss_0_port_6_pin_1_HSIOM
+#define BSP_SWJ_TDI_IRQ ioss_interrupts_gpio_6_IRQn
+#define BSP_SWJ_TMS_ENABLED 1U
+#define BSP_SWJ_TMS_PORT GPIO_PRT6
+#define BSP_SWJ_TMS_PORT_NUM 6U
+#define BSP_SWJ_TMS_PIN 2U
+#define BSP_SWJ_TMS_NUM 2U
+#define BSP_SWJ_TMS_DRIVEMODE CY_GPIO_DM_PULLUP
+#define BSP_SWJ_TMS_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_6_pin_2_HSIOM
+    #define ioss_0_port_6_pin_2_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BSP_SWJ_TMS_HSIOM ioss_0_port_6_pin_2_HSIOM
+#define BSP_SWJ_TMS_IRQ ioss_interrupts_gpio_6_IRQn
+#define BSP_SWJ_TCLK_ENABLED 1U
+#define BSP_SWJ_TCLK_PORT GPIO_PRT6
+#define BSP_SWJ_TCLK_PORT_NUM 6U
+#define BSP_SWJ_TCLK_PIN 3U
+#define BSP_SWJ_TCLK_NUM 3U
+#define BSP_SWJ_TCLK_DRIVEMODE CY_GPIO_DM_PULLDOWN
+#define BSP_SWJ_TCLK_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_6_pin_3_HSIOM
+    #define ioss_0_port_6_pin_3_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BSP_SWJ_TCLK_HSIOM ioss_0_port_6_pin_3_HSIOM
+#define BSP_SWJ_TCLK_IRQ ioss_interrupts_gpio_6_IRQn
+#define F1_FDO_ENABLED 1U
+#define F1_FDO_PORT GPIO_PRT6
+#define F1_FDO_PORT_NUM 6U
+#define F1_FDO_PIN 4U
+#define F1_FDO_NUM 4U
+#define F1_FDO_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define F1_FDO_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_6_pin_4_HSIOM
+    #define ioss_0_port_6_pin_4_HSIOM HSIOM_SEL_GPIO
+#endif
+#define F1_FDO_HSIOM ioss_0_port_6_pin_4_HSIOM
+#define F1_FDO_IRQ ioss_interrupts_gpio_6_IRQn
+#define SCB2_UART_RX_UART_HS_ENABLED 1U
+#define SCB2_UART_RX_UART_HS_PORT GPIO_PRT6
+#define SCB2_UART_RX_UART_HS_PORT_NUM 6U
+#define SCB2_UART_RX_UART_HS_PIN 5U
+#define SCB2_UART_RX_UART_HS_NUM 5U
+#define SCB2_UART_RX_UART_HS_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define SCB2_UART_RX_UART_HS_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_6_pin_5_HSIOM
+    #define ioss_0_port_6_pin_5_HSIOM HSIOM_SEL_GPIO
+#endif
+#define SCB2_UART_RX_UART_HS_HSIOM ioss_0_port_6_pin_5_HSIOM
+#define SCB2_UART_RX_UART_HS_IRQ ioss_interrupts_gpio_6_IRQn
+#define F3_FDO_ENABLED 1U
+#define F3_FDO_PORT GPIO_PRT6
+#define F3_FDO_PORT_NUM 6U
+#define F3_FDO_PIN 6U
+#define F3_FDO_NUM 6U
+#define F3_FDO_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define F3_FDO_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_6_pin_6_HSIOM
+    #define ioss_0_port_6_pin_6_HSIOM HSIOM_SEL_GPIO
+#endif
+#define F3_FDO_HSIOM ioss_0_port_6_pin_6_HSIOM
+#define F3_FDO_IRQ ioss_interrupts_gpio_6_IRQn
+#define SCB2_UART_TX_UART_HS_ENABLED 1U
+#define SCB2_UART_TX_UART_HS_PORT GPIO_PRT6
+#define SCB2_UART_TX_UART_HS_PORT_NUM 6U
+#define SCB2_UART_TX_UART_HS_PIN 7U
+#define SCB2_UART_TX_UART_HS_NUM 7U
+#define SCB2_UART_TX_UART_HS_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define SCB2_UART_TX_UART_HS_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_6_pin_7_HSIOM
+    #define ioss_0_port_6_pin_7_HSIOM HSIOM_SEL_GPIO
+#endif
+#define SCB2_UART_TX_UART_HS_HSIOM ioss_0_port_6_pin_7_HSIOM
+#define SCB2_UART_TX_UART_HS_IRQ ioss_interrupts_gpio_6_IRQn
+#define F1_FS_ENABLED 1U
+#define F1_FS_PORT GPIO_PRT7
+#define F1_FS_PORT_NUM 7U
+#define F1_FS_PIN 0U
+#define F1_FS_NUM 0U
+#define F1_FS_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define F1_FS_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_7_pin_0_HSIOM
+    #define ioss_0_port_7_pin_0_HSIOM HSIOM_SEL_GPIO
+#endif
+#define F1_FS_HSIOM ioss_0_port_7_pin_0_HSIOM
+#define F1_FS_IRQ ioss_interrupts_gpio_7_IRQn
+#define F3_FS_ENABLED 1U
+#define F3_FS_PORT GPIO_PRT7
+#define F3_FS_PORT_NUM 7U
+#define F3_FS_PIN 1U
+#define F3_FS_NUM 1U
+#define F3_FS_DRIVEMODE CY_GPIO_DM_STRONG
+#define F3_FS_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_7_pin_1_HSIOM
+    #define ioss_0_port_7_pin_1_HSIOM HSIOM_SEL_GPIO
+#endif
+#define F3_FS_HSIOM ioss_0_port_7_pin_1_HSIOM
+#define F3_FS_IRQ ioss_interrupts_gpio_7_IRQn
+#define PWM_IL_OUT_ENABLED 1U
+#define PWM_IL_OUT_PORT GPIO_PRT7
+#define PWM_IL_OUT_PORT_NUM 7U
+#define PWM_IL_OUT_PIN 2U
+#define PWM_IL_OUT_NUM 2U
+#define PWM_IL_OUT_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define PWM_IL_OUT_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_7_pin_2_HSIOM
+    #define ioss_0_port_7_pin_2_HSIOM HSIOM_SEL_GPIO
+#endif
+#define PWM_IL_OUT_HSIOM ioss_0_port_7_pin_2_HSIOM
+#define PWM_IL_OUT_IRQ ioss_interrupts_gpio_7_IRQn
+#define LOAD_SW_IN3_ENABLED 1U
+#define LOAD_SW_IN3_PORT GPIO_PRT7
+#define LOAD_SW_IN3_PORT_NUM 7U
+#define LOAD_SW_IN3_PIN 3U
+#define LOAD_SW_IN3_NUM 3U
+#define LOAD_SW_IN3_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define LOAD_SW_IN3_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_7_pin_3_HSIOM
+    #define ioss_0_port_7_pin_3_HSIOM HSIOM_SEL_GPIO
+#endif
+#define LOAD_SW_IN3_HSIOM ioss_0_port_7_pin_3_HSIOM
+#define LOAD_SW_IN3_IRQ ioss_interrupts_gpio_7_IRQn
+#define EXT_CLK_ENABLED 1U
+#define EXT_CLK_PORT GPIO_PRT7
+#define EXT_CLK_PORT_NUM 7U
+#define EXT_CLK_PIN 4U
+#define EXT_CLK_NUM 4U
+#define EXT_CLK_DRIVEMODE CY_GPIO_DM_ANALOG
+#define EXT_CLK_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_7_pin_4_HSIOM
+    #define ioss_0_port_7_pin_4_HSIOM HSIOM_SEL_GPIO
+#endif
+#define EXT_CLK_HSIOM ioss_0_port_7_pin_4_HSIOM
+#define EXT_CLK_IRQ ioss_interrupts_gpio_7_IRQn
+#define PWM_IL_IN_ENABLED 1U
+#define PWM_IL_IN_PORT GPIO_PRT7
+#define PWM_IL_IN_PORT_NUM 7U
+#define PWM_IL_IN_PIN 5U
+#define PWM_IL_IN_NUM 5U
+#define PWM_IL_IN_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define PWM_IL_IN_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_7_pin_5_HSIOM
+    #define ioss_0_port_7_pin_5_HSIOM HSIOM_SEL_GPIO
+#endif
+#define PWM_IL_IN_HSIOM ioss_0_port_7_pin_5_HSIOM
+#define PWM_IL_IN_IRQ ioss_interrupts_gpio_7_IRQn
+#define K1_PWM_FB_ENABLED 1U
+#define K1_PWM_FB_PORT GPIO_PRT7
+#define K1_PWM_FB_PORT_NUM 7U
+#define K1_PWM_FB_PIN 6U
+#define K1_PWM_FB_NUM 6U
+#define K1_PWM_FB_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define K1_PWM_FB_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_7_pin_6_HSIOM
+    #define ioss_0_port_7_pin_6_HSIOM HSIOM_SEL_GPIO
+#endif
+#define K1_PWM_FB_HSIOM ioss_0_port_7_pin_6_HSIOM
+#define K1_PWM_FB_IRQ ioss_interrupts_gpio_7_IRQn
+#define K3_PWM_FB_ENABLED 1U
+#define K3_PWM_FB_PORT GPIO_PRT7
+#define K3_PWM_FB_PORT_NUM 7U
+#define K3_PWM_FB_PIN 7U
+#define K3_PWM_FB_NUM 7U
+#define K3_PWM_FB_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define K3_PWM_FB_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_7_pin_7_HSIOM
+    #define ioss_0_port_7_pin_7_HSIOM HSIOM_SEL_GPIO
+#endif
+#define K3_PWM_FB_HSIOM ioss_0_port_7_pin_7_HSIOM
+#define K3_PWM_FB_IRQ ioss_interrupts_gpio_7_IRQn
+#define BMS_COM2_DIO2_ENABLED 1U
+#define BMS_COM2_DIO2_PORT GPIO_PRT8
+#define BMS_COM2_DIO2_PORT_NUM 8U
+#define BMS_COM2_DIO2_PIN 0U
+#define BMS_COM2_DIO2_NUM 0U
+#define BMS_COM2_DIO2_DRIVEMODE CY_GPIO_DM_ANALOG
+#define BMS_COM2_DIO2_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_8_pin_0_HSIOM
+    #define ioss_0_port_8_pin_0_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BMS_COM2_DIO2_HSIOM ioss_0_port_8_pin_0_HSIOM
+#define BMS_COM2_DIO2_IRQ ioss_interrupts_gpio_8_IRQn
+#define BMS_COM2_DIO2_DIR_ENABLED 1U
+#define BMS_COM2_DIO2_DIR_PORT GPIO_PRT8
+#define BMS_COM2_DIO2_DIR_PORT_NUM 8U
+#define BMS_COM2_DIO2_DIR_PIN 1U
+#define BMS_COM2_DIO2_DIR_NUM 1U
+#define BMS_COM2_DIO2_DIR_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define BMS_COM2_DIO2_DIR_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_8_pin_1_HSIOM
+    #define ioss_0_port_8_pin_1_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BMS_COM2_DIO2_DIR_HSIOM ioss_0_port_8_pin_1_HSIOM
+#define BMS_COM2_DIO2_DIR_IRQ ioss_interrupts_gpio_8_IRQn
+#define FRAM_WP_L_ENABLED 1U
+#define FRAM_WP_L_PORT GPIO_PRT8
+#define FRAM_WP_L_PORT_NUM 8U
+#define FRAM_WP_L_PIN 2U
+#define FRAM_WP_L_NUM 2U
+#define FRAM_WP_L_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define FRAM_WP_L_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_8_pin_2_HSIOM
+    #define ioss_0_port_8_pin_2_HSIOM HSIOM_SEL_GPIO
+#endif
+#define FRAM_WP_L_HSIOM ioss_0_port_8_pin_2_HSIOM
+#define FRAM_WP_L_IRQ ioss_interrupts_gpio_8_IRQn
+#define SEL_BTN_ENABLED 1U
+#define SEL_BTN_PORT GPIO_PRT8
+#define SEL_BTN_PORT_NUM 8U
+#define SEL_BTN_PIN 3U
+#define SEL_BTN_NUM 3U
+#define SEL_BTN_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define SEL_BTN_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_8_pin_3_HSIOM
+    #define ioss_0_port_8_pin_3_HSIOM HSIOM_SEL_GPIO
+#endif
+#define SEL_BTN_HSIOM ioss_0_port_8_pin_3_HSIOM
+#define SEL_BTN_IRQ ioss_interrupts_gpio_8_IRQn
+#define LOAD_SW_RST_ENABLED 1U
+#define LOAD_SW_RST_PORT GPIO_PRT8
+#define LOAD_SW_RST_PORT_NUM 8U
+#define LOAD_SW_RST_PIN 4U
+#define LOAD_SW_RST_NUM 4U
+#define LOAD_SW_RST_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define LOAD_SW_RST_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_8_pin_4_HSIOM
+    #define ioss_0_port_8_pin_4_HSIOM HSIOM_SEL_GPIO
+#endif
+#define LOAD_SW_RST_HSIOM ioss_0_port_8_pin_4_HSIOM
+#define LOAD_SW_RST_IRQ ioss_interrupts_gpio_8_IRQn
+#define LOAD_SW_FAULT_ENABLED 1U
+#define LOAD_SW_FAULT_PORT GPIO_PRT8
+#define LOAD_SW_FAULT_PORT_NUM 8U
+#define LOAD_SW_FAULT_PIN 5U
+#define LOAD_SW_FAULT_NUM 5U
+#define LOAD_SW_FAULT_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define LOAD_SW_FAULT_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_8_pin_5_HSIOM
+    #define ioss_0_port_8_pin_5_HSIOM HSIOM_SEL_GPIO
+#endif
+#define LOAD_SW_FAULT_HSIOM ioss_0_port_8_pin_5_HSIOM
+#define LOAD_SW_FAULT_IRQ ioss_interrupts_gpio_8_IRQn
+#define LOAD_SW_IN4_ENABLED 1U
+#define LOAD_SW_IN4_PORT GPIO_PRT8
+#define LOAD_SW_IN4_PORT_NUM 8U
+#define LOAD_SW_IN4_PIN 6U
+#define LOAD_SW_IN4_NUM 6U
+#define LOAD_SW_IN4_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define LOAD_SW_IN4_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_8_pin_6_HSIOM
+    #define ioss_0_port_8_pin_6_HSIOM HSIOM_SEL_GPIO
+#endif
+#define LOAD_SW_IN4_HSIOM ioss_0_port_8_pin_6_HSIOM
+#define LOAD_SW_IN4_IRQ ioss_interrupts_gpio_8_IRQn
+#define LOAD_SW_LHM_ENABLED 1U
+#define LOAD_SW_LHM_PORT GPIO_PRT8
+#define LOAD_SW_LHM_PORT_NUM 8U
+#define LOAD_SW_LHM_PIN 7U
+#define LOAD_SW_LHM_NUM 7U
+#define LOAD_SW_LHM_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define LOAD_SW_LHM_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_8_pin_7_HSIOM
+    #define ioss_0_port_8_pin_7_HSIOM HSIOM_SEL_GPIO
+#endif
+#define LOAD_SW_LHM_HSIOM ioss_0_port_8_pin_7_HSIOM
+#define LOAD_SW_LHM_IRQ ioss_interrupts_gpio_8_IRQn
+#define K_ENBL_ENABLED 1U
+#define K_ENBL_PORT GPIO_PRT9
+#define K_ENBL_PORT_NUM 9U
+#define K_ENBL_PIN 0U
+#define K_ENBL_NUM 0U
+#define K_ENBL_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define K_ENBL_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_9_pin_0_HSIOM
+    #define ioss_0_port_9_pin_0_HSIOM HSIOM_SEL_GPIO
+#endif
+#define K_ENBL_HSIOM ioss_0_port_9_pin_0_HSIOM
+#define K_ENBL_IRQ ioss_interrupts_gpio_9_IRQn
+#define LED_BLUE_ENABLED 1U
+#define LED_BLUE_PORT GPIO_PRT9
+#define LED_BLUE_PORT_NUM 9U
+#define LED_BLUE_PIN 1U
+#define LED_BLUE_NUM 1U
+#define LED_BLUE_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define LED_BLUE_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_9_pin_1_HSIOM
+    #define ioss_0_port_9_pin_1_HSIOM HSIOM_SEL_GPIO
+#endif
+#define LED_BLUE_HSIOM ioss_0_port_9_pin_1_HSIOM
+#define LED_BLUE_IRQ ioss_interrupts_gpio_9_IRQn
+#define SCB1_UART_TX_UART_LS_ENABLED 1U
+#define SCB1_UART_TX_UART_LS_PORT GPIO_PRT9
+#define SCB1_UART_TX_UART_LS_PORT_NUM 9U
+#define SCB1_UART_TX_UART_LS_PIN 2U
+#define SCB1_UART_TX_UART_LS_NUM 2U
+#define SCB1_UART_TX_UART_LS_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define SCB1_UART_TX_UART_LS_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_9_pin_2_HSIOM
+    #define ioss_0_port_9_pin_2_HSIOM HSIOM_SEL_GPIO
+#endif
+#define SCB1_UART_TX_UART_LS_HSIOM ioss_0_port_9_pin_2_HSIOM
+#define SCB1_UART_TX_UART_LS_IRQ ioss_interrupts_gpio_9_IRQn
+#define SCB1_UART_RX_UART_LS_ENABLED 1U
+#define SCB1_UART_RX_UART_LS_PORT GPIO_PRT9
+#define SCB1_UART_RX_UART_LS_PORT_NUM 9U
+#define SCB1_UART_RX_UART_LS_PIN 3U
+#define SCB1_UART_RX_UART_LS_NUM 3U
+#define SCB1_UART_RX_UART_LS_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define SCB1_UART_RX_UART_LS_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_9_pin_3_HSIOM
+    #define ioss_0_port_9_pin_3_HSIOM HSIOM_SEL_GPIO
+#endif
+#define SCB1_UART_RX_UART_LS_HSIOM ioss_0_port_9_pin_3_HSIOM
+#define SCB1_UART_RX_UART_LS_IRQ ioss_interrupts_gpio_9_IRQn
+#define BT_UART_RX_ENABLED 1U
+#define BT_UART_RX_PORT GPIO_PRT10
+#define BT_UART_RX_PORT_NUM 10U
+#define BT_UART_RX_PIN 0U
+#define BT_UART_RX_NUM 0U
+#define BT_UART_RX_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define BT_UART_RX_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_10_pin_0_HSIOM
+    #define ioss_0_port_10_pin_0_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BT_UART_RX_HSIOM ioss_0_port_10_pin_0_HSIOM
+#define BT_UART_RX_IRQ ioss_interrupts_gpio_10_IRQn
+#define BT_UART_TX_ENABLED 1U
+#define BT_UART_TX_PORT GPIO_PRT10
+#define BT_UART_TX_PORT_NUM 10U
+#define BT_UART_TX_PIN 1U
+#define BT_UART_TX_NUM 1U
+#define BT_UART_TX_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define BT_UART_TX_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_10_pin_1_HSIOM
+    #define ioss_0_port_10_pin_1_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BT_UART_TX_HSIOM ioss_0_port_10_pin_1_HSIOM
+#define BT_UART_TX_IRQ ioss_interrupts_gpio_10_IRQn
+#define BT_UART_CTS_ENABLED 1U
+#define BT_UART_CTS_PORT GPIO_PRT10
+#define BT_UART_CTS_PORT_NUM 10U
+#define BT_UART_CTS_PIN 2U
+#define BT_UART_CTS_NUM 2U
+#define BT_UART_CTS_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define BT_UART_CTS_INIT_DRIVESTATE 0
+#ifndef ioss_0_port_10_pin_2_HSIOM
+    #define ioss_0_port_10_pin_2_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BT_UART_CTS_HSIOM ioss_0_port_10_pin_2_HSIOM
+#define BT_UART_CTS_IRQ ioss_interrupts_gpio_10_IRQn
+#define BT_UART_RTS_ENABLED 1U
+#define BT_UART_RTS_PORT GPIO_PRT10
+#define BT_UART_RTS_PORT_NUM 10U
+#define BT_UART_RTS_PIN 3U
+#define BT_UART_RTS_NUM 3U
+#define BT_UART_RTS_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define BT_UART_RTS_INIT_DRIVESTATE 0
+#ifndef ioss_0_port_10_pin_3_HSIOM
+    #define ioss_0_port_10_pin_3_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BT_UART_RTS_HSIOM ioss_0_port_10_pin_3_HSIOM
+#define BT_UART_RTS_IRQ ioss_interrupts_gpio_10_IRQn
+#define BT_REG_ON_ENABLED 1U
+#define BT_REG_ON_PORT GPIO_PRT10
+#define BT_REG_ON_PORT_NUM 10U
+#define BT_REG_ON_PIN 4U
+#define BT_REG_ON_NUM 4U
+#define BT_REG_ON_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define BT_REG_ON_INIT_DRIVESTATE 0
+#ifndef ioss_0_port_10_pin_4_HSIOM
+    #define ioss_0_port_10_pin_4_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BT_REG_ON_HSIOM ioss_0_port_10_pin_4_HSIOM
+#define BT_REG_ON_IRQ ioss_interrupts_gpio_10_IRQn
+#define RMII_ETH_RX_CTL_ENABLED 1U
+#define RMII_ETH_RX_CTL_PORT GPIO_PRT10
+#define RMII_ETH_RX_CTL_PORT_NUM 10U
+#define RMII_ETH_RX_CTL_PIN 5U
+#define RMII_ETH_RX_CTL_NUM 5U
+#define RMII_ETH_RX_CTL_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define RMII_ETH_RX_CTL_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_10_pin_5_HSIOM
+    #define ioss_0_port_10_pin_5_HSIOM HSIOM_SEL_GPIO
+#endif
+#define RMII_ETH_RX_CTL_HSIOM ioss_0_port_10_pin_5_HSIOM
+#define RMII_ETH_RX_CTL_IRQ ioss_interrupts_gpio_10_IRQn
+#define RMII_ETH_RXD0_ENABLED 1U
+#define RMII_ETH_RXD0_PORT GPIO_PRT10
+#define RMII_ETH_RXD0_PORT_NUM 10U
+#define RMII_ETH_RXD0_PIN 6U
+#define RMII_ETH_RXD0_NUM 6U
+#define RMII_ETH_RXD0_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define RMII_ETH_RXD0_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_10_pin_6_HSIOM
+    #define ioss_0_port_10_pin_6_HSIOM HSIOM_SEL_GPIO
+#endif
+#define RMII_ETH_RXD0_HSIOM ioss_0_port_10_pin_6_HSIOM
+#define RMII_ETH_RXD0_IRQ ioss_interrupts_gpio_10_IRQn
+#define RMII_ETH_RXD1_ENABLED 1U
+#define RMII_ETH_RXD1_PORT GPIO_PRT10
+#define RMII_ETH_RXD1_PORT_NUM 10U
+#define RMII_ETH_RXD1_PIN 7U
+#define RMII_ETH_RXD1_NUM 7U
+#define RMII_ETH_RXD1_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define RMII_ETH_RXD1_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_10_pin_7_HSIOM
+    #define ioss_0_port_10_pin_7_HSIOM HSIOM_SEL_GPIO
+#endif
+#define RMII_ETH_RXD1_HSIOM ioss_0_port_10_pin_7_HSIOM
+#define RMII_ETH_RXD1_IRQ ioss_interrupts_gpio_10_IRQn
+#define SCB6_I2C_SCL_RTC_SE_ENABLED 1U
+#define SCB6_I2C_SCL_RTC_SE_PORT GPIO_PRT11
+#define SCB6_I2C_SCL_RTC_SE_PORT_NUM 11U
+#define SCB6_I2C_SCL_RTC_SE_PIN 0U
+#define SCB6_I2C_SCL_RTC_SE_NUM 0U
+#define SCB6_I2C_SCL_RTC_SE_DRIVEMODE CY_GPIO_DM_OD_DRIVESLOW
+#define SCB6_I2C_SCL_RTC_SE_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_11_pin_0_HSIOM
+    #define ioss_0_port_11_pin_0_HSIOM HSIOM_SEL_GPIO
+#endif
+#define SCB6_I2C_SCL_RTC_SE_HSIOM ioss_0_port_11_pin_0_HSIOM
+#define SCB6_I2C_SCL_RTC_SE_IRQ ioss_interrupts_gpio_11_IRQn
+#define SCB6_I2C_SDA_RTC_SE_ENABLED 1U
+#define SCB6_I2C_SDA_RTC_SE_PORT GPIO_PRT11
+#define SCB6_I2C_SDA_RTC_SE_PORT_NUM 11U
+#define SCB6_I2C_SDA_RTC_SE_PIN 1U
+#define SCB6_I2C_SDA_RTC_SE_NUM 1U
+#define SCB6_I2C_SDA_RTC_SE_DRIVEMODE CY_GPIO_DM_OD_DRIVESLOW
+#define SCB6_I2C_SDA_RTC_SE_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_11_pin_1_HSIOM
+    #define ioss_0_port_11_pin_1_HSIOM HSIOM_SEL_GPIO
+#endif
+#define SCB6_I2C_SDA_RTC_SE_HSIOM ioss_0_port_11_pin_1_HSIOM
+#define SCB6_I2C_SDA_RTC_SE_IRQ ioss_interrupts_gpio_11_IRQn
+#define RMII_ETH_TXD0_ENABLED 1U
+#define RMII_ETH_TXD0_PORT GPIO_PRT11
+#define RMII_ETH_TXD0_PORT_NUM 11U
+#define RMII_ETH_TXD0_PIN 2U
+#define RMII_ETH_TXD0_NUM 2U
+#define RMII_ETH_TXD0_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define RMII_ETH_TXD0_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_11_pin_2_HSIOM
+    #define ioss_0_port_11_pin_2_HSIOM HSIOM_SEL_GPIO
+#endif
+#define RMII_ETH_TXD0_HSIOM ioss_0_port_11_pin_2_HSIOM
+#define RMII_ETH_TXD0_IRQ ioss_interrupts_gpio_11_IRQn
+#define RMII_ETH_TXD1_ENABLED 1U
+#define RMII_ETH_TXD1_PORT GPIO_PRT11
+#define RMII_ETH_TXD1_PORT_NUM 11U
+#define RMII_ETH_TXD1_PIN 3U
+#define RMII_ETH_TXD1_NUM 3U
+#define RMII_ETH_TXD1_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define RMII_ETH_TXD1_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_11_pin_3_HSIOM
+    #define ioss_0_port_11_pin_3_HSIOM HSIOM_SEL_GPIO
+#endif
+#define RMII_ETH_TXD1_HSIOM ioss_0_port_11_pin_3_HSIOM
+#define RMII_ETH_TXD1_IRQ ioss_interrupts_gpio_11_IRQn
+#define RMII_ETH_TX_CTL_ENABLED 1U
+#define RMII_ETH_TX_CTL_PORT GPIO_PRT11
+#define RMII_ETH_TX_CTL_PORT_NUM 11U
+#define RMII_ETH_TX_CTL_PIN 4U
+#define RMII_ETH_TX_CTL_NUM 4U
+#define RMII_ETH_TX_CTL_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define RMII_ETH_TX_CTL_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_11_pin_4_HSIOM
+    #define ioss_0_port_11_pin_4_HSIOM HSIOM_SEL_GPIO
+#endif
+#define RMII_ETH_TX_CTL_HSIOM ioss_0_port_11_pin_4_HSIOM
+#define RMII_ETH_TX_CTL_IRQ ioss_interrupts_gpio_11_IRQn
+#define BT_DEV_WAKE_ENABLED 1U
+#define BT_DEV_WAKE_PORT GPIO_PRT11
+#define BT_DEV_WAKE_PORT_NUM 11U
+#define BT_DEV_WAKE_PIN 5U
+#define BT_DEV_WAKE_NUM 5U
+#define BT_DEV_WAKE_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define BT_DEV_WAKE_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_11_pin_5_HSIOM
+    #define ioss_0_port_11_pin_5_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BT_DEV_WAKE_HSIOM ioss_0_port_11_pin_5_HSIOM
+#define BT_DEV_WAKE_IRQ ioss_interrupts_gpio_11_IRQn
+#define WL_REG_ON_ENABLED 1U
+#define WL_REG_ON_PORT GPIO_PRT11
+#define WL_REG_ON_PORT_NUM 11U
+#define WL_REG_ON_PIN 6U
+#define WL_REG_ON_NUM 6U
+#define WL_REG_ON_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define WL_REG_ON_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_11_pin_6_HSIOM
+    #define ioss_0_port_11_pin_6_HSIOM HSIOM_SEL_GPIO
+#endif
+#define WL_REG_ON_HSIOM ioss_0_port_11_pin_6_HSIOM
+#define WL_REG_ON_IRQ ioss_interrupts_gpio_11_IRQn
+#define RMII_ETH_REF_CLK_ENABLED 1U
+#define RMII_ETH_REF_CLK_PORT GPIO_PRT11
+#define RMII_ETH_REF_CLK_PORT_NUM 11U
+#define RMII_ETH_REF_CLK_PIN 7U
+#define RMII_ETH_REF_CLK_NUM 7U
+#define RMII_ETH_REF_CLK_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define RMII_ETH_REF_CLK_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_11_pin_7_HSIOM
+    #define ioss_0_port_11_pin_7_HSIOM HSIOM_SEL_GPIO
+#endif
+#define RMII_ETH_REF_CLK_HSIOM ioss_0_port_11_pin_7_HSIOM
+#define RMII_ETH_REF_CLK_IRQ ioss_interrupts_gpio_11_IRQn
+#define WL_SDIO_CLK_ENABLED 1U
+#define WL_SDIO_CLK_PORT GPIO_PRT12
+#define WL_SDIO_CLK_PORT_NUM 12U
+#define WL_SDIO_CLK_PIN 0U
+#define WL_SDIO_CLK_NUM 0U
+#define WL_SDIO_CLK_DRIVEMODE CY_GPIO_DM_STRONG
+#define WL_SDIO_CLK_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_12_pin_0_HSIOM
+    #define ioss_0_port_12_pin_0_HSIOM HSIOM_SEL_GPIO
+#endif
+#define WL_SDIO_CLK_HSIOM ioss_0_port_12_pin_0_HSIOM
+#define WL_SDIO_CLK_IRQ ioss_interrupts_gpio_12_IRQn
+#define WL_SDIO_DATA0_ENABLED 1U
+#define WL_SDIO_DATA0_PORT GPIO_PRT12
+#define WL_SDIO_DATA0_PORT_NUM 12U
+#define WL_SDIO_DATA0_PIN 1U
+#define WL_SDIO_DATA0_NUM 1U
+#define WL_SDIO_DATA0_DRIVEMODE CY_GPIO_DM_STRONG
+#define WL_SDIO_DATA0_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_12_pin_1_HSIOM
+    #define ioss_0_port_12_pin_1_HSIOM HSIOM_SEL_GPIO
+#endif
+#define WL_SDIO_DATA0_HSIOM ioss_0_port_12_pin_1_HSIOM
+#define WL_SDIO_DATA0_IRQ ioss_interrupts_gpio_12_IRQn
+#define WL_SDIO_DATA1_ENABLED 1U
+#define WL_SDIO_DATA1_PORT GPIO_PRT12
+#define WL_SDIO_DATA1_PORT_NUM 12U
+#define WL_SDIO_DATA1_PIN 2U
+#define WL_SDIO_DATA1_NUM 2U
+#define WL_SDIO_DATA1_DRIVEMODE CY_GPIO_DM_STRONG
+#define WL_SDIO_DATA1_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_12_pin_2_HSIOM
+    #define ioss_0_port_12_pin_2_HSIOM HSIOM_SEL_GPIO
+#endif
+#define WL_SDIO_DATA1_HSIOM ioss_0_port_12_pin_2_HSIOM
+#define WL_SDIO_DATA1_IRQ ioss_interrupts_gpio_12_IRQn
+#define WL_DEV_WAKE_ENABLED 1U
+#define WL_DEV_WAKE_PORT GPIO_PRT12
+#define WL_DEV_WAKE_PORT_NUM 12U
+#define WL_DEV_WAKE_PIN 3U
+#define WL_DEV_WAKE_NUM 3U
+#define WL_DEV_WAKE_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define WL_DEV_WAKE_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_12_pin_3_HSIOM
+    #define ioss_0_port_12_pin_3_HSIOM HSIOM_SEL_GPIO
+#endif
+#define WL_DEV_WAKE_HSIOM ioss_0_port_12_pin_3_HSIOM
+#define WL_DEV_WAKE_IRQ ioss_interrupts_gpio_12_IRQn
+#define WL_SDIO_DATA2_ENABLED 1U
+#define WL_SDIO_DATA2_PORT GPIO_PRT12
+#define WL_SDIO_DATA2_PORT_NUM 12U
+#define WL_SDIO_DATA2_PIN 4U
+#define WL_SDIO_DATA2_NUM 4U
+#define WL_SDIO_DATA2_DRIVEMODE CY_GPIO_DM_STRONG
+#define WL_SDIO_DATA2_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_12_pin_4_HSIOM
+    #define ioss_0_port_12_pin_4_HSIOM HSIOM_SEL_GPIO
+#endif
+#define WL_SDIO_DATA2_HSIOM ioss_0_port_12_pin_4_HSIOM
+#define WL_SDIO_DATA2_IRQ ioss_interrupts_gpio_12_IRQn
+#define WL_SDIO_DATA3_ENABLED 1U
+#define WL_SDIO_DATA3_PORT GPIO_PRT12
+#define WL_SDIO_DATA3_PORT_NUM 12U
+#define WL_SDIO_DATA3_PIN 5U
+#define WL_SDIO_DATA3_NUM 5U
+#define WL_SDIO_DATA3_DRIVEMODE CY_GPIO_DM_STRONG
+#define WL_SDIO_DATA3_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_12_pin_5_HSIOM
+    #define ioss_0_port_12_pin_5_HSIOM HSIOM_SEL_GPIO
+#endif
+#define WL_SDIO_DATA3_HSIOM ioss_0_port_12_pin_5_HSIOM
+#define WL_SDIO_DATA3_IRQ ioss_interrupts_gpio_12_IRQn
+#define BT_HOST_WAKE_ENABLED 1U
+#define BT_HOST_WAKE_PORT GPIO_PRT13
+#define BT_HOST_WAKE_PORT_NUM 13U
+#define BT_HOST_WAKE_PIN 0U
+#define BT_HOST_WAKE_NUM 0U
+#define BT_HOST_WAKE_DRIVEMODE CY_GPIO_DM_PULLUP
+#define BT_HOST_WAKE_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_13_pin_0_HSIOM
+    #define ioss_0_port_13_pin_0_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BT_HOST_WAKE_HSIOM ioss_0_port_13_pin_0_HSIOM
+#define BT_HOST_WAKE_IRQ ioss_interrupts_gpio_13_IRQn
+#define ETH_MDC_ENABLED 1U
+#define ETH_MDC_PORT GPIO_PRT13
+#define ETH_MDC_PORT_NUM 13U
+#define ETH_MDC_PIN 1U
+#define ETH_MDC_NUM 1U
+#define ETH_MDC_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define ETH_MDC_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_13_pin_1_HSIOM
+    #define ioss_0_port_13_pin_1_HSIOM HSIOM_SEL_GPIO
+#endif
+#define ETH_MDC_HSIOM ioss_0_port_13_pin_1_HSIOM
+#define ETH_MDC_IRQ ioss_interrupts_gpio_13_IRQn
+#define LED_RED_ENABLED 1U
+#define LED_RED_PORT GPIO_PRT13
+#define LED_RED_PORT_NUM 13U
+#define LED_RED_PIN 2U
+#define LED_RED_NUM 2U
+#define LED_RED_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define LED_RED_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_13_pin_2_HSIOM
+    #define ioss_0_port_13_pin_2_HSIOM HSIOM_SEL_GPIO
+#endif
+#define LED_RED_HSIOM ioss_0_port_13_pin_2_HSIOM
+#define LED_RED_IRQ ioss_interrupts_gpio_13_IRQn
+#define LED_GREEN_ENABLED 1U
+#define LED_GREEN_PORT GPIO_PRT13
+#define LED_GREEN_PORT_NUM 13U
+#define LED_GREEN_PIN 3U
+#define LED_GREEN_NUM 3U
+#define LED_GREEN_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define LED_GREEN_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_13_pin_3_HSIOM
+    #define ioss_0_port_13_pin_3_HSIOM HSIOM_SEL_GPIO
+#endif
+#define LED_GREEN_HSIOM ioss_0_port_13_pin_3_HSIOM
+#define LED_GREEN_IRQ ioss_interrupts_gpio_13_IRQn
+#define RMII_ETH_NRST_ENABLED 1U
+#define RMII_ETH_NRST_PORT GPIO_PRT13
+#define RMII_ETH_NRST_PORT_NUM 13U
+#define RMII_ETH_NRST_PIN 4U
+#define RMII_ETH_NRST_NUM 4U
+#define RMII_ETH_NRST_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define RMII_ETH_NRST_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_13_pin_4_HSIOM
+    #define ioss_0_port_13_pin_4_HSIOM HSIOM_SEL_GPIO
+#endif
+#define RMII_ETH_NRST_HSIOM ioss_0_port_13_pin_4_HSIOM
+#define RMII_ETH_NRST_IRQ ioss_interrupts_gpio_13_IRQn
+#define WL_HOST_WAKE_ENABLED 1U
+#define WL_HOST_WAKE_PORT GPIO_PRT13
+#define WL_HOST_WAKE_PORT_NUM 13U
+#define WL_HOST_WAKE_PIN 5U
+#define WL_HOST_WAKE_NUM 5U
+#define WL_HOST_WAKE_DRIVEMODE CY_GPIO_DM_PULLUP
+#define WL_HOST_WAKE_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_13_pin_5_HSIOM
+    #define ioss_0_port_13_pin_5_HSIOM HSIOM_SEL_GPIO
+#endif
+#define WL_HOST_WAKE_HSIOM ioss_0_port_13_pin_5_HSIOM
+#define WL_HOST_WAKE_IRQ ioss_interrupts_gpio_13_IRQn
+#define ETH_MDIO_ENABLED 1U
+#define ETH_MDIO_PORT GPIO_PRT13
+#define ETH_MDIO_PORT_NUM 13U
+#define ETH_MDIO_PIN 6U
+#define ETH_MDIO_NUM 6U
+#define ETH_MDIO_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define ETH_MDIO_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_13_pin_6_HSIOM
+    #define ioss_0_port_13_pin_6_HSIOM HSIOM_SEL_GPIO
+#endif
+#define ETH_MDIO_HSIOM ioss_0_port_13_pin_6_HSIOM
+#define ETH_MDIO_IRQ ioss_interrupts_gpio_13_IRQn
+#define RS485_DE_RE_L_ENABLED 1U
+#define RS485_DE_RE_L_PORT GPIO_PRT13
+#define RS485_DE_RE_L_PORT_NUM 13U
+#define RS485_DE_RE_L_PIN 7U
+#define RS485_DE_RE_L_NUM 7U
+#define RS485_DE_RE_L_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define RS485_DE_RE_L_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_13_pin_7_HSIOM
+    #define ioss_0_port_13_pin_7_HSIOM HSIOM_SEL_GPIO
+#endif
+#define RS485_DE_RE_L_HSIOM ioss_0_port_13_pin_7_HSIOM
+#define RS485_DE_RE_L_IRQ ioss_interrupts_gpio_13_IRQn
+#define PMIC_INT_ENABLED 1U
+#define PMIC_INT_PORT GPIO_PRT14
+#define PMIC_INT_PORT_NUM 14U
+#define PMIC_INT_PIN 0U
+#define PMIC_INT_NUM 0U
+#define PMIC_INT_DRIVEMODE CY_GPIO_DM_PULLUP
+#define PMIC_INT_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_14_pin_0_HSIOM
+    #define ioss_0_port_14_pin_0_HSIOM HSIOM_SEL_GPIO
+#endif
+#define PMIC_INT_HSIOM ioss_0_port_14_pin_0_HSIOM
+#define PMIC_INT_IRQ ioss_interrupts_gpio_14_IRQn
+#define PMIC_WDI_ENABLED 1U
+#define PMIC_WDI_PORT GPIO_PRT14
+#define PMIC_WDI_PORT_NUM 14U
+#define PMIC_WDI_PIN 1U
+#define PMIC_WDI_NUM 1U
+#define PMIC_WDI_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define PMIC_WDI_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_14_pin_1_HSIOM
+    #define ioss_0_port_14_pin_1_HSIOM HSIOM_SEL_GPIO
+#endif
+#define PMIC_WDI_HSIOM ioss_0_port_14_pin_1_HSIOM
+#define PMIC_WDI_IRQ ioss_interrupts_gpio_14_IRQn
+#define BMS_COM2_RST_ENABLED 1U
+#define BMS_COM2_RST_PORT GPIO_PRT14
+#define BMS_COM2_RST_PORT_NUM 14U
+#define BMS_COM2_RST_PIN 2U
+#define BMS_COM2_RST_NUM 2U
+#define BMS_COM2_RST_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define BMS_COM2_RST_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_14_pin_2_HSIOM
+    #define ioss_0_port_14_pin_2_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BMS_COM2_RST_HSIOM ioss_0_port_14_pin_2_HSIOM
+#define BMS_COM2_RST_IRQ ioss_interrupts_gpio_14_IRQn
+#define SCB8_UART_TX_ENABLED 1U
+#define SCB8_UART_TX_PORT GPIO_PRT14
+#define SCB8_UART_TX_PORT_NUM 14U
+#define SCB8_UART_TX_PIN 3U
+#define SCB8_UART_TX_NUM 3U
+#define SCB8_UART_TX_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define SCB8_UART_TX_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_14_pin_3_HSIOM
+    #define ioss_0_port_14_pin_3_HSIOM HSIOM_SEL_GPIO
+#endif
+#define SCB8_UART_TX_HSIOM ioss_0_port_14_pin_3_HSIOM
+#define SCB8_UART_TX_IRQ ioss_interrupts_gpio_14_IRQn
+#define SCB8_UART_RX_ENABLED 1U
+#define SCB8_UART_RX_PORT GPIO_PRT14
+#define SCB8_UART_RX_PORT_NUM 14U
+#define SCB8_UART_RX_PIN 4U
+#define SCB8_UART_RX_NUM 4U
+#define SCB8_UART_RX_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define SCB8_UART_RX_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_14_pin_4_HSIOM
+    #define ioss_0_port_14_pin_4_HSIOM HSIOM_SEL_GPIO
+#endif
+#define SCB8_UART_RX_HSIOM ioss_0_port_14_pin_4_HSIOM
+#define SCB8_UART_RX_IRQ ioss_interrupts_gpio_14_IRQn
+#define BMS_COM2_INT_ENABLED 1U
+#define BMS_COM2_INT_PORT GPIO_PRT14
+#define BMS_COM2_INT_PORT_NUM 14U
+#define BMS_COM2_INT_PIN 5U
+#define BMS_COM2_INT_NUM 5U
+#define BMS_COM2_INT_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define BMS_COM2_INT_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_14_pin_5_HSIOM
+    #define ioss_0_port_14_pin_5_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BMS_COM2_INT_HSIOM ioss_0_port_14_pin_5_HSIOM
+#define BMS_COM2_INT_IRQ ioss_interrupts_gpio_14_IRQn
+#define CAN1_STB_ENABLED 1U
+#define CAN1_STB_PORT GPIO_PRT14
+#define CAN1_STB_PORT_NUM 14U
+#define CAN1_STB_PIN 6U
+#define CAN1_STB_NUM 6U
+#define CAN1_STB_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define CAN1_STB_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_14_pin_6_HSIOM
+    #define ioss_0_port_14_pin_6_HSIOM HSIOM_SEL_GPIO
+#endif
+#define CAN1_STB_HSIOM ioss_0_port_14_pin_6_HSIOM
+#define CAN1_STB_IRQ ioss_interrupts_gpio_14_IRQn
+#define CAN0_STB_ENABLED 1U
+#define CAN0_STB_PORT GPIO_PRT14
+#define CAN0_STB_PORT_NUM 14U
+#define CAN0_STB_PIN 7U
+#define CAN0_STB_NUM 7U
+#define CAN0_STB_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define CAN0_STB_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_14_pin_7_HSIOM
+    #define ioss_0_port_14_pin_7_HSIOM HSIOM_SEL_GPIO
+#endif
+#define CAN0_STB_HSIOM ioss_0_port_14_pin_7_HSIOM
+#define CAN0_STB_IRQ ioss_interrupts_gpio_14_IRQn
+#define SCB9_SPI_CLK_ENABLED 1U
+#define SCB9_SPI_CLK_PORT GPIO_PRT15
+#define SCB9_SPI_CLK_PORT_NUM 15U
+#define SCB9_SPI_CLK_PIN 0U
+#define SCB9_SPI_CLK_NUM 0U
+#define SCB9_SPI_CLK_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define SCB9_SPI_CLK_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_15_pin_0_HSIOM
+    #define ioss_0_port_15_pin_0_HSIOM HSIOM_SEL_GPIO
+#endif
+#define SCB9_SPI_CLK_HSIOM ioss_0_port_15_pin_0_HSIOM
+#define SCB9_SPI_CLK_IRQ ioss_interrupts_gpio_15_IRQn
+#define SCB9_SPI_MOSI_ENABLED 1U
+#define SCB9_SPI_MOSI_PORT GPIO_PRT15
+#define SCB9_SPI_MOSI_PORT_NUM 15U
+#define SCB9_SPI_MOSI_PIN 1U
+#define SCB9_SPI_MOSI_NUM 1U
+#define SCB9_SPI_MOSI_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define SCB9_SPI_MOSI_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_15_pin_1_HSIOM
+    #define ioss_0_port_15_pin_1_HSIOM HSIOM_SEL_GPIO
+#endif
+#define SCB9_SPI_MOSI_HSIOM ioss_0_port_15_pin_1_HSIOM
+#define SCB9_SPI_MOSI_IRQ ioss_interrupts_gpio_15_IRQn
+#define SCB9_SPI_MISO_ENABLED 1U
+#define SCB9_SPI_MISO_PORT GPIO_PRT15
+#define SCB9_SPI_MISO_PORT_NUM 15U
+#define SCB9_SPI_MISO_PIN 2U
+#define SCB9_SPI_MISO_NUM 2U
+#define SCB9_SPI_MISO_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define SCB9_SPI_MISO_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_15_pin_2_HSIOM
+    #define ioss_0_port_15_pin_2_HSIOM HSIOM_SEL_GPIO
+#endif
+#define SCB9_SPI_MISO_HSIOM ioss_0_port_15_pin_2_HSIOM
+#define SCB9_SPI_MISO_IRQ ioss_interrupts_gpio_15_IRQn
+#define SCB9_SPI_CS0_K1_CSB_ENABLED 1U
+#define SCB9_SPI_CS0_K1_CSB_PORT GPIO_PRT15
+#define SCB9_SPI_CS0_K1_CSB_PORT_NUM 15U
+#define SCB9_SPI_CS0_K1_CSB_PIN 3U
+#define SCB9_SPI_CS0_K1_CSB_NUM 3U
+#define SCB9_SPI_CS0_K1_CSB_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define SCB9_SPI_CS0_K1_CSB_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_15_pin_3_HSIOM
+    #define ioss_0_port_15_pin_3_HSIOM HSIOM_SEL_GPIO
+#endif
+#define SCB9_SPI_CS0_K1_CSB_HSIOM ioss_0_port_15_pin_3_HSIOM
+#define SCB9_SPI_CS0_K1_CSB_IRQ ioss_interrupts_gpio_15_IRQn
+#define SCB9_SPI_CS1_K3_CSB_ENABLED 1U
+#define SCB9_SPI_CS1_K3_CSB_PORT GPIO_PRT15
+#define SCB9_SPI_CS1_K3_CSB_PORT_NUM 15U
+#define SCB9_SPI_CS1_K3_CSB_PIN 4U
+#define SCB9_SPI_CS1_K3_CSB_NUM 4U
+#define SCB9_SPI_CS1_K3_CSB_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define SCB9_SPI_CS1_K3_CSB_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_15_pin_4_HSIOM
+    #define ioss_0_port_15_pin_4_HSIOM HSIOM_SEL_GPIO
+#endif
+#define SCB9_SPI_CS1_K3_CSB_HSIOM ioss_0_port_15_pin_4_HSIOM
+#define SCB9_SPI_CS1_K3_CSB_IRQ ioss_interrupts_gpio_15_IRQn
+#define ADC_SAR5_K1_CSNS_ENABLED 1U
+#define ADC_SAR5_K1_CSNS_PORT GPIO_PRT15
+#define ADC_SAR5_K1_CSNS_PORT_NUM 15U
+#define ADC_SAR5_K1_CSNS_PIN 5U
+#define ADC_SAR5_K1_CSNS_NUM 5U
+#define ADC_SAR5_K1_CSNS_DRIVEMODE CY_GPIO_DM_ANALOG
+#define ADC_SAR5_K1_CSNS_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_15_pin_5_HSIOM
+    #define ioss_0_port_15_pin_5_HSIOM HSIOM_SEL_GPIO
+#endif
+#define ADC_SAR5_K1_CSNS_HSIOM ioss_0_port_15_pin_5_HSIOM
+#define ADC_SAR5_K1_CSNS_IRQ ioss_interrupts_gpio_15_IRQn
+#define ADC_SAR6_K3_CSNS_ENABLED 1U
+#define ADC_SAR6_K3_CSNS_PORT GPIO_PRT15
+#define ADC_SAR6_K3_CSNS_PORT_NUM 15U
+#define ADC_SAR6_K3_CSNS_PIN 6U
+#define ADC_SAR6_K3_CSNS_NUM 6U
+#define ADC_SAR6_K3_CSNS_DRIVEMODE CY_GPIO_DM_ANALOG
+#define ADC_SAR6_K3_CSNS_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_15_pin_6_HSIOM
+    #define ioss_0_port_15_pin_6_HSIOM HSIOM_SEL_GPIO
+#endif
+#define ADC_SAR6_K3_CSNS_HSIOM ioss_0_port_15_pin_6_HSIOM
+#define ADC_SAR6_K3_CSNS_IRQ ioss_interrupts_gpio_15_IRQn
+#define ADC_TEMP_SENS_ENABLED 1U
+#define ADC_TEMP_SENS_PORT GPIO_PRT15
+#define ADC_TEMP_SENS_PORT_NUM 15U
+#define ADC_TEMP_SENS_PIN 7U
+#define ADC_TEMP_SENS_NUM 7U
+#define ADC_TEMP_SENS_DRIVEMODE CY_GPIO_DM_ANALOG
+#define ADC_TEMP_SENS_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_15_pin_7_HSIOM
+    #define ioss_0_port_15_pin_7_HSIOM HSIOM_SEL_GPIO
+#endif
+#define ADC_TEMP_SENS_HSIOM ioss_0_port_15_pin_7_HSIOM
+#define ADC_TEMP_SENS_IRQ ioss_interrupts_gpio_15_IRQn
+#define CAN0_RX_ENABLED 1U
+#define CAN0_RX_PORT GPIO_PRT16
+#define CAN0_RX_PORT_NUM 16U
+#define CAN0_RX_PIN 0U
+#define CAN0_RX_NUM 0U
+#define CAN0_RX_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define CAN0_RX_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_16_pin_0_HSIOM
+    #define ioss_0_port_16_pin_0_HSIOM HSIOM_SEL_GPIO
+#endif
+#define CAN0_RX_HSIOM ioss_0_port_16_pin_0_HSIOM
+#define CAN0_RX_IRQ ioss_interrupts_gpio_16_IRQn
+#define CAN0_TX_ENABLED 1U
+#define CAN0_TX_PORT GPIO_PRT16
+#define CAN0_TX_PORT_NUM 16U
+#define CAN0_TX_PIN 1U
+#define CAN0_TX_NUM 1U
+#define CAN0_TX_DRIVEMODE CY_GPIO_DM_STRONG
+#define CAN0_TX_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_16_pin_1_HSIOM
+    #define ioss_0_port_16_pin_1_HSIOM HSIOM_SEL_GPIO
+#endif
+#define CAN0_TX_HSIOM ioss_0_port_16_pin_1_HSIOM
+#define CAN0_TX_IRQ ioss_interrupts_gpio_16_IRQn
+#define CAN1_RX_ENABLED 1U
+#define CAN1_RX_PORT GPIO_PRT16
+#define CAN1_RX_PORT_NUM 16U
+#define CAN1_RX_PIN 2U
+#define CAN1_RX_NUM 2U
+#define CAN1_RX_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define CAN1_RX_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_16_pin_2_HSIOM
+    #define ioss_0_port_16_pin_2_HSIOM HSIOM_SEL_GPIO
+#endif
+#define CAN1_RX_HSIOM ioss_0_port_16_pin_2_HSIOM
+#define CAN1_RX_IRQ ioss_interrupts_gpio_16_IRQn
+#define CAN1_TX_ENABLED 1U
+#define CAN1_TX_PORT GPIO_PRT16
+#define CAN1_TX_PORT_NUM 16U
+#define CAN1_TX_PIN 3U
+#define CAN1_TX_NUM 3U
+#define CAN1_TX_DRIVEMODE CY_GPIO_DM_STRONG
+#define CAN1_TX_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_16_pin_3_HSIOM
+    #define ioss_0_port_16_pin_3_HSIOM HSIOM_SEL_GPIO
+#endif
+#define CAN1_TX_HSIOM ioss_0_port_16_pin_3_HSIOM
+#define CAN1_TX_IRQ ioss_interrupts_gpio_16_IRQn
+#define BMS_COM2_DIO1_ENABLED 1U
+#define BMS_COM2_DIO1_PORT GPIO_PRT16
+#define BMS_COM2_DIO1_PORT_NUM 16U
+#define BMS_COM2_DIO1_PIN 4U
+#define BMS_COM2_DIO1_NUM 4U
+#define BMS_COM2_DIO1_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define BMS_COM2_DIO1_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_16_pin_4_HSIOM
+    #define ioss_0_port_16_pin_4_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BMS_COM2_DIO1_HSIOM ioss_0_port_16_pin_4_HSIOM
+#define BMS_COM2_DIO1_IRQ ioss_interrupts_gpio_16_IRQn
+#define BMS_COM2_SPI_MISO_ENABLED 1U
+#define BMS_COM2_SPI_MISO_PORT GPIO_PRT16
+#define BMS_COM2_SPI_MISO_PORT_NUM 16U
+#define BMS_COM2_SPI_MISO_PIN 5U
+#define BMS_COM2_SPI_MISO_NUM 5U
+#define BMS_COM2_SPI_MISO_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define BMS_COM2_SPI_MISO_INIT_DRIVESTATE 0
+#ifndef ioss_0_port_16_pin_5_HSIOM
+    #define ioss_0_port_16_pin_5_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BMS_COM2_SPI_MISO_HSIOM ioss_0_port_16_pin_5_HSIOM
+#define BMS_COM2_SPI_MISO_IRQ ioss_interrupts_gpio_16_IRQn
+#define BMS_COM2_CS0_ENABLED 1U
+#define BMS_COM2_CS0_PORT GPIO_PRT16
+#define BMS_COM2_CS0_PORT_NUM 16U
+#define BMS_COM2_CS0_PIN 6U
+#define BMS_COM2_CS0_NUM 6U
+#define BMS_COM2_CS0_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define BMS_COM2_CS0_INIT_DRIVESTATE 0
+#ifndef ioss_0_port_16_pin_6_HSIOM
+    #define ioss_0_port_16_pin_6_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BMS_COM2_CS0_HSIOM ioss_0_port_16_pin_6_HSIOM
+#define BMS_COM2_CS0_IRQ ioss_interrupts_gpio_16_IRQn
+#define BMS_COM2_CS1_MC33XS2410_ENABLED 1U
+#define BMS_COM2_CS1_MC33XS2410_PORT GPIO_PRT16
+#define BMS_COM2_CS1_MC33XS2410_PORT_NUM 16U
+#define BMS_COM2_CS1_MC33XS2410_PIN 7U
+#define BMS_COM2_CS1_MC33XS2410_NUM 7U
+#define BMS_COM2_CS1_MC33XS2410_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define BMS_COM2_CS1_MC33XS2410_INIT_DRIVESTATE 0
+#ifndef ioss_0_port_16_pin_7_HSIOM
+    #define ioss_0_port_16_pin_7_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BMS_COM2_CS1_MC33XS2410_HSIOM ioss_0_port_16_pin_7_HSIOM
+#define BMS_COM2_CS1_MC33XS2410_IRQ ioss_interrupts_gpio_16_IRQn
+#define BMS_COM2_SPI_CLK_ENABLED 1U
+#define BMS_COM2_SPI_CLK_PORT GPIO_PRT17
+#define BMS_COM2_SPI_CLK_PORT_NUM 17U
+#define BMS_COM2_SPI_CLK_PIN 0U
+#define BMS_COM2_SPI_CLK_NUM 0U
+#define BMS_COM2_SPI_CLK_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define BMS_COM2_SPI_CLK_INIT_DRIVESTATE 0
+#ifndef ioss_0_port_17_pin_0_HSIOM
+    #define ioss_0_port_17_pin_0_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BMS_COM2_SPI_CLK_HSIOM ioss_0_port_17_pin_0_HSIOM
+#define BMS_COM2_SPI_CLK_IRQ ioss_interrupts_gpio_17_IRQn
+#define BMS_COM2_SPI_MOSI_ENABLED 1U
+#define BMS_COM2_SPI_MOSI_PORT GPIO_PRT17
+#define BMS_COM2_SPI_MOSI_PORT_NUM 17U
+#define BMS_COM2_SPI_MOSI_PIN 1U
+#define BMS_COM2_SPI_MOSI_NUM 1U
+#define BMS_COM2_SPI_MOSI_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define BMS_COM2_SPI_MOSI_INIT_DRIVESTATE 0
+#ifndef ioss_0_port_17_pin_1_HSIOM
+    #define ioss_0_port_17_pin_1_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BMS_COM2_SPI_MOSI_HSIOM ioss_0_port_17_pin_1_HSIOM
+#define BMS_COM2_SPI_MOSI_IRQ ioss_interrupts_gpio_17_IRQn
+#define BMS_COM1_SPI_CLK_ENABLED 1U
+#define BMS_COM1_SPI_CLK_PORT GPIO_PRT17
+#define BMS_COM1_SPI_CLK_PORT_NUM 17U
+#define BMS_COM1_SPI_CLK_PIN 2U
+#define BMS_COM1_SPI_CLK_NUM 2U
+#define BMS_COM1_SPI_CLK_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define BMS_COM1_SPI_CLK_INIT_DRIVESTATE 0
+#ifndef ioss_0_port_17_pin_2_HSIOM
+    #define ioss_0_port_17_pin_2_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BMS_COM1_SPI_CLK_HSIOM ioss_0_port_17_pin_2_HSIOM
+#define BMS_COM1_SPI_CLK_IRQ ioss_interrupts_gpio_17_IRQn
+#define BMS_COM1_SPI_MOSI_ENABLED 1U
+#define BMS_COM1_SPI_MOSI_PORT GPIO_PRT17
+#define BMS_COM1_SPI_MOSI_PORT_NUM 17U
+#define BMS_COM1_SPI_MOSI_PIN 3U
+#define BMS_COM1_SPI_MOSI_NUM 3U
+#define BMS_COM1_SPI_MOSI_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define BMS_COM1_SPI_MOSI_INIT_DRIVESTATE 0
+#ifndef ioss_0_port_17_pin_3_HSIOM
+    #define ioss_0_port_17_pin_3_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BMS_COM1_SPI_MOSI_HSIOM ioss_0_port_17_pin_3_HSIOM
+#define BMS_COM1_SPI_MOSI_IRQ ioss_interrupts_gpio_17_IRQn
+#define BMS_COM1_DIO1_ENABLED 1U
+#define BMS_COM1_DIO1_PORT GPIO_PRT17
+#define BMS_COM1_DIO1_PORT_NUM 17U
+#define BMS_COM1_DIO1_PIN 4U
+#define BMS_COM1_DIO1_NUM 4U
+#define BMS_COM1_DIO1_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define BMS_COM1_DIO1_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_17_pin_4_HSIOM
+    #define ioss_0_port_17_pin_4_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BMS_COM1_DIO1_HSIOM ioss_0_port_17_pin_4_HSIOM
+#define BMS_COM1_DIO1_IRQ ioss_interrupts_gpio_17_IRQn
+#define BMS_COM1_MISO_ENABLED 1U
+#define BMS_COM1_MISO_PORT GPIO_PRT17
+#define BMS_COM1_MISO_PORT_NUM 17U
+#define BMS_COM1_MISO_PIN 5U
+#define BMS_COM1_MISO_NUM 5U
+#define BMS_COM1_MISO_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define BMS_COM1_MISO_INIT_DRIVESTATE 0
+#ifndef ioss_0_port_17_pin_5_HSIOM
+    #define ioss_0_port_17_pin_5_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BMS_COM1_MISO_HSIOM ioss_0_port_17_pin_5_HSIOM
+#define BMS_COM1_MISO_IRQ ioss_interrupts_gpio_17_IRQn
+#define BMS_COM1_CS0_ENABLED 1U
+#define BMS_COM1_CS0_PORT GPIO_PRT17
+#define BMS_COM1_CS0_PORT_NUM 17U
+#define BMS_COM1_CS0_PIN 6U
+#define BMS_COM1_CS0_NUM 6U
+#define BMS_COM1_CS0_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define BMS_COM1_CS0_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_17_pin_6_HSIOM
+    #define ioss_0_port_17_pin_6_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BMS_COM1_CS0_HSIOM ioss_0_port_17_pin_6_HSIOM
+#define BMS_COM1_CS0_IRQ ioss_interrupts_gpio_17_IRQn
+#define BMS_COM1_DIO2_ENABLED 1U
+#define BMS_COM1_DIO2_PORT GPIO_PRT17
+#define BMS_COM1_DIO2_PORT_NUM 17U
+#define BMS_COM1_DIO2_PIN 7U
+#define BMS_COM1_DIO2_NUM 7U
+#define BMS_COM1_DIO2_DRIVEMODE CY_GPIO_DM_PULLUP
+#define BMS_COM1_DIO2_INIT_DRIVESTATE 0
+#ifndef ioss_0_port_17_pin_7_HSIOM
+    #define ioss_0_port_17_pin_7_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BMS_COM1_DIO2_HSIOM ioss_0_port_17_pin_7_HSIOM
+#define BMS_COM1_DIO2_IRQ ioss_interrupts_gpio_17_IRQn
+#define WCO_OUT_ENABLED 1U
+#define WCO_OUT_PORT GPIO_PRT18
+#define WCO_OUT_PORT_NUM 18U
+#define WCO_OUT_PIN 0U
+#define WCO_OUT_NUM 0U
+#define WCO_OUT_DRIVEMODE CY_GPIO_DM_ANALOG
+#define WCO_OUT_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_18_pin_0_HSIOM
+    #define ioss_0_port_18_pin_0_HSIOM HSIOM_SEL_GPIO
+#endif
+#define WCO_OUT_HSIOM ioss_0_port_18_pin_0_HSIOM
+#define WCO_OUT_IRQ ioss_interrupts_gpio_18_IRQn
+#define RTC_CLK32_ENABLED 1U
+#define RTC_CLK32_PORT GPIO_PRT18
+#define RTC_CLK32_PORT_NUM 18U
+#define RTC_CLK32_PIN 1U
+#define RTC_CLK32_NUM 1U
+#define RTC_CLK32_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define RTC_CLK32_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_18_pin_1_HSIOM
+    #define ioss_0_port_18_pin_1_HSIOM HSIOM_SEL_GPIO
+#endif
+#define RTC_CLK32_HSIOM ioss_0_port_18_pin_1_HSIOM
+#define RTC_CLK32_IRQ ioss_interrupts_gpio_18_IRQn
+#define BSP_ECO_IN_ENABLED 1U
+#define BSP_ECO_IN_PORT GPIO_PRT19
+#define BSP_ECO_IN_PORT_NUM 19U
+#define BSP_ECO_IN_PIN 0U
+#define BSP_ECO_IN_NUM 0U
+#define BSP_ECO_IN_DRIVEMODE CY_GPIO_DM_ANALOG
+#define BSP_ECO_IN_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_19_pin_0_HSIOM
+    #define ioss_0_port_19_pin_0_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BSP_ECO_IN_HSIOM ioss_0_port_19_pin_0_HSIOM
+#define BSP_ECO_IN_IRQ ioss_interrupts_gpio_19_IRQn
+#define BSP_ECO_OUT_ENABLED 1U
+#define BSP_ECO_OUT_PORT GPIO_PRT19
+#define BSP_ECO_OUT_PORT_NUM 19U
+#define BSP_ECO_OUT_PIN 1U
+#define BSP_ECO_OUT_NUM 1U
+#define BSP_ECO_OUT_DRIVEMODE CY_GPIO_DM_ANALOG
+#define BSP_ECO_OUT_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_19_pin_1_HSIOM
+    #define ioss_0_port_19_pin_1_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BSP_ECO_OUT_HSIOM ioss_0_port_19_pin_1_HSIOM
+#define BSP_ECO_OUT_IRQ ioss_interrupts_gpio_19_IRQn
+#define BSP_TRACE_CLK_ENABLED 1U
+#define BSP_TRACE_CLK_PORT GPIO_PRT20
+#define BSP_TRACE_CLK_PORT_NUM 20U
+#define BSP_TRACE_CLK_PIN 0U
+#define BSP_TRACE_CLK_NUM 0U
+#define BSP_TRACE_CLK_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define BSP_TRACE_CLK_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_20_pin_0_HSIOM
+    #define ioss_0_port_20_pin_0_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BSP_TRACE_CLK_HSIOM ioss_0_port_20_pin_0_HSIOM
+#define BSP_TRACE_CLK_IRQ ioss_interrupts_gpio_20_IRQn
+#define BSP_TRACE_DATA3_ENABLED 1U
+#define BSP_TRACE_DATA3_PORT GPIO_PRT20
+#define BSP_TRACE_DATA3_PORT_NUM 20U
+#define BSP_TRACE_DATA3_PIN 1U
+#define BSP_TRACE_DATA3_NUM 1U
+#define BSP_TRACE_DATA3_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define BSP_TRACE_DATA3_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_20_pin_1_HSIOM
+    #define ioss_0_port_20_pin_1_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BSP_TRACE_DATA3_HSIOM ioss_0_port_20_pin_1_HSIOM
+#define BSP_TRACE_DATA3_IRQ ioss_interrupts_gpio_20_IRQn
+#define BSP_TRACE_DATA2_ENABLED 1U
+#define BSP_TRACE_DATA2_PORT GPIO_PRT20
+#define BSP_TRACE_DATA2_PORT_NUM 20U
+#define BSP_TRACE_DATA2_PIN 2U
+#define BSP_TRACE_DATA2_NUM 2U
+#define BSP_TRACE_DATA2_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define BSP_TRACE_DATA2_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_20_pin_2_HSIOM
+    #define ioss_0_port_20_pin_2_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BSP_TRACE_DATA2_HSIOM ioss_0_port_20_pin_2_HSIOM
+#define BSP_TRACE_DATA2_IRQ ioss_interrupts_gpio_20_IRQn
+#define BSP_TRACE_DATA1_ENABLED 1U
+#define BSP_TRACE_DATA1_PORT GPIO_PRT20
+#define BSP_TRACE_DATA1_PORT_NUM 20U
+#define BSP_TRACE_DATA1_PIN 3U
+#define BSP_TRACE_DATA1_NUM 3U
+#define BSP_TRACE_DATA1_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define BSP_TRACE_DATA1_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_20_pin_3_HSIOM
+    #define ioss_0_port_20_pin_3_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BSP_TRACE_DATA1_HSIOM ioss_0_port_20_pin_3_HSIOM
+#define BSP_TRACE_DATA1_IRQ ioss_interrupts_gpio_20_IRQn
+#define BSP_TRACE_DATA0_ENABLED 1U
+#define BSP_TRACE_DATA0_PORT GPIO_PRT20
+#define BSP_TRACE_DATA0_PORT_NUM 20U
+#define BSP_TRACE_DATA0_PIN 4U
+#define BSP_TRACE_DATA0_NUM 4U
+#define BSP_TRACE_DATA0_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define BSP_TRACE_DATA0_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_20_pin_4_HSIOM
+    #define ioss_0_port_20_pin_4_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BSP_TRACE_DATA0_HSIOM ioss_0_port_20_pin_4_HSIOM
+#define BSP_TRACE_DATA0_IRQ ioss_interrupts_gpio_20_IRQn
+#define BMS_COM1_INT_ENABLED 1U
+#define BMS_COM1_INT_PORT GPIO_PRT20
+#define BMS_COM1_INT_PORT_NUM 20U
+#define BMS_COM1_INT_PIN 5U
+#define BMS_COM1_INT_NUM 5U
+#define BMS_COM1_INT_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define BMS_COM1_INT_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_20_pin_5_HSIOM
+    #define ioss_0_port_20_pin_5_HSIOM HSIOM_SEL_GPIO
+#endif
+#define BMS_COM1_INT_HSIOM ioss_0_port_20_pin_5_HSIOM
+#define BMS_COM1_INT_IRQ ioss_interrupts_gpio_20_IRQn
+#define K1_PWM_ENABLED 1U
+#define K1_PWM_PORT GPIO_PRT20
+#define K1_PWM_PORT_NUM 20U
+#define K1_PWM_PIN 6U
+#define K1_PWM_NUM 6U
+#define K1_PWM_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define K1_PWM_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_20_pin_6_HSIOM
+    #define ioss_0_port_20_pin_6_HSIOM HSIOM_SEL_GPIO
+#endif
+#define K1_PWM_HSIOM ioss_0_port_20_pin_6_HSIOM
+#define K1_PWM_IRQ ioss_interrupts_gpio_20_IRQn
+#define K3_PWM_ENABLED 1U
+#define K3_PWM_PORT GPIO_PRT20
+#define K3_PWM_PORT_NUM 20U
+#define K3_PWM_PIN 7U
+#define K3_PWM_NUM 7U
+#define K3_PWM_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define K3_PWM_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_20_pin_7_HSIOM
+    #define ioss_0_port_20_pin_7_HSIOM HSIOM_SEL_GPIO
+#endif
+#define K3_PWM_HSIOM ioss_0_port_20_pin_7_HSIOM
+#define K3_PWM_IRQ ioss_interrupts_gpio_20_IRQn
+#define WIFI_SDIO_CMD_ENABLED 1U
+#define WIFI_SDIO_CMD_PORT GPIO_PRT21
+#define WIFI_SDIO_CMD_PORT_NUM 21U
+#define WIFI_SDIO_CMD_PIN 0U
+#define WIFI_SDIO_CMD_NUM 0U
+#define WIFI_SDIO_CMD_DRIVEMODE CY_GPIO_DM_STRONG
+#define WIFI_SDIO_CMD_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_21_pin_0_HSIOM
+    #define ioss_0_port_21_pin_0_HSIOM HSIOM_SEL_GPIO
+#endif
+#define WIFI_SDIO_CMD_HSIOM ioss_0_port_21_pin_0_HSIOM
+#define WIFI_SDIO_CMD_IRQ ioss_interrupts_gpio_21_IRQn
+#define MEMORY_RST_ENABLED 1U
+#define MEMORY_RST_PORT GPIO_PRT21
+#define MEMORY_RST_PORT_NUM 21U
+#define MEMORY_RST_PIN 1U
+#define MEMORY_RST_NUM 1U
+#define MEMORY_RST_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define MEMORY_RST_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_21_pin_1_HSIOM
+    #define ioss_0_port_21_pin_1_HSIOM HSIOM_SEL_GPIO
+#endif
+#define MEMORY_RST_HSIOM ioss_0_port_21_pin_1_HSIOM
+#define MEMORY_RST_IRQ ioss_interrupts_gpio_21_IRQn
+#define LOAD_SW_IN1_ENABLED 1U
+#define LOAD_SW_IN1_PORT GPIO_PRT21
+#define LOAD_SW_IN1_PORT_NUM 21U
+#define LOAD_SW_IN1_PIN 2U
+#define LOAD_SW_IN1_NUM 2U
+#define LOAD_SW_IN1_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define LOAD_SW_IN1_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_21_pin_2_HSIOM
+    #define ioss_0_port_21_pin_2_HSIOM HSIOM_SEL_GPIO
+#endif
+#define LOAD_SW_IN1_HSIOM ioss_0_port_21_pin_2_HSIOM
+#define LOAD_SW_IN1_IRQ ioss_interrupts_gpio_21_IRQn
+#define LOAD_SW_IN2_ENABLED 1U
+#define LOAD_SW_IN2_PORT GPIO_PRT21
+#define LOAD_SW_IN2_PORT_NUM 21U
+#define LOAD_SW_IN2_PIN 3U
+#define LOAD_SW_IN2_NUM 3U
+#define LOAD_SW_IN2_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define LOAD_SW_IN2_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_21_pin_3_HSIOM
+    #define ioss_0_port_21_pin_3_HSIOM HSIOM_SEL_GPIO
+#endif
+#define LOAD_SW_IN2_HSIOM ioss_0_port_21_pin_3_HSIOM
+#define LOAD_SW_IN2_IRQ ioss_interrupts_gpio_21_IRQn
+#define SCB3_SPI_MISO_ENABLED 1U
+#define SCB3_SPI_MISO_PORT GPIO_PRT21
+#define SCB3_SPI_MISO_PORT_NUM 21U
+#define SCB3_SPI_MISO_PIN 4U
+#define SCB3_SPI_MISO_NUM 4U
+#define SCB3_SPI_MISO_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define SCB3_SPI_MISO_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_21_pin_4_HSIOM
+    #define ioss_0_port_21_pin_4_HSIOM HSIOM_SEL_GPIO
+#endif
+#define SCB3_SPI_MISO_HSIOM ioss_0_port_21_pin_4_HSIOM
+#define SCB3_SPI_MISO_IRQ ioss_interrupts_gpio_21_IRQn
+#define SCB3_SPI_MOSI_ENABLED 1U
+#define SCB3_SPI_MOSI_PORT GPIO_PRT21
+#define SCB3_SPI_MOSI_PORT_NUM 21U
+#define SCB3_SPI_MOSI_PIN 5U
+#define SCB3_SPI_MOSI_NUM 5U
+#define SCB3_SPI_MOSI_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define SCB3_SPI_MOSI_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_21_pin_5_HSIOM
+    #define ioss_0_port_21_pin_5_HSIOM HSIOM_SEL_GPIO
+#endif
+#define SCB3_SPI_MOSI_HSIOM ioss_0_port_21_pin_5_HSIOM
+#define SCB3_SPI_MOSI_IRQ ioss_interrupts_gpio_21_IRQn
+#define SCB3_SPI_CLK_ENABLED 1U
+#define SCB3_SPI_CLK_PORT GPIO_PRT21
+#define SCB3_SPI_CLK_PORT_NUM 21U
+#define SCB3_SPI_CLK_PIN 6U
+#define SCB3_SPI_CLK_NUM 6U
+#define SCB3_SPI_CLK_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define SCB3_SPI_CLK_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_21_pin_6_HSIOM
+    #define ioss_0_port_21_pin_6_HSIOM HSIOM_SEL_GPIO
+#endif
+#define SCB3_SPI_CLK_HSIOM ioss_0_port_21_pin_6_HSIOM
+#define SCB3_SPI_CLK_IRQ ioss_interrupts_gpio_21_IRQn
+#define SCB3_SPI_CS1_FRAM_ENABLED 1U
+#define SCB3_SPI_CS1_FRAM_PORT GPIO_PRT21
+#define SCB3_SPI_CS1_FRAM_PORT_NUM 21U
+#define SCB3_SPI_CS1_FRAM_PIN 7U
+#define SCB3_SPI_CS1_FRAM_NUM 7U
+#define SCB3_SPI_CS1_FRAM_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define SCB3_SPI_CS1_FRAM_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_21_pin_7_HSIOM
+    #define ioss_0_port_21_pin_7_HSIOM HSIOM_SEL_GPIO
+#endif
+#define SCB3_SPI_CS1_FRAM_HSIOM ioss_0_port_21_pin_7_HSIOM
+#define SCB3_SPI_CS1_FRAM_IRQ ioss_interrupts_gpio_21_IRQn
+
+extern const cy_stc_gpio_pin_config_t SCB3_SPI_CS0_PMIC_config;
+extern const cy_stc_gpio_pin_config_t HYPER_RAM_SS_config;
+extern const cy_stc_gpio_pin_config_t SMIF0_DATA0_config;
+extern const cy_stc_gpio_pin_config_t SMIF0_DATA1_config;
+extern const cy_stc_gpio_pin_config_t SMIF0_DATA2_config;
+extern const cy_stc_gpio_pin_config_t SMIF0_DATA3_config;
+extern const cy_stc_gpio_pin_config_t ENT_BTN_config;
+extern const cy_stc_gpio_pin_config_t RTC_TS_L_config;
+extern const cy_stc_gpio_pin_config_t RTC_INT_L_config;
+extern const cy_stc_gpio_pin_config_t SECURE_RST_L_config;
+extern const cy_stc_gpio_pin_config_t BMS_COM1_RST_config;
+extern const cy_stc_gpio_pin_config_t BSP_I3C_SCL_config;
+extern const cy_stc_gpio_pin_config_t BSP_I3C_SDA_config;
+extern const cy_stc_gpio_pin_config_t HYPERRAM_D0_config;
+extern const cy_stc_gpio_pin_config_t HYPERRAM_D1_config;
+extern const cy_stc_gpio_pin_config_t HYPERRAM_D2_config;
+extern const cy_stc_gpio_pin_config_t HYPERRAM_D3_config;
+extern const cy_stc_gpio_pin_config_t HYPERRAM_D4_config;
+extern const cy_stc_gpio_pin_config_t HYPERRAM_D5_config;
+extern const cy_stc_gpio_pin_config_t HYPERRAM_D6_config;
+extern const cy_stc_gpio_pin_config_t HYPERRAM_D7_config;
+extern const cy_stc_gpio_pin_config_t QSPI_FLASH_SS_config;
+extern const cy_stc_gpio_pin_config_t BSP_SWJ_TDO_config;
+extern const cy_stc_gpio_pin_config_t BSP_SWJ_TDI_config;
+extern const cy_stc_gpio_pin_config_t BSP_SWJ_TMS_config;
+extern const cy_stc_gpio_pin_config_t BSP_SWJ_TCLK_config;
+extern const cy_stc_gpio_pin_config_t F1_FDO_config;
+extern const cy_stc_gpio_pin_config_t SCB2_UART_RX_UART_HS_config;
+extern const cy_stc_gpio_pin_config_t F3_FDO_config;
+extern const cy_stc_gpio_pin_config_t SCB2_UART_TX_UART_HS_config;
+extern const cy_stc_gpio_pin_config_t F1_FS_config;
+extern const cy_stc_gpio_pin_config_t F3_FS_config;
+extern const cy_stc_gpio_pin_config_t PWM_IL_OUT_config;
+extern const cy_stc_gpio_pin_config_t LOAD_SW_IN3_config;
+extern const cy_stc_gpio_pin_config_t EXT_CLK_config;
+extern const cy_stc_gpio_pin_config_t PWM_IL_IN_config;
+extern const cy_stc_gpio_pin_config_t K1_PWM_FB_config;
+extern const cy_stc_gpio_pin_config_t K3_PWM_FB_config;
+extern const cy_stc_gpio_pin_config_t BMS_COM2_DIO2_config;
+extern const cy_stc_gpio_pin_config_t BMS_COM2_DIO2_DIR_config;
+extern const cy_stc_gpio_pin_config_t FRAM_WP_L_config;
+extern const cy_stc_gpio_pin_config_t SEL_BTN_config;
+extern const cy_stc_gpio_pin_config_t LOAD_SW_RST_config;
+extern const cy_stc_gpio_pin_config_t LOAD_SW_FAULT_config;
+extern const cy_stc_gpio_pin_config_t LOAD_SW_IN4_config;
+extern const cy_stc_gpio_pin_config_t LOAD_SW_LHM_config;
+extern const cy_stc_gpio_pin_config_t K_ENBL_config;
+extern const cy_stc_gpio_pin_config_t LED_BLUE_config;
+extern const cy_stc_gpio_pin_config_t SCB1_UART_TX_UART_LS_config;
+extern const cy_stc_gpio_pin_config_t SCB1_UART_RX_UART_LS_config;
+extern const cy_stc_gpio_pin_config_t BT_UART_RX_config;
+extern const cy_stc_gpio_pin_config_t BT_UART_TX_config;
+extern const cy_stc_gpio_pin_config_t BT_UART_CTS_config;
+extern const cy_stc_gpio_pin_config_t BT_UART_RTS_config;
+extern const cy_stc_gpio_pin_config_t BT_REG_ON_config;
+extern const cy_stc_gpio_pin_config_t RMII_ETH_RX_CTL_config;
+extern const cy_stc_gpio_pin_config_t RMII_ETH_RXD0_config;
+extern const cy_stc_gpio_pin_config_t RMII_ETH_RXD1_config;
+extern const cy_stc_gpio_pin_config_t SCB6_I2C_SCL_RTC_SE_config;
+extern const cy_stc_gpio_pin_config_t SCB6_I2C_SDA_RTC_SE_config;
+extern const cy_stc_gpio_pin_config_t RMII_ETH_TXD0_config;
+extern const cy_stc_gpio_pin_config_t RMII_ETH_TXD1_config;
+extern const cy_stc_gpio_pin_config_t RMII_ETH_TX_CTL_config;
+extern const cy_stc_gpio_pin_config_t BT_DEV_WAKE_config;
+extern const cy_stc_gpio_pin_config_t WL_REG_ON_config;
+extern const cy_stc_gpio_pin_config_t RMII_ETH_REF_CLK_config;
+extern const cy_stc_gpio_pin_config_t WL_SDIO_CLK_config;
+extern const cy_stc_gpio_pin_config_t WL_SDIO_DATA0_config;
+extern const cy_stc_gpio_pin_config_t WL_SDIO_DATA1_config;
+extern const cy_stc_gpio_pin_config_t WL_DEV_WAKE_config;
+extern const cy_stc_gpio_pin_config_t WL_SDIO_DATA2_config;
+extern const cy_stc_gpio_pin_config_t WL_SDIO_DATA3_config;
+extern const cy_stc_gpio_pin_config_t BT_HOST_WAKE_config;
+extern const cy_stc_gpio_pin_config_t ETH_MDC_config;
+extern const cy_stc_gpio_pin_config_t LED_RED_config;
+extern const cy_stc_gpio_pin_config_t LED_GREEN_config;
+extern const cy_stc_gpio_pin_config_t RMII_ETH_NRST_config;
+extern const cy_stc_gpio_pin_config_t WL_HOST_WAKE_config;
+extern const cy_stc_gpio_pin_config_t ETH_MDIO_config;
+extern const cy_stc_gpio_pin_config_t RS485_DE_RE_L_config;
+extern const cy_stc_gpio_pin_config_t PMIC_INT_config;
+extern const cy_stc_gpio_pin_config_t PMIC_WDI_config;
+extern const cy_stc_gpio_pin_config_t BMS_COM2_RST_config;
+extern const cy_stc_gpio_pin_config_t SCB8_UART_TX_config;
+extern const cy_stc_gpio_pin_config_t SCB8_UART_RX_config;
+extern const cy_stc_gpio_pin_config_t BMS_COM2_INT_config;
+extern const cy_stc_gpio_pin_config_t CAN1_STB_config;
+extern const cy_stc_gpio_pin_config_t CAN0_STB_config;
+extern const cy_stc_gpio_pin_config_t SCB9_SPI_CLK_config;
+extern const cy_stc_gpio_pin_config_t SCB9_SPI_MOSI_config;
+extern const cy_stc_gpio_pin_config_t SCB9_SPI_MISO_config;
+extern const cy_stc_gpio_pin_config_t SCB9_SPI_CS0_K1_CSB_config;
+extern const cy_stc_gpio_pin_config_t SCB9_SPI_CS1_K3_CSB_config;
+extern const cy_stc_gpio_pin_config_t ADC_SAR5_K1_CSNS_config;
+extern const cy_stc_gpio_pin_config_t ADC_SAR6_K3_CSNS_config;
+extern const cy_stc_gpio_pin_config_t ADC_TEMP_SENS_config;
+extern const cy_stc_gpio_pin_config_t CAN0_RX_config;
+extern const cy_stc_gpio_pin_config_t CAN0_TX_config;
+extern const cy_stc_gpio_pin_config_t CAN1_RX_config;
+extern const cy_stc_gpio_pin_config_t CAN1_TX_config;
+extern const cy_stc_gpio_pin_config_t BMS_COM2_DIO1_config;
+extern const cy_stc_gpio_pin_config_t BMS_COM2_SPI_MISO_config;
+extern const cy_stc_gpio_pin_config_t BMS_COM2_CS0_config;
+extern const cy_stc_gpio_pin_config_t BMS_COM2_CS1_MC33XS2410_config;
+extern const cy_stc_gpio_pin_config_t BMS_COM2_SPI_CLK_config;
+extern const cy_stc_gpio_pin_config_t BMS_COM2_SPI_MOSI_config;
+extern const cy_stc_gpio_pin_config_t BMS_COM1_SPI_CLK_config;
+extern const cy_stc_gpio_pin_config_t BMS_COM1_SPI_MOSI_config;
+extern const cy_stc_gpio_pin_config_t BMS_COM1_DIO1_config;
+extern const cy_stc_gpio_pin_config_t BMS_COM1_MISO_config;
+extern const cy_stc_gpio_pin_config_t BMS_COM1_CS0_config;
+extern const cy_stc_gpio_pin_config_t BMS_COM1_DIO2_config;
+extern const cy_stc_gpio_pin_config_t WCO_OUT_config;
+extern const cy_stc_gpio_pin_config_t RTC_CLK32_config;
+extern const cy_stc_gpio_pin_config_t BSP_ECO_IN_config;
+extern const cy_stc_gpio_pin_config_t BSP_ECO_OUT_config;
+extern const cy_stc_gpio_pin_config_t BSP_TRACE_CLK_config;
+extern const cy_stc_gpio_pin_config_t BSP_TRACE_DATA3_config;
+extern const cy_stc_gpio_pin_config_t BSP_TRACE_DATA2_config;
+extern const cy_stc_gpio_pin_config_t BSP_TRACE_DATA1_config;
+extern const cy_stc_gpio_pin_config_t BSP_TRACE_DATA0_config;
+extern const cy_stc_gpio_pin_config_t BMS_COM1_INT_config;
+extern const cy_stc_gpio_pin_config_t K1_PWM_config;
+extern const cy_stc_gpio_pin_config_t K3_PWM_config;
+extern const cy_stc_gpio_pin_config_t WIFI_SDIO_CMD_config;
+extern const cy_stc_gpio_pin_config_t MEMORY_RST_config;
+extern const cy_stc_gpio_pin_config_t LOAD_SW_IN1_config;
+extern const cy_stc_gpio_pin_config_t LOAD_SW_IN2_config;
+extern const cy_stc_gpio_pin_config_t SCB3_SPI_MISO_config;
+extern const cy_stc_gpio_pin_config_t SCB3_SPI_MOSI_config;
+extern const cy_stc_gpio_pin_config_t SCB3_SPI_CLK_config;
+extern const cy_stc_gpio_pin_config_t SCB3_SPI_CS1_FRAM_config;
+
+void init_cycfg_pins(void);
+
+#if defined(__cplusplus)
+}
+#endif /* defined(__cplusplus) */
+
+#endif /* CYCFG_PINS_H */
