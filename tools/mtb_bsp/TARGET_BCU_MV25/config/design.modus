@@ -8549,7 +8549,7 @@
                     <Parameters>
                         <Param id="description" value="CM33 secure image including non-secure callable region"/>
                         <Param id="domain" value="7cPl230VJyc"/>
-                        <Param id="memoryId" value="SMIF0MEM1"/>
+                        <Param id="memoryId" value="SMIF0MEM0"/>
                         <Param id="offset" value="0x00100000"/>
                         <Param id="regionId" value="m33s_nvm"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
@@ -8561,7 +8561,7 @@
                     <Parameters>
                         <Param id="description" value="CM33 image"/>
                         <Param id="domain" value="Xo07Phg6oz8"/>
-                        <Param id="memoryId" value="SMIF0MEM1"/>
+                        <Param id="memoryId" value="SMIF0MEM0"/>
                         <Param id="offset" value="0x00340000"/>
                         <Param id="regionId" value="m33_nvm"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
@@ -8573,7 +8573,7 @@
                     <Parameters>
                         <Param id="description" value="CM55 image"/>
                         <Param id="domain" value="P8kQl2DRYUQ"/>
-                        <Param id="memoryId" value="SMIF0MEM1"/>
+                        <Param id="memoryId" value="SMIF0MEM0"/>
                         <Param id="offset" value="0x00580000"/>
                         <Param id="regionId" value="m55_nvm"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
@@ -8741,7 +8741,7 @@
                     <Parameters>
                         <Param id="description" value="CM33 secure trailer"/>
                         <Param id="domain" value="7cPl230VJyc"/>
-                        <Param id="memoryId" value="SMIF0MEM1"/>
+                        <Param id="memoryId" value="SMIF0MEM0"/>
                         <Param id="offset" value="0x00300000"/>
                         <Param id="regionId" value="m33s_trailer"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
@@ -8753,7 +8753,7 @@
                     <Parameters>
                         <Param id="description" value="CM33 trailer"/>
                         <Param id="domain" value="Xo07Phg6oz8"/>
-                        <Param id="memoryId" value="SMIF0MEM1"/>
+                        <Param id="memoryId" value="SMIF0MEM0"/>
                         <Param id="offset" value="0x00540000"/>
                         <Param id="regionId" value="m33_trailer"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
@@ -8765,7 +8765,7 @@
                     <Parameters>
                         <Param id="description" value="CM55 trailer"/>
                         <Param id="domain" value="P8kQl2DRYUQ"/>
-                        <Param id="memoryId" value="SMIF0MEM1"/>
+                        <Param id="memoryId" value="SMIF0MEM0"/>
                         <Param id="offset" value="0x00840000"/>
                         <Param id="regionId" value="m55_trailer"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>

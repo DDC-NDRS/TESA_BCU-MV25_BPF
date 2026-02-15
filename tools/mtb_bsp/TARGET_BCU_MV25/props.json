@@ -53,6 +53,8 @@
                 "bt-fw-ifx-cyw55500a1": "release-v3.1.0",
                 "core-lib": "release-v1.6.0",
                 "core-make": "release-v3.8.0",
+                "ifx-mbedtls": "latest-v3.X",
+                "ifx-mcuboot-pse84": "latest-v1.X",
                 "mtb-dsl-pse8xxgp": "release-v1.2.0",
                 "mtb-ipc": "release-v1.2.0",
                 "mtb-srf": "release-v1.1.0",
