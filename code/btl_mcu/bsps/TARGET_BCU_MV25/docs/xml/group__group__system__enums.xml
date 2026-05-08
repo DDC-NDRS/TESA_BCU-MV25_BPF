@@ -50,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" line="66" column="1" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" bodystart="67" bodyend="72"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" line="66" column="1" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" bodystart="67" bodyend="72"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

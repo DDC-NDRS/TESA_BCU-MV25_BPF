@@ -4,11 +4,11 @@
  * Description:
  * Provides definitions of the SMIF-driver memory configuration.
  * This file was automatically generated and should not be modified.
- * QSPI Configurator 4.70.0.2834
+ * QSPI Configurator 4.80.0.2923
  *
  *******************************************************************************
- * Copyright 2026 Cypress Semiconductor Corporation (an Infineon company) or
- * an affiliate of Cypress Semiconductor Corporation.
+ * Copyright 2026, Infineon Technologies AG, or an affiliate of Infineon
+ * Technologies AG. All rights reserved.
  * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +26,7 @@
 
 #include "cycfg_qspi_memslot.h"
 
-cy_stc_smif_mem_cmd_t S25HL512T_SMIF0_SlaveSlot_0_readCmd =
+cy_stc_smif_mem_cmd_t S25HS512T_SMIF0_SlaveSlot_0_readCmd =
 {
     /* The 8-bit command. 1 x I/O read command. */
     .command = 0xECU,
@@ -64,7 +64,7 @@ cy_stc_smif_mem_cmd_t S25HL512T_SMIF0_SlaveSlot_0_readCmd =
 #endif /* CY_IP_MXSMIF_VERSION */
 };
 
-cy_stc_smif_mem_cmd_t S25HL512T_SMIF0_SlaveSlot_0_writeEnCmd =
+cy_stc_smif_mem_cmd_t S25HS512T_SMIF0_SlaveSlot_0_writeEnCmd =
 {
     /* The 8-bit command. 1 x I/O read command. */
     .command = 0x06U,
@@ -102,7 +102,7 @@ cy_stc_smif_mem_cmd_t S25HL512T_SMIF0_SlaveSlot_0_writeEnCmd =
 #endif /* CY_IP_MXSMIF_VERSION */
 };
 
-cy_stc_smif_mem_cmd_t S25HL512T_SMIF0_SlaveSlot_0_writeDisCmd =
+cy_stc_smif_mem_cmd_t S25HS512T_SMIF0_SlaveSlot_0_writeDisCmd =
 {
     /* The 8-bit command. 1 x I/O read command. */
     .command = 0x04U,
@@ -140,7 +140,7 @@ cy_stc_smif_mem_cmd_t S25HL512T_SMIF0_SlaveSlot_0_writeDisCmd =
 #endif /* CY_IP_MXSMIF_VERSION */
 };
 
-cy_stc_smif_mem_cmd_t S25HL512T_SMIF0_SlaveSlot_0_eraseCmd =
+cy_stc_smif_mem_cmd_t S25HS512T_SMIF0_SlaveSlot_0_eraseCmd =
 {
     /* The 8-bit command. 1 x I/O read command. */
     .command = 0xDCU,
@@ -178,7 +178,7 @@ cy_stc_smif_mem_cmd_t S25HL512T_SMIF0_SlaveSlot_0_eraseCmd =
 #endif /* CY_IP_MXSMIF_VERSION */
 };
 
-cy_stc_smif_mem_cmd_t S25HL512T_SMIF0_SlaveSlot_0_chipEraseCmd =
+cy_stc_smif_mem_cmd_t S25HS512T_SMIF0_SlaveSlot_0_chipEraseCmd =
 {
     /* The 8-bit command. 1 x I/O read command. */
     .command = 0x60U,
@@ -216,7 +216,7 @@ cy_stc_smif_mem_cmd_t S25HL512T_SMIF0_SlaveSlot_0_chipEraseCmd =
 #endif /* CY_IP_MXSMIF_VERSION */
 };
 
-cy_stc_smif_mem_cmd_t S25HL512T_SMIF0_SlaveSlot_0_programCmd =
+cy_stc_smif_mem_cmd_t S25HS512T_SMIF0_SlaveSlot_0_programCmd =
 {
     /* The 8-bit command. 1 x I/O read command. */
     .command = 0x12U,
@@ -254,7 +254,7 @@ cy_stc_smif_mem_cmd_t S25HL512T_SMIF0_SlaveSlot_0_programCmd =
 #endif /* CY_IP_MXSMIF_VERSION */
 };
 
-cy_stc_smif_mem_cmd_t S25HL512T_SMIF0_SlaveSlot_0_readStsRegQeCmd =
+cy_stc_smif_mem_cmd_t S25HS512T_SMIF0_SlaveSlot_0_readStsRegQeCmd =
 {
     /* The 8-bit command. 1 x I/O read command. */
     .command = 0x35U,
@@ -292,7 +292,7 @@ cy_stc_smif_mem_cmd_t S25HL512T_SMIF0_SlaveSlot_0_readStsRegQeCmd =
 #endif /* CY_IP_MXSMIF_VERSION */
 };
 
-cy_stc_smif_mem_cmd_t S25HL512T_SMIF0_SlaveSlot_0_readStsRegWipCmd =
+cy_stc_smif_mem_cmd_t S25HS512T_SMIF0_SlaveSlot_0_readStsRegWipCmd =
 {
     /* The 8-bit command. 1 x I/O read command. */
     .command = 0x05U,
@@ -330,7 +330,7 @@ cy_stc_smif_mem_cmd_t S25HL512T_SMIF0_SlaveSlot_0_readStsRegWipCmd =
 #endif /* CY_IP_MXSMIF_VERSION */
 };
 
-cy_stc_smif_mem_cmd_t S25HL512T_SMIF0_SlaveSlot_0_writeStsRegQeCmd =
+cy_stc_smif_mem_cmd_t S25HS512T_SMIF0_SlaveSlot_0_writeStsRegQeCmd =
 {
     /* The 8-bit command. 1 x I/O read command. */
     .command = 0x01U,
@@ -369,7 +369,7 @@ cy_stc_smif_mem_cmd_t S25HL512T_SMIF0_SlaveSlot_0_writeStsRegQeCmd =
 };
 
 #if (CY_SMIF_DRV_VERSION_MAJOR > 1) || (CY_SMIF_DRV_VERSION_MINOR >= 50)
-static cy_stc_smif_hybrid_region_info_t S25HL512T_SMIF0_SlaveSlot_0_region0 =
+static cy_stc_smif_hybrid_region_info_t S25HS512T_SMIF0_SlaveSlot_0_region0 =
 {
     /* The region start address. */
     .regionAddress = 0x0U,
@@ -383,7 +383,7 @@ static cy_stc_smif_hybrid_region_info_t S25HL512T_SMIF0_SlaveSlot_0_region0 =
     .eraseTime = 335U,
 };
 
-static cy_stc_smif_hybrid_region_info_t S25HL512T_SMIF0_SlaveSlot_0_region1 =
+static cy_stc_smif_hybrid_region_info_t S25HS512T_SMIF0_SlaveSlot_0_region1 =
 {
     /* The region start address. */
     .regionAddress = 0x20000U,
@@ -397,7 +397,7 @@ static cy_stc_smif_hybrid_region_info_t S25HL512T_SMIF0_SlaveSlot_0_region1 =
     .eraseTime = 5869U,
 };
 
-static cy_stc_smif_hybrid_region_info_t S25HL512T_SMIF0_SlaveSlot_0_region2 =
+static cy_stc_smif_hybrid_region_info_t S25HS512T_SMIF0_SlaveSlot_0_region2 =
 {
     /* The region start address. */
     .regionAddress = 0x40000U,
@@ -411,42 +411,42 @@ static cy_stc_smif_hybrid_region_info_t S25HL512T_SMIF0_SlaveSlot_0_region2 =
     .eraseTime = 5869U,
 };
 
-static cy_stc_smif_hybrid_region_info_t * S25HL512T_SMIF0_SlaveSlot_0_regionInfo[3] = {
-   &S25HL512T_SMIF0_SlaveSlot_0_region0,
-   &S25HL512T_SMIF0_SlaveSlot_0_region1,
-   &S25HL512T_SMIF0_SlaveSlot_0_region2
+static cy_stc_smif_hybrid_region_info_t * S25HS512T_SMIF0_SlaveSlot_0_regionInfo[3] = {
+   &S25HS512T_SMIF0_SlaveSlot_0_region0,
+   &S25HS512T_SMIF0_SlaveSlot_0_region1,
+   &S25HS512T_SMIF0_SlaveSlot_0_region2
 };
 
 #endif
 
-cy_stc_smif_mem_device_cfg_t deviceCfg_S25HL512T_SMIF0_SlaveSlot_0 =
+cy_stc_smif_mem_device_cfg_t deviceCfg_S25HS512T_SMIF0_SlaveSlot_0 =
 {
     /* Specifies the number of address bytes used by the memory slave device. */
     .numOfAddrBytes = 0x04U,
     /* The size of the memory. */
     .memSize = 0x04000000U,
     /* Specifies the Read command. */
-    .readCmd = &S25HL512T_SMIF0_SlaveSlot_0_readCmd,
+    .readCmd = &S25HS512T_SMIF0_SlaveSlot_0_readCmd,
     /* Specifies the Write Enable command. */
-    .writeEnCmd = &S25HL512T_SMIF0_SlaveSlot_0_writeEnCmd,
+    .writeEnCmd = &S25HS512T_SMIF0_SlaveSlot_0_writeEnCmd,
     /* Specifies the Write Disable command. */
-    .writeDisCmd = &S25HL512T_SMIF0_SlaveSlot_0_writeDisCmd,
+    .writeDisCmd = &S25HS512T_SMIF0_SlaveSlot_0_writeDisCmd,
     /* Specifies the Erase command. */
-    .eraseCmd = &S25HL512T_SMIF0_SlaveSlot_0_eraseCmd,
+    .eraseCmd = &S25HS512T_SMIF0_SlaveSlot_0_eraseCmd,
     /* Specifies the sector size of each erase. */
     .eraseSize = 0x0040000U,
     /* Specifies the Chip Erase command. */
-    .chipEraseCmd = &S25HL512T_SMIF0_SlaveSlot_0_chipEraseCmd,
+    .chipEraseCmd = &S25HS512T_SMIF0_SlaveSlot_0_chipEraseCmd,
     /* Specifies the Program command. */
-    .programCmd = &S25HL512T_SMIF0_SlaveSlot_0_programCmd,
+    .programCmd = &S25HS512T_SMIF0_SlaveSlot_0_programCmd,
     /* Specifies the page size for programming. */
     .programSize = 0x0000100U,
     /* Specifies the command to read the QE-containing status register. */
-    .readStsRegQeCmd = &S25HL512T_SMIF0_SlaveSlot_0_readStsRegQeCmd,
+    .readStsRegQeCmd = &S25HS512T_SMIF0_SlaveSlot_0_readStsRegQeCmd,
     /* Specifies the command to read the WIP-containing status register. */
-    .readStsRegWipCmd = &S25HL512T_SMIF0_SlaveSlot_0_readStsRegWipCmd,
+    .readStsRegWipCmd = &S25HS512T_SMIF0_SlaveSlot_0_readStsRegWipCmd,
     /* Specifies the command to write into the QE-containing status register. */
-    .writeStsRegQeCmd = &S25HL512T_SMIF0_SlaveSlot_0_writeStsRegQeCmd,
+    .writeStsRegQeCmd = &S25HS512T_SMIF0_SlaveSlot_0_writeStsRegQeCmd,
     /* The mask for the status register. */
     .stsRegBusyMask = 0x01U,
     /* The mask for the status register. */
@@ -460,7 +460,7 @@ cy_stc_smif_mem_device_cfg_t deviceCfg_S25HL512T_SMIF0_SlaveSlot_0 =
 #if (CY_SMIF_DRV_VERSION_MAJOR > 1) || (CY_SMIF_DRV_VERSION_MINOR >= 50)
     /* Points to NULL or to structure with info about sectors for hybrid memory. */
     .hybridRegionCount = 3U,
-    .hybridRegionInfo = S25HL512T_SMIF0_SlaveSlot_0_regionInfo,
+    .hybridRegionInfo = S25HS512T_SMIF0_SlaveSlot_0_regionInfo,
 #else
 #error Hybrid erase sectors require SMIF driver 1.50 or greater.
 #endif
@@ -488,7 +488,7 @@ cy_stc_smif_mem_device_cfg_t deviceCfg_S25HL512T_SMIF0_SlaveSlot_0 =
 #endif
 };
 
-cy_stc_smif_mem_config_t S25HL512T_SMIF0_SlaveSlot_0 =
+cy_stc_smif_mem_config_t S25HS512T_SMIF0_SlaveSlot_0 =
 {
     /* Determines the slot number where the memory device is placed. */
     .slaveSelect = CY_SMIF_SLAVE_SELECT_0,
@@ -505,12 +505,12 @@ cy_stc_smif_mem_config_t S25HL512T_SMIF0_SlaveSlot_0 =
     .baseAddress = 0x60000000U,
     /* The size allocated in the PSoC memory map, for the memory slave device.
     The size is allocated from the base address. Valid when the memory mapped mode is enabled. */
-    .memMappedSize = 0x2000000U,
+    .memMappedSize = 0x4000000U,
     /* If this memory device is one of the devices in the dual quad SPI configuration.
     Valid when the memory mapped mode is enabled. */
     .dualQuadSlots = 0,
     /* The configuration of the device. */
-    .deviceCfg = &deviceCfg_S25HL512T_SMIF0_SlaveSlot_0,
+    .deviceCfg = &deviceCfg_S25HS512T_SMIF0_SlaveSlot_0,
 #if (CY_IP_MXSMIF_VERSION >= 2)
     /** Continous transfer merge timeout.
      * After this period the memory device is deselected. A later transfer, even from a
@@ -766,7 +766,7 @@ cy_stc_smif_mem_config_t S70KS1283_SMIF1_SlaveSlot_2 =
     .baseAddress = 0x64000000U,
     /* The size allocated in the PSoC memory map, for the memory slave device.
     The size is allocated from the base address. Valid when the memory mapped mode is enabled. */
-    .memMappedSize = 0x10000U,
+    .memMappedSize = 0x1000000U,
     /* If this memory device is one of the devices in the dual quad SPI configuration.
     Valid when the memory mapped mode is enabled. */
     .dualQuadSlots = 0,
@@ -784,7 +784,7 @@ cy_stc_smif_mem_config_t S70KS1283_SMIF1_SlaveSlot_2 =
 };
 
 cy_stc_smif_mem_config_t* smif0MemConfigs[CY_SMIF_DEVICE_NUM0] = {
-   &S25HL512T_SMIF0_SlaveSlot_0,
+   &S25HS512T_SMIF0_SlaveSlot_0,
 };
 
 cy_stc_smif_block_config_t smif0BlockConfig =

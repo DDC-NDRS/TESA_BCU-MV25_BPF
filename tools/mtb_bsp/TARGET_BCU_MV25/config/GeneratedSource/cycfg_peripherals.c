@@ -4,13 +4,13 @@
  * Description:
  * Analog configuration
  * This file was automatically generated and should not be modified.
- * Configurator Backend 3.70.0
- * device-db 4.34.0.9502
- * mtb-dsl-pse8xxgp 1.1.1.824
+ * Configurator Backend 3.80.0
+ * device-db 4.37.0.10260
+ * mtb-dsl-pse8xxgp 1.5.0.1072
  *
  *******************************************************************************
- * Copyright 2026 Cypress Semiconductor Corporation (an Infineon company) or
- * an affiliate of Cypress Semiconductor Corporation.
+ * Copyright 2026, Infineon Technologies AG, or an affiliate of Infineon
+ * Technologies AG. All rights reserved.
  * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,18 +28,20 @@
 
 #include "cycfg_peripherals.h"
 
-#define CAN0_IF_STD_ID_FILTER_0 \
+#define CANFD_STD_ID_FILTER_0 \
 {\
     .sfid2 = 0U, \
     .sfid1 = 0U, \
     .sfec = CY_CANFD_SFEC_STORE_RX_FIFO_0, \
     .sft = CY_CANFD_SFT_RANGE_SFID1_SFID2, \
  }
-#define CAN0_IF_EXT_ID_FILTER_0 \
+#define CAN0_IF_STD_ID_FILTER_0 CANFD_STD_ID_FILTER_0
+#define CANFD_EXT_ID_FILTER_0 \
 {\
-    .f0_f = &CAN0_IF_extIdFilterF0Config_0, \
-    .f1_f = &CAN0_IF_extIdFilterF1Config_0, \
+    .f0_f = &CANFD_extIdFilterF0Config_0, \
+    .f1_f = &CANFD_extIdFilterF1Config_0, \
  }
+#define CAN0_IF_EXT_ID_FILTER_0 CANFD_EXT_ID_FILTER_0
 #define CAN1_IF_STD_ID_FILTER_0 \
 {\
     .sfid2 = 0U, \
@@ -360,7 +362,7 @@ mtb_hal_adc_configurator_t CYBSP_SAR_ADC_hal_config =
 };
 #endif /* defined (COMPONENT_MTB_HAL) && (MTB_HAL_DRIVER_AVAILABLE_ADC) */
 
-const cy_stc_i3c_config_t I3C_IF_config =
+const cy_stc_i3c_config_t CYBSP_I3C_CONTROLLER_config =
 {
     .i3cMode = CY_I3C_CONTROLLER,
     .i3cBusMode = CY_I3C_BUS_PURE,
@@ -467,7 +469,7 @@ const mtb_hal_uart_configurator_t UART_LS_hal_config =
 };
 #endif /* defined (COMPONENT_MTB_HAL) && (MTB_HAL_DRIVER_AVAILABLE_UART) */
 
-const cy_stc_scb_uart_config_t DEBUG_UART_HS_config =
+const cy_stc_scb_uart_config_t CYBSP_DEBUG_UART_config =
 {
     .uartMode = CY_SCB_UART_STANDARD,
     .enableMultiProcessorMode = false,
@@ -498,24 +500,24 @@ const cy_stc_scb_uart_config_t DEBUG_UART_HS_config =
 };
 
 #if defined (COMPONENT_MTB_HAL)
-const mtb_hal_peri_div_t DEBUG_UART_HS_clock_ref =
+const mtb_hal_peri_div_t CYBSP_DEBUG_UART_clock_ref =
 {
-    .clk_dst = (en_clk_dst_t)BSP_DEBUG_UART_CLK_DIV_GRP_NUM,
-    .div_type = BSP_DEBUG_UART_CLK_DIV_HW,
-    .div_num = BSP_DEBUG_UART_CLK_DIV_NUM,
+    .clk_dst = (en_clk_dst_t)CYBSP_DEBUG_UART_CLK_DIV_GRP_NUM,
+    .div_type = CYBSP_DEBUG_UART_CLK_DIV_HW,
+    .div_num = CYBSP_DEBUG_UART_CLK_DIV_NUM,
 };
-const mtb_hal_clock_t DEBUG_UART_HS_hal_clock =
+const mtb_hal_clock_t CYBSP_DEBUG_UART_hal_clock =
 {
-    .clock_ref = &DEBUG_UART_HS_clock_ref,
+    .clock_ref = &CYBSP_DEBUG_UART_clock_ref,
     .interface = &mtb_hal_clock_peri_interface,
 };
 #endif /* defined (COMPONENT_MTB_HAL) */
 
 #if defined (COMPONENT_MTB_HAL) && (MTB_HAL_DRIVER_AVAILABLE_UART)
-const mtb_hal_uart_configurator_t DEBUG_UART_HS_hal_config =
+const mtb_hal_uart_configurator_t CYBSP_DEBUG_UART_hal_config =
 {
-    .base = DEBUG_UART_HS_HW,
-    .clock = &DEBUG_UART_HS_hal_clock,
+    .base = CYBSP_DEBUG_UART_HW,
+    .clock = &CYBSP_DEBUG_UART_hal_clock,
     .tx_pin = 7,
 #if defined (COMPONENT_MW_ASYNC_TRANSFER)
     .rts_pin = 0xFF,
@@ -581,7 +583,7 @@ const mtb_hal_spi_configurator_t PMIC_FRAM_IF_hal_config =
 };
 #endif /* defined (COMPONENT_MTB_HAL) && (MTB_HAL_DRIVER_AVAILABLE_SPI) */
 
-const cy_stc_scb_uart_config_t BT_UART_config =
+const cy_stc_scb_uart_config_t CYBSP_BT_UART_config =
 {
     .uartMode = CY_SCB_UART_STANDARD,
     .enableMultiProcessorMode = false,
@@ -612,24 +614,24 @@ const cy_stc_scb_uart_config_t BT_UART_config =
 };
 
 #if defined (COMPONENT_MTB_HAL)
-const mtb_hal_peri_div_t BT_UART_clock_ref =
+const mtb_hal_peri_div_t CYBSP_BT_UART_clock_ref =
 {
-    .clk_dst = (en_clk_dst_t)BSP_UART_LOW_SPEED_CLK_GRP_NUM,
-    .div_type = BSP_UART_LOW_SPEED_CLK_HW,
-    .div_num = BSP_UART_LOW_SPEED_CLK_NUM,
+    .clk_dst = (en_clk_dst_t)CYBSP_UART_LOW_SPEED_CLK_GRP_NUM,
+    .div_type = CYBSP_UART_LOW_SPEED_CLK_HW,
+    .div_num = CYBSP_UART_LOW_SPEED_CLK_NUM,
 };
-const mtb_hal_clock_t BT_UART_hal_clock =
+const mtb_hal_clock_t CYBSP_BT_UART_hal_clock =
 {
-    .clock_ref = &BT_UART_clock_ref,
+    .clock_ref = &CYBSP_BT_UART_clock_ref,
     .interface = &mtb_hal_clock_peri_interface,
 };
 #endif /* defined (COMPONENT_MTB_HAL) */
 
 #if defined (COMPONENT_MTB_HAL) && (MTB_HAL_DRIVER_AVAILABLE_UART)
-const mtb_hal_uart_configurator_t BT_UART_hal_config =
+const mtb_hal_uart_configurator_t CYBSP_BT_UART_hal_config =
 {
-    .base = BT_UART_HW,
-    .clock = &BT_UART_hal_clock,
+    .base = CYBSP_BT_UART_HW,
+    .clock = &CYBSP_BT_UART_hal_clock,
     .tx_pin = 1,
 #if defined (COMPONENT_MW_ASYNC_TRANSFER)
     .rts_pin = 3,
@@ -695,7 +697,7 @@ const mtb_hal_spi_configurator_t BMS_COM2_IF_hal_config =
 };
 #endif /* defined (COMPONENT_MTB_HAL) && (MTB_HAL_DRIVER_AVAILABLE_SPI) */
 
-const cy_stc_scb_i2c_config_t RTC_SE_IF_config =
+const cy_stc_scb_i2c_config_t CYBSP_I2C_CONTROLLER_config =
 {
     .i2cMode = CY_SCB_I2C_MASTER,
     .useRxFifo = true,
@@ -711,25 +713,25 @@ const cy_stc_scb_i2c_config_t RTC_SE_IF_config =
 };
 
 #if defined (COMPONENT_MTB_HAL)
-const mtb_hal_peri_div_t RTC_SE_IF_clock_ref =
+const mtb_hal_peri_div_t CYBSP_I2C_CONTROLLER_clock_ref =
 {
-    .clk_dst = (en_clk_dst_t)BSP_I2C_CONTROLLER_CLK_DIV_GRP_NUM,
-    .div_type = BSP_I2C_CONTROLLER_CLK_DIV_HW,
-    .div_num = BSP_I2C_CONTROLLER_CLK_DIV_NUM,
+    .clk_dst = (en_clk_dst_t)CYBSP_I2C_CONTROLLER_CLK_DIV_GRP_NUM,
+    .div_type = CYBSP_I2C_CONTROLLER_CLK_DIV_HW,
+    .div_num = CYBSP_I2C_CONTROLLER_CLK_DIV_NUM,
 };
-const mtb_hal_clock_t RTC_SE_IF_hal_clock =
+const mtb_hal_clock_t CYBSP_I2C_CONTROLLER_hal_clock =
 {
-    .clock_ref = &RTC_SE_IF_clock_ref,
+    .clock_ref = &CYBSP_I2C_CONTROLLER_clock_ref,
     .interface = &mtb_hal_clock_peri_interface,
 };
 #endif /* defined (COMPONENT_MTB_HAL) */
 
 #if defined (COMPONENT_MTB_HAL) && (MTB_HAL_DRIVER_AVAILABLE_I2C)
-const mtb_hal_i2c_configurator_t RTC_SE_IF_hal_config =
+const mtb_hal_i2c_configurator_t CYBSP_I2C_CONTROLLER_hal_config =
 {
-    .base = RTC_SE_IF_HW,
-    .config = &RTC_SE_IF_config,
-    .clock = &RTC_SE_IF_hal_clock,
+    .base = CYBSP_I2C_CONTROLLER_HW,
+    .config = &CYBSP_I2C_CONTROLLER_config,
+    .clock = &CYBSP_I2C_CONTROLLER_hal_clock,
 };
 #endif /* defined (COMPONENT_MTB_HAL) && (MTB_HAL_DRIVER_AVAILABLE_I2C) */
 
@@ -766,9 +768,9 @@ const cy_stc_scb_uart_config_t RS485_IF_config =
 #if defined (COMPONENT_MTB_HAL)
 const mtb_hal_peri_div_t RS485_IF_clock_ref =
 {
-    .clk_dst = (en_clk_dst_t)BSP_UART_LOW_SPEED_CLK_GRP_NUM,
-    .div_type = BSP_UART_LOW_SPEED_CLK_HW,
-    .div_num = BSP_UART_LOW_SPEED_CLK_NUM,
+    .clk_dst = (en_clk_dst_t)CYBSP_UART_LOW_SPEED_CLK_GRP_NUM,
+    .div_type = CYBSP_UART_LOW_SPEED_CLK_HW,
+    .div_num = CYBSP_UART_LOW_SPEED_CLK_NUM,
 };
 const mtb_hal_clock_t RS485_IF_hal_clock =
 {
@@ -921,9 +923,9 @@ cy_stc_sd_host_sd_card_config_t CYBSP_WIFI_SDIO_card_cfg =
 #if defined (COMPONENT_MTB_HAL) && (MTB_HAL_DRIVER_AVAILABLE_SDHC)
 const mtb_hal_peri_div_t CYBSP_WIFI_SDIO_clock_ref =
 {
-    .clk_dst = (en_clk_dst_t)BSP_SDHC_0_CLK_DIV_GRP_NUM,
-    .div_type = BSP_SDHC_0_CLK_DIV_HW,
-    .div_num = BSP_SDHC_0_CLK_DIV_NUM,
+    .clk_dst = (en_clk_dst_t)CYBSP_SDHC_0_CLK_DIV_GRP_NUM,
+    .div_type = CYBSP_SDHC_0_CLK_DIV_HW,
+    .div_num = CYBSP_SDHC_0_CLK_DIV_NUM,
 };
 const mtb_hal_clock_t CYBSP_WIFI_SDIO_hal_clock =
 {
@@ -950,119 +952,119 @@ const mtb_hal_sdio_configurator_t CYBSP_WIFI_SDIO_sdio_hal_config =
 };
 #endif /* defined (COMPONENT_MTB_HAL) && (MTB_HAL_DRIVER_AVAILABLE_SDIO) */
 
-const cy_stc_canfd_bitrate_t CAN0_IF_nominalBitrateConfig =
+const cy_stc_canfd_bitrate_t CANFD_nominalBitrateConfig =
 {
     .prescaler = 8U - 1U,
     .timeSegment1 = 15U - 1U,
     .timeSegment2 = 4U - 1U,
     .syncJumpWidth = 2U - 1U,
 };
-const cy_stc_canfd_bitrate_t CAN0_IF_dataBitrateConfig =
+const cy_stc_canfd_bitrate_t CANFD_dataBitrateConfig =
 {
     .prescaler = 2U - 1U,
     .timeSegment1 = 15U - 1U,
     .timeSegment2 = 8U - 1U,
     .syncJumpWidth = 4U - 1U,
 };
-const cy_stc_canfd_transceiver_delay_compensation_t CAN0_IF_tdcConfig =
+const cy_stc_canfd_transceiver_delay_compensation_t CANFD_tdcConfig =
 {
     .tdcEnabled = false,
     .tdcOffset = 0U,
     .tdcFilterWindow = 0U,
 };
-const cy_stc_id_filter_t CAN0_IF_stdIdFilter_0 =
+const cy_stc_id_filter_t CANFD_stdIdFilter_0 =
 {
     .sfid2 = 0U,
     .sfid1 = 0U,
     .sfec = CY_CANFD_SFEC_STORE_RX_FIFO_0,
     .sft = CY_CANFD_SFT_RANGE_SFID1_SFID2,
 };
-const cy_stc_id_filter_t CAN0_IF_stdIdFilters[] =
+const cy_stc_id_filter_t CANFD_stdIdFilters[] =
 {
-    [0] = CAN0_IF_STD_ID_FILTER_0,
+    [0] = CANFD_STD_ID_FILTER_0,
 };
-const cy_stc_canfd_sid_filter_config_t CAN0_IF_sidFiltersConfig =
+const cy_stc_canfd_sid_filter_config_t CANFD_sidFiltersConfig =
 {
     .numberOfSIDFilters = 1U,
-    .sidFilter = CAN0_IF_stdIdFilters,
+    .sidFilter = CANFD_stdIdFilters,
 };
-const cy_stc_canfd_f0_t CAN0_IF_extIdFilterF0Config_0 =
+const cy_stc_canfd_f0_t CANFD_extIdFilterF0Config_0 =
 {
     .efid1 = 0U,
     .efec = CY_CANFD_EFEC_STORE_RX_FIFO_0,
 };
-const cy_stc_canfd_f1_t CAN0_IF_extIdFilterF1Config_0 =
+const cy_stc_canfd_f1_t CANFD_extIdFilterF1Config_0 =
 {
     .efid2 = 0U,
     .eft = CY_CANFD_EFT_RANGE_EFID1_EFID2,
 };
-const cy_stc_extid_filter_t CAN0_IF_extIdFilter_0 =
+const cy_stc_extid_filter_t CANFD_extIdFilter_0 =
 {
-    .f0_f = &CAN0_IF_extIdFilterF0Config_0,
-    .f1_f = &CAN0_IF_extIdFilterF1Config_0,
+    .f0_f = &CANFD_extIdFilterF0Config_0,
+    .f1_f = &CANFD_extIdFilterF1Config_0,
 };
-const cy_stc_extid_filter_t CAN0_IF_extIdFilters[] =
+const cy_stc_extid_filter_t CANFD_extIdFilters[] =
 {
-    [0] = CAN0_IF_EXT_ID_FILTER_0,
+    [0] = CANFD_EXT_ID_FILTER_0,
 };
-const cy_stc_canfd_extid_filter_config_t CAN0_IF_extIdFiltersConfig =
+const cy_stc_canfd_extid_filter_config_t CANFD_extIdFiltersConfig =
 {
     .numberOfEXTIDFilters = 1U,
-    .extidFilter = (cy_stc_extid_filter_t*)&CAN0_IF_extIdFilters,
+    .extidFilter = (cy_stc_extid_filter_t*)&CANFD_extIdFilters,
     .extIDANDMask = 536870911UL,
 };
-const cy_stc_canfd_global_filter_config_t CAN0_IF_globalFilterConfig =
+const cy_stc_canfd_global_filter_config_t CANFD_globalFilterConfig =
 {
     .nonMatchingFramesStandard = CY_CANFD_ACCEPT_IN_RXFIFO_0,
     .nonMatchingFramesExtended = CY_CANFD_ACCEPT_IN_RXFIFO_0,
     .rejectRemoteFramesStandard = false,
     .rejectRemoteFramesExtended = false,
 };
-const cy_en_canfd_fifo_config_t CAN0_IF_rxFifo0Config =
+const cy_en_canfd_fifo_config_t CANFD_rxFifo0Config =
 {
     .mode = CY_CANFD_FIFO_MODE_BLOCKING,
     .watermark = 0U,
     .numberOfFIFOElements = 0U,
     .topPointerLogicEnabled = false,
 };
-const cy_en_canfd_fifo_config_t CAN0_IF_rxFifo1Config =
+const cy_en_canfd_fifo_config_t CANFD_rxFifo1Config =
 {
     .mode = CY_CANFD_FIFO_MODE_BLOCKING,
     .watermark = 0U,
     .numberOfFIFOElements = 0U,
     .topPointerLogicEnabled = false,
 };
-const cy_stc_canfd_config_t CAN0_IF_config =
+const cy_stc_canfd_config_t CANFD_config =
 {
     .txCallback = NULL,
     .rxCallback = NULL,
     .errorCallback = NULL,
     .canFDMode = false,
-    .bitrate = &CAN0_IF_nominalBitrateConfig,
-    .fastBitrate = &CAN0_IF_dataBitrateConfig,
-    .tdcConfig = &CAN0_IF_tdcConfig,
-    .sidFilterConfig = &CAN0_IF_sidFiltersConfig,
-    .extidFilterConfig = &CAN0_IF_extIdFiltersConfig,
-    .globalFilterConfig = &CAN0_IF_globalFilterConfig,
+    .bitrate = &CANFD_nominalBitrateConfig,
+    .fastBitrate = &CANFD_dataBitrateConfig,
+    .tdcConfig = &CANFD_tdcConfig,
+    .sidFilterConfig = &CANFD_sidFiltersConfig,
+    .extidFilterConfig = &CANFD_extIdFiltersConfig,
+    .globalFilterConfig = &CANFD_globalFilterConfig,
     .rxBufferDataSize = CY_CANFD_BUFFER_DATA_SIZE_8,
     .rxFIFO1DataSize = CY_CANFD_BUFFER_DATA_SIZE_8,
     .rxFIFO0DataSize = CY_CANFD_BUFFER_DATA_SIZE_8,
     .txBufferDataSize = CY_CANFD_BUFFER_DATA_SIZE_8,
-    .rxFIFO0Config = &CAN0_IF_rxFifo0Config,
-    .rxFIFO1Config = &CAN0_IF_rxFifo1Config,
+    .rxFIFO0Config = &CANFD_rxFifo0Config,
+    .rxFIFO1Config = &CANFD_rxFifo1Config,
     .noOfRxBuffers = 1U,
     .noOfTxBuffers = 1U,
     .messageRAMaddress = CY_CAN0MRAM_BASE + 0U,
     .messageRAMsize = 8192U,
 };
-cy_stc_canfd_t0_t CAN0_IF_T0RegisterBuffer_0 =
+cy_stc_canfd_t0_t CANFD_T0RegisterBuffer_0 =
 {
     .id = 0U,
     .rtr = CY_CANFD_RTR_DATA_FRAME,
     .xtd = CY_CANFD_XTD_STANDARD_ID,
     .esi = CY_CANFD_ESI_ERROR_ACTIVE,
 };
-cy_stc_canfd_t1_t CAN0_IF_T1RegisterBuffer_0 =
+cy_stc_canfd_t1_t CANFD_T1RegisterBuffer_0 =
 {
     .dlc = 0U,
     .brs = false,
@@ -1070,16 +1072,16 @@ cy_stc_canfd_t1_t CAN0_IF_T1RegisterBuffer_0 =
     .efc = false,
     .mm = 0U,
 };
-uint32_t CAN0_IF_dataBuffer_0[] =
+uint32_t CANFD_dataBuffer_0[] =
 {
-    [CAN0_IF_DATA_0] = 0U,
-    [CAN0_IF_DATA_1] = 0U,
+    [CANFD_DATA_0] = 0U,
+    [CANFD_DATA_1] = 0U,
 };
-cy_stc_canfd_tx_buffer_t CAN0_IF_txBuffer_0 =
+cy_stc_canfd_tx_buffer_t CANFD_txBuffer_0 =
 {
-    .t0_f = &CAN0_IF_T0RegisterBuffer_0,
-    .t1_f = &CAN0_IF_T1RegisterBuffer_0,
-    .data_area_f = CAN0_IF_dataBuffer_0,
+    .t0_f = &CANFD_T0RegisterBuffer_0,
+    .t1_f = &CANFD_T1RegisterBuffer_0,
+    .data_area_f = CANFD_dataBuffer_0,
 };
 const cy_stc_canfd_bitrate_t CAN1_IF_nominalBitrateConfig =
 {
@@ -1258,7 +1260,7 @@ const cy_stc_smif_config_t SMIF1_HYPERRAM_config =
     .mode = (uint32_t)CY_SMIF_NORMAL,
     .deselectDelay = SMIF1_HYPERRAM_DESELECT_DELAY,
     .blockEvent = (uint32_t)CY_SMIF_BUS_ERROR,
-    .inputFrequencyMHz = 160,
+    .inputFrequencyMHz = 320,
     .enable_internal_dll = false,
     .dll_divider_value = CY_SMIF_DLL_DIVIDE_BY_2,
     .rx_capture_mode = CY_SMIF_SEL_NORMAL_SPI,

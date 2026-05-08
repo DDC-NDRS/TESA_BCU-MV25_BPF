@@ -24,7 +24,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_pse84.h" line="224" column="13" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="98" bodyend="102" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_pse84.h" declline="224" declcolumn="13"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_pse84.h" line="224" column="13" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="98" bodyend="102" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_pse84.h" declline="224" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="group__group__system__config__functions__edge_1gae0c36a9591fe6e9c45ecb21a794f0f0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_pse84.h" line="234" column="13" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="117" bodyend="135" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_pse84.h" declline="234" declcolumn="13"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_pse84.h" line="234" column="13" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="117" bodyend="135" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_pse84.h" declline="234" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="group__group__system__config__functions__edge_1ga15d44a0428b12582b056c2501fbe52e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -89,7 +89,7 @@ Populates system clock frequency variables with the provided values.</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_pse84.h" line="250" column="13" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="140" bodyend="150" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_pse84.h" declline="250" declcolumn="13"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_pse84.h" line="250" column="13" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="140" bodyend="150" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_pse84.h" declline="250" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="group__group__system__config__functions__edge_1ga70ad2d6aad9d042677abbbbc571f9d68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -107,7 +107,7 @@ Populates system clock frequency variables with the provided values.</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_pse84.h" line="257" column="13" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="107" bodyend="111" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_pse84.h" declline="257" declcolumn="13"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_pse84.h" line="257" column="13" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="107" bodyend="111" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_pse84.h" declline="257" declcolumn="13"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

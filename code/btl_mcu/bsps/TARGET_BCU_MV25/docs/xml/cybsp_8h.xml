@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp.h" line="55" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp.h" bodystart="55" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp.h" line="55" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp.h" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__group__bsp__errors_1gaee745bd3fccec6eb2df1e83fc4c9f775" prot="public" static="no">
         <name>CYBSP_RSLT_ERR_SYSCLK_PM_CALLBACK</name>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp.h" line="58" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp.h" bodystart="58" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp.h" line="58" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp.h" bodystart="58" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -71,7 +71,7 @@
         <inbodydescription>
 <para>defined(CYBSP_DISABLE_SRF_INIT)</para>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp.h" line="104" column="11" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp.c" bodystart="295" bodyend="398" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp.h" declline="104" declcolumn="11"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp.h" line="104" column="11" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp.c" bodystart="295" bodyend="398" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp.h" declline="104" declcolumn="11"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -149,6 +149,6 @@ SPDX-License-Identifier: Apache-2.0</para>
 <codeline lineno="121"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp.h"/>
+    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp.h"/>
   </compounddef>
 </doxygen>

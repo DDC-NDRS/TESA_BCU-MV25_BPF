@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp.h" line="55" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp.h" bodystart="55" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp.h" line="55" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp.h" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__group__bsp__errors_1gaee745bd3fccec6eb2df1e83fc4c9f775" prot="public" static="no">
         <name>CYBSP_RSLT_ERR_SYSCLK_PM_CALLBACK</name>
@@ -26,7 +26,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp.h" line="58" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp.h" bodystart="58" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp.h" line="58" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp.h" bodystart="58" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

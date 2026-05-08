@@ -23,7 +23,7 @@
         <inbodydescription>
 <para>defined(CYBSP_DISABLE_SRF_INIT)</para>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp.h" line="104" column="11" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp.c" bodystart="295" bodyend="398" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp.h" declline="104" declcolumn="11"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp.h" line="104" column="11" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp.c" bodystart="295" bodyend="398" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp.h" declline="104" declcolumn="11"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

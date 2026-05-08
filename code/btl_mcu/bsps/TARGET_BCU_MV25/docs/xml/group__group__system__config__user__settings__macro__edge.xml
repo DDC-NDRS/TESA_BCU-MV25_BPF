@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" line="86" column="13" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" bodystart="86" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" line="86" column="13" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" bodystart="86" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__group__system__config__user__settings__macro__edge_1gaf7ce010fed54e442c870c003790c232e" prot="public" static="no">
         <name>CY_CM55_APP_BOOT_ADDR</name>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" line="93" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" bodystart="93" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" line="93" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" bodystart="93" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__group__system__config__user__settings__macro__edge_1ga02de510de4ee1e844aa544b0db2c5b90" prot="public" static="no">
         <name>CY_CORTEX_M55_APPL_ADDR</name>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" line="98" column="13" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" bodystart="98" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" line="98" column="13" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" bodystart="98" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

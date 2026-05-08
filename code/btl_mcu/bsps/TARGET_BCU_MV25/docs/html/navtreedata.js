@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "KIT_PSE84_EVAL_EPC4 BSP", "index.html", [
+  [ "KIT_PSE84_EVAL_EPC2 BSP", "index.html", [
     [ "Overview", "index.html#autotoc_md1", null ],
     [ "Features", "index.html#autotoc_md2", null ],
     [ "BSP Configuration", "index.html#autotoc_md3", [

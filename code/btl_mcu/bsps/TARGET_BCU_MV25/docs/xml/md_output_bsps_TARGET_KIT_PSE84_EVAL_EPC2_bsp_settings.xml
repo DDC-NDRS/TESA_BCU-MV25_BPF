@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
-  <compounddef id="md_output_bsps_TARGET_KIT_PSE84_EVAL_EPC4_bsp_settings" kind="page">
-    <compoundname>md_output_bsps_TARGET_KIT_PSE84_EVAL_EPC4_bsp_settings</compoundname>
+  <compounddef id="md_output_bsps_TARGET_KIT_PSE84_EVAL_EPC2_bsp_settings" kind="page">
+    <compoundname>md_output_bsps_TARGET_KIT_PSE84_EVAL_EPC2_bsp_settings</compoundname>
     <title>Peripheral Default BSP Settings</title>
     <briefdescription>
     </briefdescription>
@@ -106,6 +106,6 @@
 <para><hruler/>
  © Infineon Technologies AG, 2023-2025. </para>
     </detaileddescription>
-    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/bsp_settings.md"/>
+    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/bsp_settings.md"/>
   </compounddef>
 </doxygen>

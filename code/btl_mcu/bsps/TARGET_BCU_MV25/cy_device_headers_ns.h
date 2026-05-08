@@ -1,11 +1,10 @@
 /***************************************************************************//**
-* PSE846GPS4DBZC4A device header
+* PSE846GPS2DBZC4A device header
 *
 ********************************************************************************
 * \copyright
-* (c) (2016-2025), Cypress Semiconductor Corporation (an Infineon company) or
-* an affiliate of Cypress Semiconductor Corporation.
-*
+* (c) 2016-2026, Infineon Technologies AG or an affiliate of
+* Infineon Technologies AG.
 * SPDX-License-Identifier: Apache-2.0
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,11 +20,11 @@
 * limitations under the License.
 *******************************************************************************/
 
-#ifndef _PSE846GPS4DBZC4A_H_
-#define _PSE846GPS4DBZC4A_H_
+#ifndef _PSE846GPS2DBZC4A_H_
+#define _PSE846GPS2DBZC4A_H_
 
 /**
-* \addtogroup group_device PSE846GPS4DBZC4A
+* \addtogroup group_device PSE846GPS2DBZC4A
 * \{
 */
 
@@ -749,8 +748,8 @@ typedef enum {
 
 #define CY_DEVICE_PSE84
 #define CY_DEVICE_SERIES_PSE8XXGP
-#define CY_DEVICE_IFX_SECURITY_EPC4
-#define CY_SILICON_ID                   0xED912215UL
+#define CY_DEVICE_IFX_SECURITY_EPC2
+#define CY_SILICON_ID                   0xED942115UL
 #define CY_HF_CLK_MAX_FREQ              400000000UL
 
 
@@ -2823,9 +2822,9 @@ typedef enum {
 #define USBHS_DWC_OTG_INTREG                    ((USBHS_DWC_OTG_INTREG_Type*) &USBHS->DWC_OTG_INTREG)             /* 0x44900000 */
 #define USBHS_SS                                ((USBHS_SS_Type*) &USBHS->SS)                                     /* 0x44940000 */
 
-/** \} PSE846GPS4DBZC4A */
+/** \} PSE846GPS2DBZC4A */
 
-#endif /* _PSE846GPS4DBZC4A_H_ */
+#endif /* _PSE846GPS2DBZC4A_H_ */
 
 
 /* [] END OF FILE */

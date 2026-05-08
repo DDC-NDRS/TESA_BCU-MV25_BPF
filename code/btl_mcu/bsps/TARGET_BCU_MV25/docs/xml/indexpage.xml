@@ -2,25 +2,25 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
   <compounddef id="indexpage" kind="page">
     <compoundname>index</compoundname>
-    <title>KIT_PSE84_EVAL_EPC4 BSP</title>
+    <title>KIT_PSE84_EVAL_EPC2 BSP</title>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para><anchor id="index_1md_output_bsps_TARGET_KIT_PSE84_EVAL_EPC4_README"/> </para>
+<para><anchor id="index_1md_output_bsps_TARGET_KIT_PSE84_EVAL_EPC2_README"/> </para>
 <sect1 id="index_1autotoc_md1">
 <title>Overview</title>
-<para>The PSOC™ Edge E84 Evaluation Kit (KIT_PSE84_EVAL) is based on the PSOC™ Edge family of devices. It enables the evaluation and development of applications for the PSOC™ Edge E84 EPC4 MCU.</para>
+<para>The PSOC™ Edge E84 Evaluation Kit (KIT_PSE84_EVAL) is based on the PSOC™ Edge family of devices. It enables the evaluation and development of applications for the PSOC™ Edge E84 EPC2 MCU.</para>
 <para>To use code from the BSP, simply include a reference to <computeroutput>cybsp.h</computeroutput>.</para>
 </sect1>
 <sect1 id="index_1autotoc_md2">
 <title>Features</title>
-<para>This evaluation kit carries a PSOC™ E84 EPC4 MCU (PSE846GPS2DBZC4A) on a SODIMM based detachable SOM board connected to the base-board. The MCU SOM also has 128 Mb QSPI flash, 1 Gb Octal flash, 128 Mb Octal RAM, PSOC™ 4000T as CAPSENSE™ co-processor and on-board AIROC™ Wi-Fi and Bluetooth® combo (CYW55513IUBG). <linebreak/>
+<para>This evaluation kit carries a PSOC™ E84 EPC2 MCU (PSE846GPS2DBZC4A) on a SODIMM based detachable SOM board connected to the base-board. The MCU SOM also has 128 Mb QSPI flash, 1 Gb Octal flash, 128 Mb Octal RAM, PSOC™ 4000T as CAPSENSE™ co-processor and on-board AIROC™ Wi-Fi and Bluetooth® combo (CYW55513IUBG). <linebreak/>
 </para>
 <para>The base-board has M.2 interface connectors for interfacing external radio modules based on AIROC™ Wi-Fi and Bluetooth® combos and external memory interfaces. The base-board features an on-board programmer/debugger(KitProg3), ETM/JTAG/SWD debug headers, custom display capacitive touch panel connector, R-Pi compatible MIPI-DSI and MIPI-DSI custom display, Analog and PDM microphones, Headphone connector, Speaker, USB Host Type-A and USB device Type-C connectors, RJ45 Ethernet connector, M.2 (B-key) memory interface and M.2 (E-key) radio interface, Infineon’s Shield2Go interface, Mikroelektronika&apos;s mikroBUS compatible headers, 6-Axis IMU sensor, 3-axis Magnetometer, microSD cardholder, CAPSENSE™ buttons and slider, user LEDs and user buttons. The MCU power domain supports following operating voltages - 2.7 V, 3.3 V, 4.2 V and the peripheral power domain supports operating voltages - 1.8 V and 3.3 V.</para>
 </sect1>
 <sect1 id="index_1autotoc_md3">
 <title>BSP Configuration</title>
-<para>The BSP has a few hooks that allow its behavior to be configured. Some of these items are enabled by default while others must be explicitly enabled. Items enabled by default are specified in the KIT_PSE84_EVAL_EPC4.mk file. The items that are enabled can be changed by creating a custom BSP or by editing the application makefile.</para>
+<para>The BSP has a few hooks that allow its behavior to be configured. Some of these items are enabled by default while others must be explicitly enabled. Items enabled by default are specified in the KIT_PSE84_EVAL_EPC2.mk file. The items that are enabled can be changed by creating a custom BSP or by editing the application makefile.</para>
 <para>Components:</para>
 <para>Defines:<itemizedlist>
 <listitem><para>CYBSP_WIFI_CAPABLE - This define, disabled by default, causes the BSP to initialize the interface to an onboard wireless chip if it has one.</para>
@@ -209,14 +209,14 @@
 </sect1>
 <sect1 id="index_1autotoc_md15">
 <title>API Reference Manual</title>
-<para>The KIT_PSE84_EVAL_EPC4 Board Support Package provides a set of APIs to configure, initialize and use the board resources.</para>
+<para>The KIT_PSE84_EVAL_EPC2 Board Support Package provides a set of APIs to configure, initialize and use the board resources.</para>
 <para>See the <ulink url="modules.html">BSP API Reference Manual</ulink> for the complete list of the provided interfaces.</para>
 </sect1>
 <sect1 id="index_1autotoc_md16">
 <title>More information</title>
 <para><itemizedlist>
-<listitem><para><ulink url="modules.html">KIT_PSE84_EVAL_EPC4 BSP API Reference Manual</ulink></para>
-</listitem><listitem><para><ulink url="https://www.infineon.com/product-information/kit_pse84_eval">KIT_PSE84_EVAL_EPC4 Documentation</ulink></para>
+<listitem><para><ulink url="modules.html">KIT_PSE84_EVAL_EPC2 BSP API Reference Manual</ulink></para>
+</listitem><listitem><para><ulink url="https://www.infineon.com/product-information/kit_pse84_eval">KIT_PSE84_EVAL_EPC2 Documentation</ulink></para>
 </listitem><listitem><para><ulink url="https://www.infineon.com">Infineon Technologies AG</ulink></para>
 </listitem><listitem><para><ulink url="https://github.com/Infineon">Infineon GitHub</ulink></para>
 </listitem><listitem><para><ulink url="https://www.infineon.com/modustoolbox">ModusToolbox™</ulink></para>
@@ -226,6 +226,6 @@
  © Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2025. </para>
 </sect1>
     </detaileddescription>
-    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/README.md"/>
+    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/README.md"/>
   </compounddef>
 </doxygen>

@@ -4,14 +4,14 @@
  * Description:
  * System configuration
  * This file was automatically generated and should not be modified.
- * Configurator Backend 3.70.0
- * device-db 4.34.0.9502
+ * Configurator Backend 3.80.0
+ * device-db 4.37.0.10260
  * ifx-mcuboot-pse84 1.1.0.349
- * mtb-dsl-pse8xxgp 1.2.0.895
+ * mtb-dsl-pse8xxgp 1.5.0.1072
  *
  *******************************************************************************
- * Copyright 2026 Cypress Semiconductor Corporation (an Infineon company) or
- * an affiliate of Cypress Semiconductor Corporation.
+ * Copyright 2026, Infineon Technologies AG, or an affiliate of Infineon
+ * Technologies AG. All rights reserved.
  * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,11 +32,20 @@
 
 #include "cycfg_notices.h"
 
+#if defined (COMPONENT_SECURE_DEVICE) && defined(COMPONENT_MW_MTB_SRF) && !defined(CY_SRF_DISABLE)
+#include "mtb_srf.h"
+#endif /* defined (COMPONENT_SECURE_DEVICE) && defined(COMPONENT_MW_MTB_SRF) && !defined(CY_SRF_DISABLE) */
+
 #if defined(__cplusplus)
 extern "C" {
 #endif /* defined(__cplusplus) */
 
 #define vres_0_protection_0_ENABLED 1U
+
+#if defined (COMPONENT_SECURE_DEVICE) && defined(COMPONENT_MW_MTB_SRF) && !defined(CY_SRF_DISABLE)
+extern const mtb_srf_memory_protection_s_t mtb_srf_memory_protection_s[];
+extern const uint8_t mtb_srf_protection_range_s_count;
+#endif /* defined (COMPONENT_SECURE_DEVICE) && defined(COMPONENT_MW_MTB_SRF) && !defined(CY_SRF_DISABLE) */
 
 void init_cycfg_protection(void);
 

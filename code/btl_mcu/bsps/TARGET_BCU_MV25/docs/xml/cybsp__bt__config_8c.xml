@@ -16,6 +16,6 @@
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>defined(COMPONENT_WICED_BLE)<sp/>||<sp/>defined(COMPONENT_WICED_DUALMODE)<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/bluetooth/cybsp_bt_config.c"/>
+    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/bluetooth/cybsp_bt_config.c"/>
   </compounddef>
 </doxygen>

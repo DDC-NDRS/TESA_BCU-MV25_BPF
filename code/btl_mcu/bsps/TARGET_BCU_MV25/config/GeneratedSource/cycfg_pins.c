@@ -4,14 +4,14 @@
  * Description:
  * Pin configuration
  * This file was automatically generated and should not be modified.
- * Configurator Backend 3.70.0
- * device-db 4.34.0.9502
+ * Configurator Backend 3.80.0
+ * device-db 4.37.0.10260
  * ifx-mcuboot-pse84 1.1.0.349
- * mtb-dsl-pse8xxgp 1.2.0.895
+ * mtb-dsl-pse8xxgp 1.5.0.1072
  *
  *******************************************************************************
- * Copyright 2026 Cypress Semiconductor Corporation (an Infineon company) or
- * an affiliate of Cypress Semiconductor Corporation.
+ * Copyright 2026, Infineon Technologies AG, or an affiliate of Infineon
+ * Technologies AG. All rights reserved.
  * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -772,8 +772,8 @@ const cy_stc_gpio_pin_config_t CYBSP_WIFI_HOST_WAKE_config =
     .outVal = 1,
     .driveMode = CY_GPIO_DM_OD_DRIVESLOW,
     .hsiom = CYBSP_WIFI_HOST_WAKE_HSIOM,
-    .intEdge = CY_GPIO_INTR_DISABLE,
-    .intMask = 0UL,
+    .intEdge = CY_GPIO_INTR_RISING,
+    .intMask = 1UL,
     .vtrip = CY_GPIO_VTRIP_CMOS,
     .slewRate = CY_GPIO_SLEW_FAST,
     .driveSel = CY_GPIO_DRIVE_1_2,

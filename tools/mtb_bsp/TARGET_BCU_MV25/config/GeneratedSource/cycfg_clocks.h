@@ -4,13 +4,13 @@
  * Description:
  * Clock configuration
  * This file was automatically generated and should not be modified.
- * Configurator Backend 3.70.0
- * device-db 4.34.0.9502
- * mtb-dsl-pse8xxgp 1.1.1.824
+ * Configurator Backend 3.80.0
+ * device-db 4.37.0.10260
+ * mtb-dsl-pse8xxgp 1.5.0.1072
  *
  *******************************************************************************
- * Copyright 2026 Cypress Semiconductor Corporation (an Infineon company) or
- * an affiliate of Cypress Semiconductor Corporation.
+ * Copyright 2026, Infineon Technologies AG, or an affiliate of Infineon
+ * Technologies AG. All rights reserved.
  * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,6 +32,7 @@
 #include "cycfg_notices.h"
 #include "cy_sysclk.h"
 #include "cy_wdt.h"
+#include "cycfg_system.h"
 #include "cycfg_clock_types.h"
 #include "cy_rtc.h"
 #include "cy_gpio.h"
@@ -40,15 +41,15 @@
 extern "C" {
 #endif /* defined(__cplusplus) */
 
-#define BSP_RTC_ENABLED 1U
-#define BSP_RTC_10_MONTH_OFFSET (28U)
-#define BSP_RTC_MONTH_OFFSET (24U)
-#define BSP_RTC_10_DAY_OFFSET (20U)
-#define BSP_RTC_DAY_OFFSET (16U)
-#define BSP_RTC_1000_YEAR_OFFSET (12U)
-#define BSP_RTC_100_YEAR_OFFSET (8U)
-#define BSP_RTC_10_YEAR_OFFSET (4U)
-#define BSP_RTC_YEAR_OFFSET (0U)
+#define CYBSP_RTC_ENABLED 1U
+#define CYBSP_RTC_10_MONTH_OFFSET (28U)
+#define CYBSP_RTC_MONTH_OFFSET (24U)
+#define CYBSP_RTC_10_DAY_OFFSET (20U)
+#define CYBSP_RTC_DAY_OFFSET (16U)
+#define CYBSP_RTC_1000_YEAR_OFFSET (12U)
+#define CYBSP_RTC_100_YEAR_OFFSET (8U)
+#define CYBSP_RTC_10_YEAR_OFFSET (4U)
+#define CYBSP_RTC_YEAR_OFFSET (0U)
 #define srss_0_clock_0_eco_0_ENABLED 1U
 #define srss_0_clock_0_ext_0_ENABLED 1U
 #define srss_0_clock_0_iho_0_ENABLED 1U
@@ -89,7 +90,7 @@ extern "C" {
 #define srss_0_clock_0_hfclk_13_ENABLED 1U
 #define CY_CFG_SYSCLK_CLKHF13 13UL
 
-extern const cy_stc_rtc_config_t BSP_RTC_config;
+extern const cy_stc_rtc_config_t CYBSP_RTC_config;
 extern const cycfg_clkhf_config_t cycfg_hf0Config;
 extern const cycfg_clkhf_config_t cycfg_hf1Config;
 extern const cycfg_clkhf_config_t cycfg_hf3Config;

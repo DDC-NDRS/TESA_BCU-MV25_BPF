@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="39" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="39" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="39" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="COMPONENT__CM55_2COMPONENT__NON__SECURE__DEVICE_2ns__system__pse84_8c_1a2f30d7ab7a0bbf3b862387fb39ed3394" prot="public" static="no">
         <name>CY_CLK_PERICLK_FREQ_HZ_DEFAULT</name>
@@ -69,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="42" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="42" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="42" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="COMPONENT__CM55_2COMPONENT__NON__SECURE__DEVICE_2ns__system__pse84_8c_1ab4cc32901c7c918f8afd1d1d3885b8cd" prot="public" static="no">
         <name>CY_CLK_SYSTEM_FREQ_HZ_DEFAULT</name>
@@ -81,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="48" column="10" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="48" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="48" column="10" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="COMPONENT__CM55_2COMPONENT__NON__SECURE__DEVICE_2ns__system__pse84_8c_1ac41d5835c59b1fda0090d3021b4b092d" prot="public" static="no">
         <name>CY_CLK_IMO_FREQ_HZ</name>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="52" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="52" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="52" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="COMPONENT__CM55_2COMPONENT__NON__SECURE__DEVICE_2ns__system__pse84_8c_1ac304371e8d8e43b987c777406b0385ea" prot="public" static="no">
         <name>CY_CLK_HVILO_FREQ_HZ</name>
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="55" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="55" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="55" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="COMPONENT__CM55_2COMPONENT__NON__SECURE__DEVICE_2ns__system__pse84_8c_1ad089c3d4891be15afbda9e8a82665883" prot="public" static="no">
         <name>CY_CLK_PILO_FREQ_HZ</name>
@@ -117,7 +117,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="58" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="58" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="58" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="COMPONENT__CM55_2COMPONENT__NON__SECURE__DEVICE_2ns__system__pse84_8c_1a3afe90b1ff61eec30ffe8d7555988fc2" prot="public" static="no">
         <name>CY_CLK_WCO_FREQ_HZ</name>
@@ -129,7 +129,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="61" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="61" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="61" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="COMPONENT__CM55_2COMPONENT__NON__SECURE__DEVICE_2ns__system__pse84_8c_1a910aed64775b3f50adb1105eb593a418" prot="public" static="no">
         <name>CY_CLK_ALTLF_FREQ_HZ</name>
@@ -141,7 +141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="64" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="64" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="64" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="64" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="COMPONENT__CM55_2COMPONENT__NON__SECURE__DEVICE_2ns__system__pse84_8c_1a2bddc1076d557927c273c1255bb0435d" prot="public" static="no">
         <name>CY_DELAY_MS_OVERFLOW_THRESHOLD</name>
@@ -152,7 +152,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="73" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="73" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="73" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="73" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="COMPONENT__CM55_2COMPONENT__NON__SECURE__DEVICE_2ns__system__pse84_8c_1a7ce6941bfc591de584305c405edd173f" prot="public" static="no">
         <name>CY_DELAY_1K_THRESHOLD</name>
@@ -163,7 +163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="74" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="74" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="74" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="74" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="COMPONENT__CM55_2COMPONENT__NON__SECURE__DEVICE_2ns__system__pse84_8c_1ad1ae9b4f0eab0f1ae5e94ff2ef6163ae" prot="public" static="no">
         <name>CY_DELAY_1K_MINUS_1_THRESHOLD</name>
@@ -174,7 +174,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="75" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="75" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="75" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="75" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="COMPONENT__CM55_2COMPONENT__NON__SECURE__DEVICE_2ns__system__pse84_8c_1a0658126e98c6e971f8ab4b611edc437b" prot="public" static="no">
         <name>CY_DELAY_1M_THRESHOLD</name>
@@ -185,7 +185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="76" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="76" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="76" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="76" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="COMPONENT__CM55_2COMPONENT__NON__SECURE__DEVICE_2ns__system__pse84_8c_1a7fa46fa65576764fe6e7fe70216214f3" prot="public" static="no">
         <name>CY_DELAY_1M_MINUS_1_THRESHOLD</name>
@@ -196,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="77" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="77" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="77" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="77" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="COMPONENT__CM55_2COMPONENT__NON__SECURE__DEVICE_2ns__system__pse84_8c_1a39b8191a0fc5e177b11f4eb04f368a68" prot="public" static="no">
         <name>CY_ROOT_PATH_SRC_IMO</name>
@@ -207,7 +207,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="89" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="89" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="89" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="89" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="COMPONENT__CM55_2COMPONENT__NON__SECURE__DEVICE_2ns__system__pse84_8c_1a206f6d0a5bcca6ff6b4174f11eb416d3" prot="public" static="no">
         <name>CY_ROOT_PATH_SRC_EXT</name>
@@ -218,7 +218,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="90" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="90" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="90" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="90" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="COMPONENT__CM55_2COMPONENT__NON__SECURE__DEVICE_2ns__system__pse84_8c_1abe9f787f4941445ce74b923e772abd44" prot="public" static="no">
         <name>CY_ROOT_PATH_SRC_DSI_MUX</name>
@@ -229,7 +229,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="97" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="97" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="97" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="97" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="COMPONENT__CM55_2COMPONENT__NON__SECURE__DEVICE_2ns__system__pse84_8c_1a9915befcb33c7383ef4e1cbd329ac0be" prot="public" static="no">
         <name>CY_ROOT_PATH_SRC_DSI_MUX_HVILO</name>
@@ -240,7 +240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="98" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="98" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="98" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="98" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="COMPONENT__CM55_2COMPONENT__NON__SECURE__DEVICE_2ns__system__pse84_8c_1af7b2f4303dc8fbcc320897b994c944b1" prot="public" static="no">
         <name>CY_ROOT_PATH_SRC_DSI_MUX_WCO</name>
@@ -251,7 +251,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="99" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="99" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="99" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="99" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -269,7 +269,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="66" column="10" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="66" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="66" column="10" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="COMPONENT__CM55_2COMPONENT__NON__SECURE__DEVICE_2ns__system__pse84_8c_1a4d9e1b2b20e89093355c2d5da8638d37" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -283,7 +283,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="78" column="10" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="78" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="78" column="10" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="78" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="COMPONENT__CM55_2COMPONENT__NON__SECURE__DEVICE_2ns__system__pse84_8c_1adc13cad6509d7cc483888dbaba8d7117" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -298,7 +298,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="80" column="10" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="80" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="80" column="10" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="COMPONENT__CM55_2COMPONENT__NON__SECURE__DEVICE_2ns__system__pse84_8c_1a8cbe34bc8bdc0874633ef9a5c398a29d" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -313,7 +313,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="83" column="10" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="83" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="83" column="10" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="83" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group__group__system__config__globals__edge_1gacacb048cf07405e3bb7d2aeca6ed1339" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -329,7 +329,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="87" column="10" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="87" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="87" column="10" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="87" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -350,7 +350,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="110" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="110" bodyend="114"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="110" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="110" bodyend="114"/>
       </memberdef>
       <memberdef kind="function" id="group__group__system__config__functions__edge_1ga70ad2d6aad9d042677abbbbc571f9d68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__WEAK void</type>
@@ -368,7 +368,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="119" column="13" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="119" bodyend="123"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="119" column="13" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="119" bodyend="123"/>
       </memberdef>
       <memberdef kind="function" id="group__group__system__config__functions__edge_1gae0c36a9591fe6e9c45ecb21a794f0f0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -387,7 +387,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="128" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="128" bodyend="147"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="128" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="128" bodyend="147"/>
       </memberdef>
       <memberdef kind="function" id="group__group__system__config__functions__edge_1ga15d44a0428b12582b056c2501fbe52e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -411,7 +411,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="152" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="152" bodyend="162"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" line="152" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c" bodystart="152" bodyend="162"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -559,6 +559,6 @@ Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you ma
 <codeline lineno="163"><highlight class="normal"></highlight></codeline>
 <codeline lineno="164"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>[]<sp/>END<sp/>OF<sp/>FILE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c"/>
+    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM55/COMPONENT_NON_SECURE_DEVICE/ns_system_pse84.c"/>
   </compounddef>
 </doxygen>

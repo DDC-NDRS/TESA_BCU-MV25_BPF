@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxyfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="doxyfile.xsd" version="1.9.2" xml:lang="en-US">
   <option  id='DOXYFILE_ENCODING' default='yes' type='string'><value><![CDATA[UTF-8]]></value></option>
-  <option  id='PROJECT_NAME' default='no' type='string'><value><![CDATA["KIT_PSE84_EVAL_EPC4 BSP"]]></value></option>
-  <option  id='PROJECT_NUMBER' default='no' type='string'><value><![CDATA[1.2.0]]></value></option>
+  <option  id='PROJECT_NAME' default='no' type='string'><value><![CDATA["KIT_PSE84_EVAL_EPC2 BSP"]]></value></option>
+  <option  id='PROJECT_NUMBER' default='no' type='string'><value><![CDATA[1.3.0]]></value></option>
   <option  id='PROJECT_BRIEF' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='PROJECT_LOGO' default='no' type='string'><value><![CDATA[/builds/repo/bsp/psoc-edge/ci/src/docs/images/logo.png]]></value></option>
-  <option  id='OUTPUT_DIRECTORY' default='no' type='string'><value><![CDATA[output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/docs]]></value></option>
+  <option  id='OUTPUT_DIRECTORY' default='no' type='string'><value><![CDATA[output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/docs]]></value></option>
   <option  id='CREATE_SUBDIRS' default='yes' type='bool'><value>NO</value></option>
   <option  id='ALLOW_UNICODE_NAMES' default='yes' type='bool'><value>NO</value></option>
   <option  id='OUTPUT_LANGUAGE' default='yes' type='string'><value>English</value></option>
@@ -114,12 +114,12 @@
   <option  id='WARN_NO_PARAMDOC' default='no' type='bool'><value>YES</value></option>
   <option  id='WARN_AS_ERROR' default='no' type='string'><value>YES</value></option>
   <option  id='WARN_FORMAT' default='yes' type='string'><value><![CDATA["$file:$line: $text"]]></value></option>
-  <option  id='WARN_LOGFILE' default='no' type='string'><value><![CDATA[/KIT_PSE84_EVAL_EPC4.txt]]></value></option>
+  <option  id='WARN_LOGFILE' default='no' type='string'><value><![CDATA[/KIT_PSE84_EVAL_EPC2.txt]]></value></option>
   <option  id='INPUT' default='no' type='stringlist'>
-    <value><![CDATA[output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/README.md]]></value>
-    <value><![CDATA[output/bsps/TARGET_KIT_PSE84_EVAL_EPC4]]></value>
+    <value><![CDATA[output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/README.md]]></value>
+    <value><![CDATA[output/bsps/TARGET_KIT_PSE84_EVAL_EPC2]]></value>
     <value><![CDATA[/builds/repo/bsp/psoc-edge/ci/src/docs/mt_bsp_user_guide.md]]></value>
-    <value><![CDATA[output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/bsp_settings.md]]></value>
+    <value><![CDATA[output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/bsp_settings.md]]></value>
   </option>
   <option  id='INPUT_ENCODING' default='yes' type='string'><value><![CDATA[UTF-8]]></value></option>
   <option  id='FILE_PATTERNS' default='no' type='stringlist'>
@@ -151,7 +151,7 @@
   <option  id='FILTER_SOURCE_FILES' default='yes' type='bool'><value>NO</value></option>
   <option  id='FILTER_SOURCE_PATTERNS' default='yes' type='stringlist'>
   </option>
-  <option  id='USE_MDFILE_AS_MAINPAGE' default='no' type='string'><value><![CDATA[output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/README.md]]></value></option>
+  <option  id='USE_MDFILE_AS_MAINPAGE' default='no' type='string'><value><![CDATA[output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/README.md]]></value></option>
   <option  id='SOURCE_BROWSER' default='yes' type='bool'><value>NO</value></option>
   <option  id='INLINE_SOURCES' default='yes' type='bool'><value>NO</value></option>
   <option  id='STRIP_CODE_COMMENTS' default='yes' type='bool'><value>YES</value></option>
@@ -280,7 +280,7 @@
   <option  id='EXPAND_ONLY_PREDEF' default='no' type='bool'><value>YES</value></option>
   <option  id='SEARCH_INCLUDES' default='yes' type='bool'><value>YES</value></option>
   <option  id='INCLUDE_PATH' default='no' type='stringlist'>
-    <value><![CDATA[output/bsps/TARGET_KIT_PSE84_EVAL_EPC4]]></value>
+    <value><![CDATA[output/bsps/TARGET_KIT_PSE84_EVAL_EPC2]]></value>
   </option>
   <option  id='INCLUDE_FILE_PATTERNS' default='yes' type='stringlist'>
   </option>

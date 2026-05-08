@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>KIT_PSE84_EVAL_EPC4 BSP</title>
+<title>KIT_PSE84_EVAL_EPC2 BSP</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><a href="http://www.cypress.com/"><img alt="Logo" src="logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">KIT_PSE84_EVAL_EPC4 BSP</div>
+   <div id="projectname">KIT_PSE84_EVAL_EPC2 BSP</div>
   </td>
  </tr>
  </tbody>
@@ -58,7 +58,7 @@ $(function() {
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;"
+  <div id="splitbar" style="-moz-user-select:none;" 
        class="ui-resizable-handle">
   </div>
 </div>
@@ -77,28 +77,28 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0"
+<iframe src="javascript:void(0)" frameborder="0" 
         name="MSearchResults" id="MSearchResults">
 </iframe>
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">KIT_PSE84_EVAL_EPC4 BSP </div></div>
+  <div class="headertitle"><div class="title">KIT_PSE84_EVAL_EPC2 BSP </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><a class="anchor" id="md_output_bsps_TARGET_KIT_PSE84_EVAL_EPC4_README"></a> </p>
+<div class="textblock"><p ><a class="anchor" id="md_output_bsps_TARGET_KIT_PSE84_EVAL_EPC2_README"></a> </p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Overview</h1>
-<p >The PSOC™ Edge E84 Evaluation Kit (KIT_PSE84_EVAL) is based on the PSOC™ Edge family of devices. It enables the evaluation and development of applications for the PSOC™ Edge E84 EPC4 MCU.</p>
+<p >The PSOC™ Edge E84 Evaluation Kit (KIT_PSE84_EVAL) is based on the PSOC™ Edge family of devices. It enables the evaluation and development of applications for the PSOC™ Edge E84 EPC2 MCU.</p>
 <p >To use code from the BSP, simply include a reference to <code>cybsp.h</code>.</p>
 <h1><a class="anchor" id="autotoc_md2"></a>
 Features</h1>
-<p >This evaluation kit carries a PSOC™ E84 EPC4 MCU (PSE846GPS2DBZC4A) on a SODIMM based detachable SOM board connected to the base-board. The MCU SOM also has 128 Mb QSPI flash, 1 Gb Octal flash, 128 Mb Octal RAM, PSOC™ 4000T as CAPSENSE™ co-processor and on-board AIROC™ Wi-Fi and Bluetooth® combo (CYW55513IUBG). <br  />
+<p >This evaluation kit carries a PSOC™ E84 EPC2 MCU (PSE846GPS2DBZC4A) on a SODIMM based detachable SOM board connected to the base-board. The MCU SOM also has 128 Mb QSPI flash, 1 Gb Octal flash, 128 Mb Octal RAM, PSOC™ 4000T as CAPSENSE™ co-processor and on-board AIROC™ Wi-Fi and Bluetooth® combo (CYW55513IUBG). <br  />
 </p>
 <p >The base-board has M.2 interface connectors for interfacing external radio modules based on AIROC™ Wi-Fi and Bluetooth® combos and external memory interfaces. The base-board features an on-board programmer/debugger(KitProg3), ETM/JTAG/SWD debug headers, custom display capacitive touch panel connector, R-Pi compatible MIPI-DSI and MIPI-DSI custom display, Analog and PDM microphones, Headphone connector, Speaker, USB Host Type-A and USB device Type-C connectors, RJ45 Ethernet connector, M.2 (B-key) memory interface and M.2 (E-key) radio interface, Infineon’s Shield2Go interface, Mikroelektronika's mikroBUS compatible headers, 6-Axis IMU sensor, 3-axis Magnetometer, microSD cardholder, CAPSENSE™ buttons and slider, user LEDs and user buttons. The MCU power domain supports following operating voltages - 2.7 V, 3.3 V, 4.2 V and the peripheral power domain supports operating voltages - 1.8 V and 3.3 V.</p>
 <h1><a class="anchor" id="autotoc_md3"></a>
 BSP Configuration</h1>
-<p >The BSP has a few hooks that allow its behavior to be configured. Some of these items are enabled by default while others must be explicitly enabled. Items enabled by default are specified in the KIT_PSE84_EVAL_EPC4.mk file. The items that are enabled can be changed by creating a custom BSP or by editing the application makefile.</p>
+<p >The BSP has a few hooks that allow its behavior to be configured. Some of these items are enabled by default while others must be explicitly enabled. Items enabled by default are specified in the KIT_PSE84_EVAL_EPC2.mk file. The items that are enabled can be changed by creating a custom BSP or by editing the application makefile.</p>
 <p >Components:</p>
 <p >Defines:</p><ul>
 <li>CYBSP_WIFI_CAPABLE - This define, disabled by default, causes the BSP to initialize the interface to an onboard wireless chip if it has one.</li>
@@ -220,13 +220,13 @@ Note on memory aliases</h1>
 <p >The distinction between secure and non-secure access is relatively simple, but understanding CBUS and SBUS requires more attention. CBUS provides faster, higher-performance access to memory regions, but it supports only read operations. As a result, CBUS is typically used for code execution at runtime. In contrast, SBUS offers both read and write capabilities, though with lower performance. SBUS is necessary when writing data to memory, such as during device programming.</p>
 <h1><a class="anchor" id="autotoc_md15"></a>
 API Reference Manual</h1>
-<p >The KIT_PSE84_EVAL_EPC4 Board Support Package provides a set of APIs to configure, initialize and use the board resources.</p>
+<p >The KIT_PSE84_EVAL_EPC2 Board Support Package provides a set of APIs to configure, initialize and use the board resources.</p>
 <p >See the <a href="modules.html">BSP API Reference Manual</a> for the complete list of the provided interfaces.</p>
 <h1><a class="anchor" id="autotoc_md16"></a>
 More information</h1>
 <ul>
-<li><a href="modules.html">KIT_PSE84_EVAL_EPC4 BSP API Reference Manual</a></li>
-<li><a href="https://www.infineon.com/product-information/kit_pse84_eval">KIT_PSE84_EVAL_EPC4 Documentation</a></li>
+<li><a href="modules.html">KIT_PSE84_EVAL_EPC2 BSP API Reference Manual</a></li>
+<li><a href="https://www.infineon.com/product-information/kit_pse84_eval">KIT_PSE84_EVAL_EPC2 Documentation</a></li>
 <li><a href="https://www.infineon.com">Infineon Technologies AG</a></li>
 <li><a href="https://github.com/infineon">Infineon GitHub</a></li>
 <li><a href="https://www.infineon.com/modustoolbox">ModusToolbox™</a></li>
@@ -240,7 +240,7 @@ More information</h1>
 <div id="nav-path" class="navpath">
     <ul>
         <li class="footer">
-            Generated for <b>KIT_PSE84_EVAL_EPC4 BSP</b> by <b>Cypress Semiconductor Corporation</b>.
+            Generated for <b>KIT_PSE84_EVAL_EPC2 BSP</b> by <b>Cypress Semiconductor Corporation</b>.
             All rights reserved.
         </li>
     </ul>

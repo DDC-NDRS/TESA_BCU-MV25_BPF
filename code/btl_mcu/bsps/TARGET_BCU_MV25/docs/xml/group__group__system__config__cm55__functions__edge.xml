@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" line="156" column="10" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.c" bodystart="278" bodyend="283" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" declline="156" declcolumn="10"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" line="156" column="10" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.c" bodystart="278" bodyend="283" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" declline="156" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group__group__system__config__cm55__functions__edge_1gaaee957e11ebb7961c2a80a7fc8785f95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -102,7 +102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" line="157" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.c" bodystart="468" bodyend="588" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" declline="157" declcolumn="6"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" line="157" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.c" bodystart="468" bodyend="588" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" declline="157" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__group__system__config__cm55__functions__edge_1ga688183b526204c8dd5a0556ffdc02683" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -126,7 +126,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" line="158" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.c" bodystart="402" bodyend="442" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" declline="158" declcolumn="6"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" line="158" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.c" bodystart="402" bodyend="442" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" declline="158" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__group__system__config__cm55__functions__edge_1gaae3cf41b1f6eeb4f6f01bed9d5653089" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -168,7 +168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" line="159" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.c" bodystart="608" bodyend="676" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" declline="159" declcolumn="6"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" line="159" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.c" bodystart="608" bodyend="676" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" declline="159" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__group__system__config__cm55__functions__edge_1ga2c9c7235b32e25e40b5a60493c6f5fa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -196,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" line="160" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.c" bodystart="296" bodyend="349" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" declline="160" declcolumn="6"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" line="160" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.c" bodystart="296" bodyend="349" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" declline="160" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__group__system__config__cm55__functions__edge_1gae0b13828ca2650fd4b17663dea8238d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -240,7 +240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" line="161" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.c" bodystart="188" bodyend="249" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" declline="161" declcolumn="6"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" line="161" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.c" bodystart="188" bodyend="249" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" declline="161" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__group__system__config__cm55__functions__edge_1gaa864ce851a42f626f26befe50b6aedd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -257,7 +257,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" line="162" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.c" bodystart="258" bodyend="267" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" declline="162" declcolumn="6"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" line="162" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.c" bodystart="258" bodyend="267" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" declline="162" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__group__system__config__cm55__functions__edge_1gad700761d3215537e5c660feb96345f40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -290,7 +290,7 @@
 <para>Enables invasive debug &amp; all trace and non-invasive enable for CM55</para>
 <para>Invalid value passed</para>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" line="163" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.c" bodystart="359" bodyend="389" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" declline="163" declcolumn="6"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" line="163" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.c" bodystart="359" bodyend="389" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" declline="163" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__group__system__config__cm55__functions__edge_1ga237ac03639063c3f32e14961fcc194c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -319,7 +319,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" line="166" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.c" bodystart="91" bodyend="126" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" declline="166" declcolumn="6"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" line="166" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.c" bodystart="91" bodyend="126" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" declline="166" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

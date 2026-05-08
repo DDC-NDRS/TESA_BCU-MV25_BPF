@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="409" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="409" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="409" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="409" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -75,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="147" column="30" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="147" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="147" column="30" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="147" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="37" column="1" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="37" bodyend="104"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="37" column="1" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="37" bodyend="104"/>
       </memberdef>
       <memberdef kind="function" id="s__start__pse84_8c_1ad2fd62b5edcc41fe0fd5acf169ee6275" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -116,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="106" column="1" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" declline="106" declcolumn="1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="106" column="1" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" declline="106" declcolumn="1"/>
       </memberdef>
       <memberdef kind="function" id="s__start__pse84_8c_1af594b16498a8a99ceceb8d4cee3de1c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -133,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="108" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="108" bodyend="111"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="108" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="108" bodyend="111"/>
       </memberdef>
       <memberdef kind="function" id="s__start__pse84_8c_1a69610f77f69ec14dda80d8090841122d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -149,7 +149,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="422" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="422" bodyend="485" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" declline="114" declcolumn="6"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="422" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="422" bodyend="485" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" declline="114" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="s__start__pse84_8c_1a486604c9de20430c6cc185db1317f9d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -165,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="115" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="115" bodyend="115"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="115" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="115" bodyend="115"/>
       </memberdef>
       <memberdef kind="function" id="s__start__pse84_8c_1a320ee7f85fe6778b55ff89874e1e48b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -181,7 +181,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="116" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="116" bodyend="135"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="116" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="116" bodyend="135"/>
       </memberdef>
       <memberdef kind="function" id="s__start__pse84_8c_1a35187c6a06833ca5daf7d29c46e8278b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -197,7 +197,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="137" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="137" bodyend="137"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="137" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="137" bodyend="137"/>
       </memberdef>
       <memberdef kind="function" id="s__start__pse84_8c_1ad79df2d600dae138d752a2115391fd0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -213,7 +213,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="138" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="138" bodyend="138"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="138" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="138" bodyend="138"/>
       </memberdef>
       <memberdef kind="function" id="s__start__pse84_8c_1a9599782770a0fed052aaba5ee626f822" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -229,7 +229,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="139" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="139" bodyend="139"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="139" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="139" bodyend="139"/>
       </memberdef>
       <memberdef kind="function" id="s__start__pse84_8c_1abd560fc3f62fecd7aab164c8719f9c22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -245,7 +245,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="140" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="140" bodyend="140"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="140" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="140" bodyend="140"/>
       </memberdef>
       <memberdef kind="function" id="s__start__pse84_8c_1acdd4be9a608e13c221ed191e31891eb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__WEAK void</type>
@@ -261,7 +261,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="141" column="13" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="141" bodyend="141"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="141" column="13" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="141" bodyend="141"/>
       </memberdef>
       <memberdef kind="function" id="s__start__pse84_8c_1a0b02998510d8468f7c081f4cb8a9619c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -277,7 +277,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="142" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="142" bodyend="142"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="142" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="142" bodyend="142"/>
       </memberdef>
       <memberdef kind="function" id="s__start__pse84_8c_1a03dff78e883d9e15ba25316155dc3cad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -293,7 +293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="143" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="143" bodyend="143"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="143" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="143" bodyend="143"/>
       </memberdef>
       <memberdef kind="function" id="s__start__pse84_8c_1a905ef08794da21e89753762830356fef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -309,7 +309,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="144" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="144" bodyend="144"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="144" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="144" bodyend="144"/>
       </memberdef>
       <memberdef kind="function" id="s__start__pse84_8c_1a15d36144194f869428ce1b8076c89acf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -325,7 +325,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="145" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="145" bodyend="145"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" line="145" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c" bodystart="145" bodyend="145"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -821,6 +821,6 @@ The device system-startup file. </para>
 <codeline lineno="489"><highlight class="normal">CY_MISRA_BLOCK_END(&apos;ARRAY_VS_SINGLETON&apos;)</highlight></codeline>
 <codeline lineno="490"><highlight class="normal">CY_MISRA_BLOCK_END(&apos;MISRA<sp/>C-2012<sp/>Rule<sp/>8.6&apos;)</highlight></codeline>
     </programlisting>
-    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c"/>
+    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/COMPONENT_CM33/COMPONENT_SECURE_DEVICE/s_start_pse84.c"/>
   </compounddef>
 </doxygen>

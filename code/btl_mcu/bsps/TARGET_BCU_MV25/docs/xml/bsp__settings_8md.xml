@@ -32,6 +32,6 @@
 <codeline><highlight class="normal">---</highlight></codeline>
 <codeline><highlight class="normal">©<sp/>Infineon<sp/>Technologies<sp/>AG,<sp/>2023-2025.</highlight></codeline>
     </programlisting>
-    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/bsp_settings.md"/>
+    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/bsp_settings.md"/>
   </compounddef>
 </doxygen>

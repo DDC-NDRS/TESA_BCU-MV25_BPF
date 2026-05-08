@@ -25,7 +25,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_srf_config.h" line="48" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_srf_config.h" bodystart="48" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_srf_config.h" line="48" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_srf_config.h" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__group__mtb__srf__config_1ga68ee7633d8162c1f31896810f563e206" prot="public" static="no">
         <name>MTB_SRF_MAX_ARG_OUT_SIZE</name>
@@ -37,7 +37,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_srf_config.h" line="51" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_srf_config.h" bodystart="51" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_srf_config.h" line="51" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_srf_config.h" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__group__mtb__srf__config_1ga840535b930f09b3d78ca7406454bc51a" prot="public" static="no">
         <name>MTB_SRF_SECURE_ARG_BUFFER_LEN</name>
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_srf_config.h" line="65" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_srf_config.h" bodystart="65" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_srf_config.h" line="65" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_srf_config.h" bodystart="65" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__group__mtb__srf__config_1ga589067eb1e3af68adab2b2caaf8435d5" prot="public" static="no">
         <name>MTB_SRF_POOL_SIZE</name>
@@ -71,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_srf_config.h" line="75" column="10" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_srf_config.h" bodystart="75" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_srf_config.h" line="75" column="10" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_srf_config.h" bodystart="75" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__group__mtb__srf__config_1ga3f76c11e98c959e0ccb9863e20268f66" prot="public" static="no">
         <name>MTB_SRF_IPC_SERVICE_TIMEOUT_US</name>
@@ -84,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_srf_config.h" line="85" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_srf_config.h" bodystart="85" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_srf_config.h" line="85" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_srf_config.h" bodystart="85" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__group__mtb__srf__config_1ga9bdc01184ef62328bad398d51241d796" prot="public" static="no">
         <name>MTB_SRF_MODULE_COUNT</name>
@@ -96,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_srf_config.h" line="89" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_srf_config.h" bodystart="89" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_srf_config.h" line="89" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_srf_config.h" bodystart="89" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__group__mtb__srf__config_1ga023ab19da755d6f9a588dfdd935c1b6f" prot="public" static="no">
         <name>MTB_SRF_MODULE_PDL</name>
@@ -108,7 +108,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_srf_config.h" line="92" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_srf_config.h" bodystart="92" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_srf_config.h" line="92" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_srf_config.h" bodystart="92" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__group__mtb__srf__config_1gab41e47ced9cd3a8ccf3064eb69298831" prot="public" static="no">
         <name>MTB_SRF_MODULE_USER</name>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_srf_config.h" line="94" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_srf_config.h" bodystart="94" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_srf_config.h" line="94" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_srf_config.h" bodystart="94" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -197,6 +197,6 @@
 <codeline lineno="101"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>defined(__cplusplus)<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_srf_config.h"/>
+    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_srf_config.h"/>
   </compounddef>
 </doxygen>

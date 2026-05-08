@@ -90,6 +90,7 @@ extern "C" {
 *******************************************************************************/
 void Cy_SysU55Enable(bool enable)
 {
+#if defined(CY_IP_MXU55)
     cy_rslt_t result;
     if(enable)
     {
@@ -119,6 +120,9 @@ void Cy_SysU55Enable(bool enable)
         Cy_SysClk_PeriGroupSlaveDeinit(CY_MMIO_MXU550_PERI_NR, CY_MMIO_MXU550_GROUP_NR, CY_MMIO_MXU550_SLAVE_NR);
     }
     CY_UNUSED_PARAMETER(result);
+#else
+    CY_UNUSED_PARAMETER(enable);
+#endif /* CY_IP_MXU55 */
 }
 #endif /* (CY_SYSTEM_CPU_M55 == 1UL) || defined(CY_DOXYGEN) */
 

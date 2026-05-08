@@ -4,13 +4,13 @@
  * Description:
  * Connectivity Wi-Fi configuration
  * This file was automatically generated and should not be modified.
- * Configurator Backend 3.70.0
- * device-db 4.34.0.9502
- * mtb-dsl-pse8xxgp 1.1.1.824
+ * Configurator Backend 3.80.0
+ * device-db 4.37.0.10260
+ * mtb-dsl-pse8xxgp 1.5.0.1072
  *
  *******************************************************************************
- * Copyright 2026 Cypress Semiconductor Corporation (an Infineon company) or
- * an affiliate of Cypress Semiconductor Corporation.
+ * Copyright 2026, Infineon Technologies AG, or an affiliate of Infineon
+ * Technologies AG. All rights reserved.
  * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,8 +38,8 @@ extern "C" {
 
 #define wifi_0_power_0_ENABLED 1U
 #define CYCFG_WIFI_HOST_WAKE_ENABLED (1u)
-#define CYCFG_WIFI_HOST_WAKE_GPIO WL_HOST_WAKE_HAL_PORT_PIN
-#define CYCFG_WIFI_HOST_WAKE_IRQ_EVENT WL_HOST_WAKE_HAL_IRQ
+#define CYCFG_WIFI_HOST_WAKE_GPIO CYBSP_WIFI_HOST_WAKE_HAL_PORT_PIN
+#define CYCFG_WIFI_HOST_WAKE_IRQ_EVENT CYBSP_WIFI_HOST_WAKE_HAL_IRQ
 
 #if defined(__cplusplus)
 }

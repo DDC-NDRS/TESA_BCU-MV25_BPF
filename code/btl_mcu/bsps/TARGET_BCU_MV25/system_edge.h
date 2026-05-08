@@ -179,6 +179,7 @@ void Cy_SysCM33Enable(uint32_t vectorTableOffset, uint32_t waitus);
 void Cy_SysCM33Reset(uint32_t waitus);
 #endif /* (CY_SYSTEM_CPU_M0P == 1UL) || defined(CY_DOXYGEN) */
 
+uint32_t cy_CbusRemapAddr(const void *addr) __attribute__((weak));
 /**
  *****************************************************************************
  ** \brief  CBUS address remap
@@ -189,7 +190,7 @@ void Cy_SysCM33Reset(uint32_t waitus);
  ** \retval remap address
  **
  *****************************************************************************/
-static inline uint32_t cy_CbusRemapAddr(const void *addr)
+inline uint32_t cy_CbusRemapAddr(const void *addr)
 {
   uint32_t remapAddr, offset;
 
@@ -227,6 +228,57 @@ static inline uint32_t cy_CbusRemapAddr(const void *addr)
   return remapAddr;
 }
 
+uint32_t cy_crypto_CbusRemapAddr(const void *addr) __attribute__((weak));
+/**
+ *****************************************************************************
+ ** \brief  CBUS crypto address remap
+ **  remap address for masters on CBUS
+ **
+ ** \param [in]  addr  pointer to be remap
+ **
+ ** \retval remap address
+ **
+ *****************************************************************************/
+inline uint32_t cy_crypto_CbusRemapAddr(const void *addr)
+{
+  uint32_t remapAddr, offset;
+
+  /* SRAM Address */
+  if (((uint32_t)addr >= CY_SRAM_BASE) &&
+      ((uint32_t)addr < (CY_SRAM_BASE + CY_SRAM_SIZE)))
+  {
+    offset = (uint32_t)addr - CY_SRAM_BASE;
+    remapAddr = CY_SRAM_CBUS_BASE + offset;
+  } /* SOCMEM Address */
+  else if (((uint32_t)addr >= CY_SOCMEM_RAM_BASE) &&
+      ((uint32_t)addr < (CY_SOCMEM_RAM_BASE + CY_SOCMEM_RAM_SIZE)))
+  {
+    offset = (uint32_t)addr - CY_SOCMEM_RAM_BASE;
+    remapAddr = CY_SOCMEM_RAM_CBUS_BASE + offset;
+  }
+  /* XIP is mapped with offset */
+  else if (((uint32_t)addr >= CY_XIP_PORT0_BASE) &&
+      ((uint32_t)addr < (CY_XIP_PORT1_BASE + CY_XIP_PORT1_SIZE)))
+  {
+    offset = (uint32_t)addr - CY_XIP_PORT0_BASE;
+    remapAddr =  CY_XIP_PORT0_CBUS_BASE + offset;
+  }
+  /* RRAM Address */
+  else if (((uint32_t)addr >= CY_RRAM_CBUS_BASE) &&
+      ((uint32_t)addr < (CY_RRAM_CBUS_BASE + CY_RRAM_SIZE)))
+  {
+    offset = (uint32_t)addr - CY_RRAM_CBUS_BASE;
+    remapAddr = CY_RRAM_BASE + offset;
+  }/* no remapping, addr not in range */
+  else
+  {
+    remapAddr = (uint32_t)addr;
+  }
+  return remapAddr;
+}
+
+
+uint32_t cy_AhbRemapAddr(const void *addr) __attribute__((weak));
 /**
  *****************************************************************************
  ** \brief  AHB address remap
@@ -237,7 +289,7 @@ static inline uint32_t cy_CbusRemapAddr(const void *addr)
  ** \retval remap address
  **
  *****************************************************************************/
-static inline uint32_t cy_AhbRemapAddr(const void *addr)
+inline uint32_t cy_AhbRemapAddr(const void *addr)
 {
   uint32_t remapAddr, offset;
 
@@ -276,6 +328,55 @@ static inline uint32_t cy_AhbRemapAddr(const void *addr)
   return remapAddr;
 }
 
+uint32_t cy_crypto_AhbRemapAddr(const void *addr) __attribute__((weak));
+/**
+ *****************************************************************************
+ ** \brief  AHB address remap for crypto
+ **  remap address for masters
+ **
+ ** \param [in]  addr  pointer to be remap
+ **
+ ** \retval remap address
+ **
+ *****************************************************************************/
+inline uint32_t cy_crypto_AhbRemapAddr(const void *addr)
+{
+  uint32_t remapAddr, offset;
+
+  /* SRAM Address */
+  if (((uint32_t)addr >= CY_SRAM_CBUS_BASE) &&
+      ((uint32_t)addr < (CY_SRAM_CBUS_BASE + CY_SRAM_SIZE)))
+  {
+    offset = (uint32_t)addr - CY_SRAM_CBUS_BASE;
+    remapAddr = CY_SRAM_BASE + offset;
+  }
+  /* SOCMEM Address */
+  else if (((uint32_t)addr >= CY_SOCMEM_RAM_CBUS_BASE) &&
+      ((uint32_t)addr < (CY_SOCMEM_RAM_CBUS_BASE + CY_SOCMEM_RAM_SIZE)))
+  {
+    offset = (uint32_t)addr - CY_SOCMEM_RAM_CBUS_BASE;
+    remapAddr = CY_SOCMEM_RAM_BASE + offset;
+  }
+  /* XIP is mapped with offset */
+  else if (((uint32_t)addr >= CY_XIP_PORT0_CBUS_BASE) &&
+      ((uint32_t)addr < (CY_XIP_PORT1_CBUS_BASE + CY_XIP_PORT1_SIZE)))
+  {
+    offset = (uint32_t)addr - CY_XIP_PORT0_CBUS_BASE;
+    remapAddr =  CY_XIP_PORT0_BASE + offset;
+  }
+  /* RRAM is mapped with offset */
+  else if (((uint32_t)addr >= CY_RRAM_BASE) &&
+      ((uint32_t)addr < (CY_RRAM_BASE + CY_RRAM_SIZE)))
+  {
+    offset = (uint32_t)addr - CY_RRAM_BASE;
+    remapAddr = CY_RRAM_CBUS_BASE + offset;
+  }/* no remapping, addr not in range */
+  else
+  {
+    remapAddr = (uint32_t)addr;
+  }
+  return remapAddr;
+}
 
 #if defined(CORE_NAME_CM55_0)
 /**
@@ -290,7 +391,18 @@ static inline uint32_t cy_AhbRemapAddr(const void *addr)
  *****************************************************************************/
 #define CY_CM55_DTCM_REMAP_BASE 0x48040000UL
 
-static inline uint32_t cy_DTCMRemapAddr(const void *addr)
+uint32_t cy_DTCMRemapAddr(const void *addr) __attribute__((weak));
+/**
+ *****************************************************************************
+ ** \brief  DTCM address remap
+ **  remap address for masters
+ **
+ ** \param [in]  addr  pointer to be remap
+ **
+ ** \retval remap address
+ **
+ *****************************************************************************/
+inline uint32_t cy_DTCMRemapAddr(const void *addr)
 {
   uint32_t remapAddr, offset;
 
@@ -318,7 +430,18 @@ static inline uint32_t cy_DTCMRemapAddr(const void *addr)
  ** \retval internal remap address
  **
  *****************************************************************************/
-static inline uint32_t cy_DTCMInternalRemapAddr(const void *addr)
+uint32_t cy_DTCMInternalRemapAddr(const void *addr) __attribute__((weak));
+/**
+ *****************************************************************************
+ ** \brief  DTCM Internal address remap
+ **  Internal address for CPU access
+ **
+ ** \param [in]  addr  pointer to be remap
+ **
+ ** \retval internal remap address
+ **
+ *****************************************************************************/
+inline uint32_t cy_DTCMInternalRemapAddr(const void *addr)
 {
   uint32_t remapAddr, offset;
 
@@ -348,9 +471,19 @@ static inline uint32_t cy_DTCMInternalRemapAddr(const void *addr)
  **
  *****************************************************************************/
 #if defined(CORE_NAME_CM33_0)
+#ifndef CY_REMAP_ADDRESS_CBUS_TO_SAHB
 #define CY_REMAP_ADDRESS_CBUS_TO_SAHB(addr)    ((void *)cy_AhbRemapAddr(addr))
+#endif
+#ifndef CY_REMAP_CRYPTO_ADDRESS_CBUS_TO_SAHB
+#define CY_REMAP_CRYPTO_ADDRESS_CBUS_TO_SAHB(addr)    ((void *)cy_crypto_AhbRemapAddr(addr))
+#endif
 #elif defined(CORE_NAME_CM55_0)
+#ifndef CY_REMAP_ADDRESS_CBUS_TO_SAHB
 #define CY_REMAP_ADDRESS_CBUS_TO_SAHB(addr)    ((void *)cy_DTCMRemapAddr(addr))
+#endif
+#ifndef CY_REMAP_CRYPTO_ADDRESS_CBUS_TO_SAHB
+#define CY_REMAP_CRYPTO_ADDRESS_CBUS_TO_SAHB(addr)    ((void *)cy_DTCMRemapAddr(addr))
+#endif
 #endif
 
 /**
@@ -364,9 +497,19 @@ static inline uint32_t cy_DTCMInternalRemapAddr(const void *addr)
  **
  *****************************************************************************/
 #if defined(CORE_NAME_CM33_0)
+#ifndef CY_REMAP_ADDRESS_SAHB_TO_CBUS
 #define CY_REMAP_ADDRESS_SAHB_TO_CBUS(addr)    ((void *)cy_CbusRemapAddr(addr))
+#endif
+#ifndef CY_REMAP_CRYPTO_ADDRESS_SAHB_TO_CBUS
+#define CY_REMAP_CRYPTO_ADDRESS_SAHB_TO_CBUS(addr)    ((void *)cy_crypto_CbusRemapAddr(addr))
+#endif
 #elif defined(CORE_NAME_CM55_0)
+#ifndef CY_REMAP_ADDRESS_SAHB_TO_CBUS
 #define CY_REMAP_ADDRESS_SAHB_TO_CBUS(addr)    ((void *)cy_DTCMInternalRemapAddr(addr))
+#endif
+#ifndef CY_REMAP_CRYPTO_ADDRESS_SAHB_TO_CBUS
+#define CY_REMAP_CRYPTO_ADDRESS_SAHB_TO_CBUS(addr)    ((void *)cy_DTCMInternalRemapAddr(addr))
+#endif
 #endif
 
 /** \} group_system_config_cm33_functions_edge */

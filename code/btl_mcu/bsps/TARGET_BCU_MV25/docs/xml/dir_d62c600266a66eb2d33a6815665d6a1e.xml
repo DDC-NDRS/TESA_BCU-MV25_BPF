@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
-  <compounddef id="dir_e15ba38f4c3c17333b9bd725c55582cc" kind="dir">
-    <compoundname>TARGET_KIT_PSE84_EVAL_EPC4</compoundname>
-    <innerdir refid="dir_ae9d82c31584c14b036db0ba97cbd030">bluetooth</innerdir>
-    <innerdir refid="dir_b5ca2d76f97e26211da858468544eba4">COMPONENT_CM33</innerdir>
-    <innerdir refid="dir_b16418114f4d4d5854ee736412cbe32d">COMPONENT_CM55</innerdir>
+  <compounddef id="dir_d62c600266a66eb2d33a6815665d6a1e" kind="dir">
+    <compoundname>TARGET_KIT_PSE84_EVAL_EPC2</compoundname>
+    <innerdir refid="dir_b142a1308d673267a76748aa0278b9ae">bluetooth</innerdir>
+    <innerdir refid="dir_deec1e376f8b01dc4855535696eb8422">COMPONENT_CM33</innerdir>
+    <innerdir refid="dir_8eaeef4c871aa4e6fbf4d1e1f3df7120">COMPONENT_CM55</innerdir>
     <innerfile refid="cybsp_8c">cybsp.c</innerfile>
     <innerfile refid="cybsp_8h">cybsp.h</innerfile>
     <innerfile refid="cybsp__doc_8h">cybsp_doc.h</innerfile>
@@ -23,6 +23,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/"/>
+    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/"/>
   </compounddef>
 </doxygen>

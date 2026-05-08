@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/startup_edge.h" line="32" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/startup_edge.h" bodystart="32" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/startup_edge.h" line="32" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/startup_edge.h" bodystart="32" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="startup__edge_8h_1a643c3ea4654de2811c559fafb4d8a39a" prot="public" static="no">
         <name>VECTORTABLE_SIZE</name>
@@ -38,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/startup_edge.h" line="34" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/startup_edge.h" bodystart="34" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/startup_edge.h" line="34" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/startup_edge.h" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="startup__edge_8h_1a8805e6a0cc4344f8b293ed2a82e8dc86" prot="public" static="no">
         <name>VECTORTABLE_ALIGN</name>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/startup_edge.h" line="39" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/startup_edge.h" bodystart="39" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/startup_edge.h" line="39" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/startup_edge.h" bodystart="39" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/startup_edge.h" line="93" column="20" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/startup_edge.h" declline="93" declcolumn="20"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/startup_edge.h" line="93" column="20" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/startup_edge.h" declline="93" declcolumn="20"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -153,6 +153,6 @@ Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you ma
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
 <codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>STARTUP_EDGE_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/startup_edge.h"/>
+    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/startup_edge.h"/>
   </compounddef>
 </doxygen>

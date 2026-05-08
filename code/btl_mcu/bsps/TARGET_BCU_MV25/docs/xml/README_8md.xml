@@ -7,11 +7,11 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline><highlight class="normal">#<sp/>KIT_PSE84_EVAL_EPC4<sp/>BSP</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>KIT_PSE84_EVAL_EPC2<sp/>BSP</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">##<sp/>Overview</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">The<sp/>PSOC™<sp/>Edge<sp/>E84<sp/>Evaluation<sp/>Kit<sp/>(KIT\_PSE84\_EVAL)<sp/>is<sp/>based<sp/>on<sp/>the<sp/>PSOC™<sp/>Edge<sp/>family<sp/>of<sp/>devices.<sp/>It<sp/>enables<sp/>the<sp/>evaluation<sp/>and<sp/>development<sp/>of<sp/>applications<sp/>for<sp/>the<sp/>PSOC™<sp/>Edge<sp/>E84<sp/>EPC4<sp/>MCU.</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>PSOC™<sp/>Edge<sp/>E84<sp/>Evaluation<sp/>Kit<sp/>(KIT\_PSE84\_EVAL)<sp/>is<sp/>based<sp/>on<sp/>the<sp/>PSOC™<sp/>Edge<sp/>family<sp/>of<sp/>devices.<sp/>It<sp/>enables<sp/>the<sp/>evaluation<sp/>and<sp/>development<sp/>of<sp/>applications<sp/>for<sp/>the<sp/>PSOC™<sp/>Edge<sp/>E84<sp/>EPC2<sp/>MCU.</highlight></codeline>
 <codeline></codeline>
 <codeline></codeline>
 <codeline></codeline>
@@ -19,14 +19,14 @@
 <codeline><highlight class="normal">To<sp/>use<sp/>code<sp/>from<sp/>the<sp/>BSP,<sp/>simply<sp/>include<sp/>a<sp/>reference<sp/>to<sp/>`cybsp.h`.</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">##<sp/>Features</highlight></codeline>
-<codeline><highlight class="normal">This<sp/>evaluation<sp/>kit<sp/>carries<sp/>a<sp/>PSOC™<sp/>E84<sp/>EPC4<sp/>MCU<sp/>(PSE846GPS2DBZC4A)<sp/>on<sp/>a<sp/>SODIMM<sp/>based<sp/>detachable<sp/>SOM<sp/>board<sp/>connected<sp/>to<sp/>the<sp/>base\-board.<sp/>The<sp/>MCU<sp/>SOM<sp/>also<sp/>has<sp/>128<sp/>Mb<sp/>QSPI<sp/>flash,<sp/>1<sp/>Gb<sp/>Octal<sp/>flash,<sp/>128<sp/>Mb<sp/>Octal<sp/>RAM,<sp/>PSOC™<sp/>4000T<sp/>as<sp/>CAPSENSE™<sp/>co\-processor<sp/>and<sp/>on\-board<sp/>AIROC™<sp/>Wi\-Fi<sp/>and<sp/>Bluetooth®<sp/>combo<sp/>(CYW55513IUBG).<sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">This<sp/>evaluation<sp/>kit<sp/>carries<sp/>a<sp/>PSOC™<sp/>E84<sp/>EPC2<sp/>MCU<sp/>(PSE846GPS2DBZC4A)<sp/>on<sp/>a<sp/>SODIMM<sp/>based<sp/>detachable<sp/>SOM<sp/>board<sp/>connected<sp/>to<sp/>the<sp/>base\-board.<sp/>The<sp/>MCU<sp/>SOM<sp/>also<sp/>has<sp/>128<sp/>Mb<sp/>QSPI<sp/>flash,<sp/>1<sp/>Gb<sp/>Octal<sp/>flash,<sp/>128<sp/>Mb<sp/>Octal<sp/>RAM,<sp/>PSOC™<sp/>4000T<sp/>as<sp/>CAPSENSE™<sp/>co\-processor<sp/>and<sp/>on\-board<sp/>AIROC™<sp/>Wi\-Fi<sp/>and<sp/>Bluetooth®<sp/>combo<sp/>(CYW55513IUBG).<sp/><sp/></highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">The<sp/>base\-board<sp/>has<sp/>M.2<sp/>interface<sp/>connectors<sp/>for<sp/>interfacing<sp/>external<sp/>radio<sp/>modules<sp/>based<sp/>on<sp/>AIROC™<sp/>Wi\-Fi<sp/>and<sp/>Bluetooth®<sp/>combos<sp/>and<sp/>external<sp/>memory<sp/>interfaces.<sp/>The<sp/>base\-board<sp/>features<sp/>an<sp/>on\-board<sp/>programmer/debugger(KitProg3\),<sp/>ETM/JTAG/SWD<sp/>debug<sp/>headers,<sp/>custom<sp/>display<sp/>capacitive<sp/>touch<sp/>panel<sp/>connector,<sp/>R\-Pi<sp/>compatible<sp/>MIPI\-DSI<sp/>and<sp/>MIPI\-DSI<sp/>custom<sp/>display,<sp/>Analog<sp/>and<sp/>PDM<sp/>microphones,<sp/>Headphone<sp/>connector,<sp/>Speaker,<sp/>USB<sp/>Host<sp/>Type\-A<sp/>and<sp/>USB<sp/>device<sp/>Type\-C<sp/>connectors,<sp/>RJ45<sp/>Ethernet<sp/>connector,<sp/>M.2<sp/>(B\-key)<sp/>memory<sp/>interface<sp/>and<sp/>M.2<sp/>(E\-key)<sp/>radio<sp/>interface,<sp/>Infineon’s<sp/>Shield2Go<sp/>interface,<sp/>Mikroelektronika&apos;s<sp/>mikroBUS<sp/>compatible<sp/>headers,<sp/>6\-Axis<sp/>IMU<sp/>sensor,<sp/>3\-axis<sp/>Magnetometer,<sp/>microSD<sp/>cardholder,<sp/>CAPSENSE™<sp/>buttons<sp/>and<sp/>slider,<sp/>user<sp/>LEDs<sp/>and<sp/>user<sp/>buttons.<sp/>The<sp/>MCU<sp/>power<sp/>domain<sp/>supports<sp/>following<sp/>operating<sp/>voltages<sp/>\-<sp/>2\.7<sp/>V,<sp/>3\.3<sp/>V,<sp/>4\.2<sp/>V<sp/>and<sp/>the<sp/>peripheral<sp/>power<sp/>domain<sp/>supports<sp/>operating<sp/>voltages<sp/>\-<sp/>1\.8<sp/>V<sp/>and<sp/>3\.3<sp/>V.</highlight></codeline>
 <codeline></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">##<sp/>BSP<sp/>Configuration</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">The<sp/>BSP<sp/>has<sp/>a<sp/>few<sp/>hooks<sp/>that<sp/>allow<sp/>its<sp/>behavior<sp/>to<sp/>be<sp/>configured.<sp/>Some<sp/>of<sp/>these<sp/>items<sp/>are<sp/>enabled<sp/>by<sp/>default<sp/>while<sp/>others<sp/>must<sp/>be<sp/>explicitly<sp/>enabled.<sp/>Items<sp/>enabled<sp/>by<sp/>default<sp/>are<sp/>specified<sp/>in<sp/>the<sp/>KIT_PSE84_EVAL_EPC4.mk<sp/>file.<sp/>The<sp/>items<sp/>that<sp/>are<sp/>enabled<sp/>can<sp/>be<sp/>changed<sp/>by<sp/>creating<sp/>a<sp/>custom<sp/>BSP<sp/>or<sp/>by<sp/>editing<sp/>the<sp/>application<sp/>makefile.</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>BSP<sp/>has<sp/>a<sp/>few<sp/>hooks<sp/>that<sp/>allow<sp/>its<sp/>behavior<sp/>to<sp/>be<sp/>configured.<sp/>Some<sp/>of<sp/>these<sp/>items<sp/>are<sp/>enabled<sp/>by<sp/>default<sp/>while<sp/>others<sp/>must<sp/>be<sp/>explicitly<sp/>enabled.<sp/>Items<sp/>enabled<sp/>by<sp/>default<sp/>are<sp/>specified<sp/>in<sp/>the<sp/>KIT_PSE84_EVAL_EPC2.mk<sp/>file.<sp/>The<sp/>items<sp/>that<sp/>are<sp/>enabled<sp/>can<sp/>be<sp/>changed<sp/>by<sp/>creating<sp/>a<sp/>custom<sp/>BSP<sp/>or<sp/>by<sp/>editing<sp/>the<sp/>application<sp/>makefile.</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">Components:</highlight></codeline>
 <codeline></codeline>
@@ -126,13 +126,13 @@
 <codeline></codeline>
 <codeline><highlight class="normal">##<sp/>API<sp/>Reference<sp/>Manual</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">The<sp/>KIT_PSE84_EVAL_EPC4<sp/>Board<sp/>Support<sp/>Package<sp/>provides<sp/>a<sp/>set<sp/>of<sp/>APIs<sp/>to<sp/>configure,<sp/>initialize<sp/>and<sp/>use<sp/>the<sp/>board<sp/>resources.</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>KIT_PSE84_EVAL_EPC2<sp/>Board<sp/>Support<sp/>Package<sp/>provides<sp/>a<sp/>set<sp/>of<sp/>APIs<sp/>to<sp/>configure,<sp/>initialize<sp/>and<sp/>use<sp/>the<sp/>board<sp/>resources.</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">See<sp/>the<sp/>[BSP<sp/>API<sp/>Reference<sp/>Manual][api]<sp/>for<sp/>the<sp/>complete<sp/>list<sp/>of<sp/>the<sp/>provided<sp/>interfaces.</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">##<sp/>More<sp/>information</highlight></codeline>
-<codeline><highlight class="normal">*<sp/>[KIT_PSE84_EVAL_EPC4<sp/>BSP<sp/>API<sp/>Reference<sp/>Manual][api]</highlight></codeline>
-<codeline><highlight class="normal">*<sp/>[KIT_PSE84_EVAL_EPC4<sp/>Documentation](https://www.infineon.com/product-information/kit_pse84_eval)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[KIT_PSE84_EVAL_EPC2<sp/>BSP<sp/>API<sp/>Reference<sp/>Manual][api]</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[KIT_PSE84_EVAL_EPC2<sp/>Documentation](https://www.infineon.com/product-information/kit_pse84_eval)</highlight></codeline>
 <codeline><highlight class="normal">*<sp/>[Infineon<sp/>Technologies<sp/>AG](https://www.infineon.com)</highlight></codeline>
 <codeline><highlight class="normal">*<sp/>[Infineon<sp/>GitHub](https://github.com/Infineon)</highlight></codeline>
 <codeline><highlight class="normal">*<sp/>[ModusToolbox™](https://www.infineon.com/modustoolbox)</highlight></codeline>
@@ -143,6 +143,6 @@
 <codeline><highlight class="normal">---</highlight></codeline>
 <codeline><highlight class="normal">©<sp/>Cypress<sp/>Semiconductor<sp/>Corporation<sp/>(an<sp/>Infineon<sp/>company)<sp/>or<sp/>an<sp/>affiliate<sp/>of<sp/>Cypress<sp/>Semiconductor<sp/>Corporation,<sp/>2019-2025.</highlight></codeline>
     </programlisting>
-    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/README.md"/>
+    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/README.md"/>
   </compounddef>
 </doxygen>

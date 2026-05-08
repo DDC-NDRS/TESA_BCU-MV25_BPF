@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp.c" line="64" column="13" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp.c" bodystart="64" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp.c" line="64" column="13" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp.c" bodystart="64" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="cybsp_8c_1a934d562d62bd0c02534e51b028f276f4" prot="public" static="no">
         <name>CYBSP_DISABLE_SRF_INIT</name>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp.c" line="69" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp.c" bodystart="69" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp.c" line="69" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp.c" bodystart="69" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -78,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp.c" line="276" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp.c" bodystart="276" bodyend="290"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp.c" line="276" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp.c" bodystart="276" bodyend="290"/>
       </memberdef>
       <memberdef kind="function" id="group__group__bsp__functions_1gab989986b285e127f78f61c29f6ccbbfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>cy_rslt_t</type>
@@ -99,7 +99,7 @@
         <inbodydescription>
 <para>defined(CYBSP_DISABLE_SRF_INIT)</para>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp.c" line="295" column="11" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp.c" bodystart="295" bodyend="398"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp.c" line="295" column="11" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp.c" bodystart="295" bodyend="398"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -520,6 +520,6 @@ SPDX-License-Identifier: Apache-2.0</para>
 <codeline lineno="441"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="442"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp.c"/>
+    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp.c"/>
   </compounddef>
 </doxygen>

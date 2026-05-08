@@ -431,6 +431,6 @@
 <codeline lineno="846"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="847"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp_doc.h"/>
+    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp_doc.h"/>
   </compounddef>
 </doxygen>

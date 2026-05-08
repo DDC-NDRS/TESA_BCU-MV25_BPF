@@ -5,14 +5,14 @@
  * Contains warnings and errors that occurred while generating code for the
  * design.
  * This file was automatically generated and should not be modified.
- * Configurator Backend 3.70.0
- * device-db 4.34.0.9502
+ * Configurator Backend 3.80.0
+ * device-db 4.37.0.10260
  * ifx-mcuboot-pse84 1.1.0.349
- * mtb-dsl-pse8xxgp 1.2.0.895
+ * mtb-dsl-pse8xxgp 1.5.0.1072
  *
  *******************************************************************************
- * Copyright 2026 Cypress Semiconductor Corporation (an Infineon company) or
- * an affiliate of Cypress Semiconductor Corporation.
+ * Copyright 2026, Infineon Technologies AG, or an affiliate of Infineon
+ * Technologies AG. All rights reserved.
  * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -36,21 +36,19 @@ extern "C" {
 #endif /* defined(__cplusplus) */
 
 #if defined(CY_SUPPORTS_DEVICE_VALIDATION)
-#if !defined(PSE846GPS4DBZC4A)
-#error "Unexpected MPN; expected DEVICE:=PSE846GPS4DBZC4A. There may be an inconsistency between the *.modus file and the makefile target configuration device sets."
-#endif /* !defined(PSE846GPS4DBZC4A) */
+#if !defined(PSE846GPS2DBZC4A)
+#error "Unexpected MPN; expected DEVICE:=PSE846GPS2DBZC4A. There may be an inconsistency between the *.modus file and the makefile target configuration device sets."
+#endif /* !defined(PSE846GPS2DBZC4A) */
 #endif /* defined(CY_SUPPORTS_DEVICE_VALIDATION) */
 
 #if defined(CY_SUPPORTS_COMPLETE_DEVICE_VALIDATION)
-#if !defined(PSE846GPS4DBZC4A)
-#error "Unexpected MPN; expected DEVICE:=PSE846GPS4DBZC4A, ADDITIONAL_DEVICES:=CYW55513IUBG. There may be an inconsistency between the *.modus file and the makefile target configuration device sets."
-#endif /* !defined(PSE846GPS4DBZC4A) */
+#if !defined(PSE846GPS2DBZC4A)
+#error "Unexpected MPN; expected DEVICE:=PSE846GPS2DBZC4A, ADDITIONAL_DEVICES:=CYW55513IUBG. There may be an inconsistency between the *.modus file and the makefile target configuration device sets."
+#endif /* !defined(PSE846GPS2DBZC4A) */
 #if !defined(CYW55513IUBG)
-#error "Unexpected MPN; expected DEVICE:=PSE846GPS4DBZC4A, ADDITIONAL_DEVICES:=CYW55513IUBG. There may be an inconsistency between the *.modus file and the makefile target configuration device sets."
+#error "Unexpected MPN; expected DEVICE:=PSE846GPS2DBZC4A, ADDITIONAL_DEVICES:=CYW55513IUBG. There may be an inconsistency between the *.modus file and the makefile target configuration device sets."
 #endif /* !defined(CYW55513IUBG) */
 #endif /* defined(CY_SUPPORTS_COMPLETE_DEVICE_VALIDATION) */
-
-#warning "(PSE846GPS4DBZC4A: P11[4] (CYBSP_WIFI_HOST_WAKE, CYBSP_ETH_TX_CTL)) Block 'P11[4] (CYBSP_WIFI_HOST_WAKE, CYBSP_ETH_TX_CTL)' does not satisfy constraint imposed by param 'Host Device Interrupt Pin' on 'Wi-Fi'. The pin must be configured to generate interrupts on rising or falling edge."
 
 #if defined(__cplusplus)
 }

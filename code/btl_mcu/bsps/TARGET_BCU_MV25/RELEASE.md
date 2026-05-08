@@ -1,11 +1,11 @@
-# KIT_PSE84_EVAL_EPC4 BSP Release Notes
-The PSOC™ Edge E84 Evaluation Kit (KIT\_PSE84\_EVAL) is based on the PSOC™ Edge family of devices. It enables the evaluation and development of applications for the PSOC™ Edge E84 EPC4 MCU.
+# KIT_PSE84_EVAL_EPC2 BSP Release Notes
+The PSOC™ Edge E84 Evaluation Kit (KIT\_PSE84\_EVAL) is based on the PSOC™ Edge family of devices. It enables the evaluation and development of applications for the PSOC™ Edge E84 EPC2 MCU.
 
 
 NOTE: BSPs are versioned by family. This means that version 1.2.0 of any BSP in a family (eg: XMC™ ) will have the same software maturity level. However, not all updates are necessarily applicable for each BSP in the family so not all version numbers will exist for each board. Additionally, new BSPs may not start at version 1.0.0. In the event of adding a common feature across all BSPs, the libraries are assigned the same version number. For example if BSP_A is at v1.3.0 and BSP_B is at v1.2.0, the event will trigger a version update to v1.4.0 for both BSP_A and BSP_B. This allows the common feature to be tracked in a consistent way.
 
 ### What's Included?
-The KIT_PSE84_EVAL_EPC4 library includes the following:
+The KIT_PSE84_EVAL_EPC2 library includes the following:
 * BSP specific makefile to configure the build process for the board
 * cybsp.c/h files to initialize the board and any system peripherals
 * cybsp_types.h file describing basic board setup
@@ -16,6 +16,8 @@ The KIT_PSE84_EVAL_EPC4 library includes the following:
 * API documentation
 
 ### What Changed?
+#### v1.3.0
+* Updated BSP for Modustoolbox 3.7
 #### v1.2.0
 * Documentation improvements
 #### v1.1.0
@@ -24,7 +26,7 @@ The KIT_PSE84_EVAL_EPC4 library includes the following:
 * Initial production release
 
 ### Supported Software and Tools
-This version of the KIT_PSE84_EVAL_EPC4 BSP was validated for compatibility with the following Software and Tools:
+This version of the KIT_PSE84_EVAL_EPC2 BSP was validated for compatibility with the following Software and Tools:
 
 | Software and Tools                        | Version |
 | :---                                      | :----:  |
@@ -37,13 +39,13 @@ This version of the KIT_PSE84_EVAL_EPC4 BSP was validated for compatibility with
 Minimum required ModusToolbox™ Software Environment: v3.6.0
 
 ### More information
-* [KIT_PSE84_EVAL_EPC4 BSP API Reference Manual][api]
-* [KIT_PSE84_EVAL_EPC4 Documentation](https://www.infineon.com/product-information/kit_pse84_eval)
+* [KIT_PSE84_EVAL_EPC2 BSP API Reference Manual][api]
+* [KIT_PSE84_EVAL_EPC2 Documentation](https://www.infineon.com/product-information/kit_pse84_eval)
 * [Infineon Technologies AG](https://www.infineon.com)
 * [Infineon GitHub](https://github.com/infineon)
 * [ModusToolbox™](https://www.infineon.com/modustoolbox)
 
-[api]: https://infineon.github.io/TARGET_KIT_PSE84_EVAL_EPC4/html/modules.html
+[api]: https://infineon.github.io/TARGET_KIT_PSE84_EVAL_EPC2/html/modules.html
 
 ---
 © Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2023.

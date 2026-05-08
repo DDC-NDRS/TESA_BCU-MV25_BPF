@@ -22,7 +22,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" line="177" column="10" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.c" bodystart="690" bodyend="694" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" declline="177" declcolumn="10"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" line="177" column="10" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.c" bodystart="690" bodyend="694" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" declline="177" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group__group__system__config__cm33__functions__edge_1ga8f3b905620b91664007b3ba7fe58c133" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" line="178" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.c" bodystart="711" bodyend="753" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" declline="178" declcolumn="6"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" line="178" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.c" bodystart="711" bodyend="753" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" declline="178" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__group__system__config__cm33__functions__edge_1gaa45b4961fc31a1b0bf59ff42aa59c1cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -94,7 +94,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" line="179" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.c" bodystart="773" bodyend="803" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" declline="179" declcolumn="6"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" line="179" column="6" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.c" bodystart="773" bodyend="803" declfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" declline="179" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__group__system__config__cm33__functions__edge_1gaa9fe7771438fdc28c0a4daaf8c0efd24" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint32_t</type>
@@ -131,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" line="192" column="24" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" bodystart="192" bodyend="228"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" line="192" column="24" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" bodystart="192" bodyend="228"/>
       </memberdef>
       <memberdef kind="function" id="group__group__system__config__cm33__functions__edge_1ga6004d48d31cfd458ce78d807803c2f5a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint32_t</type>
@@ -168,7 +168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" line="240" column="24" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/system_edge.h" bodystart="240" bodyend="277"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" line="240" column="24" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/system_edge.h" bodystart="240" bodyend="277"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

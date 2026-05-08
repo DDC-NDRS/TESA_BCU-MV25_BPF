@@ -1,8 +1,8 @@
-# KIT_PSE84_EVAL_EPC4 BSP
+# KIT_PSE84_EVAL_EPC2 BSP
 
 ## Overview
 
-The PSOC™ Edge E84 Evaluation Kit (KIT\_PSE84\_EVAL) is based on the PSOC™ Edge family of devices. It enables the evaluation and development of applications for the PSOC™ Edge E84 EPC4 MCU.
+The PSOC™ Edge E84 Evaluation Kit (KIT\_PSE84\_EVAL) is based on the PSOC™ Edge family of devices. It enables the evaluation and development of applications for the PSOC™ Edge E84 EPC2 MCU.
 
 
 
@@ -10,14 +10,14 @@ The PSOC™ Edge E84 Evaluation Kit (KIT\_PSE84\_EVAL) is based on the PSOC™ E
 To use code from the BSP, simply include a reference to `cybsp.h`.
 
 ## Features
-This evaluation kit carries a PSOC™ E84 EPC4 MCU (PSE846GPS2DBZC4A) on a SODIMM based detachable SOM board connected to the base\-board. The MCU SOM also has 128 Mb QSPI flash, 1 Gb Octal flash, 128 Mb Octal RAM, PSOC™ 4000T as CAPSENSE™ co\-processor and on\-board AIROC™ Wi\-Fi and Bluetooth® combo (CYW55513IUBG).
+This evaluation kit carries a PSOC™ E84 EPC2 MCU (PSE846GPS2DBZC4A) on a SODIMM based detachable SOM board connected to the base\-board. The MCU SOM also has 128 Mb QSPI flash, 1 Gb Octal flash, 128 Mb Octal RAM, PSOC™ 4000T as CAPSENSE™ co\-processor and on\-board AIROC™ Wi\-Fi and Bluetooth® combo (CYW55513IUBG).
 
 The base\-board has M.2 interface connectors for interfacing external radio modules based on AIROC™ Wi\-Fi and Bluetooth® combos and external memory interfaces. The base\-board features an on\-board programmer/debugger(KitProg3\), ETM/JTAG/SWD debug headers, custom display capacitive touch panel connector, R\-Pi compatible MIPI\-DSI and MIPI\-DSI custom display, Analog and PDM microphones, Headphone connector, Speaker, USB Host Type\-A and USB device Type\-C connectors, RJ45 Ethernet connector, M.2 (B\-key) memory interface and M.2 (E\-key) radio interface, Infineon’s Shield2Go interface, Mikroelektronika's mikroBUS compatible headers, 6\-Axis IMU sensor, 3\-axis Magnetometer, microSD cardholder, CAPSENSE™ buttons and slider, user LEDs and user buttons. The MCU power domain supports following operating voltages \- 2\.7 V, 3\.3 V, 4\.2 V and the peripheral power domain supports operating voltages \- 1\.8 V and 3\.3 V.
 
 
 ## BSP Configuration
 
-The BSP has a few hooks that allow its behavior to be configured. Some of these items are enabled by default while others must be explicitly enabled. Items enabled by default are specified in the KIT_PSE84_EVAL_EPC4.mk file. The items that are enabled can be changed by creating a custom BSP or by editing the application makefile.
+The BSP has a few hooks that allow its behavior to be configured. Some of these items are enabled by default while others must be explicitly enabled. Items enabled by default are specified in the KIT_PSE84_EVAL_EPC2.mk file. The items that are enabled can be changed by creating a custom BSP or by editing the application makefile.
 
 Components:
 
@@ -117,19 +117,19 @@ The distinction between secure and non-secure access is relatively simple, but u
 
 ## API Reference Manual
 
-The KIT_PSE84_EVAL_EPC4 Board Support Package provides a set of APIs to configure, initialize and use the board resources.
+The KIT_PSE84_EVAL_EPC2 Board Support Package provides a set of APIs to configure, initialize and use the board resources.
 
 See the [BSP API Reference Manual][api] for the complete list of the provided interfaces.
 
 ## More information
-* [KIT_PSE84_EVAL_EPC4 BSP API Reference Manual][api]
-* [KIT_PSE84_EVAL_EPC4 Documentation](https://www.infineon.com/product-information/kit_pse84_eval)
+* [KIT_PSE84_EVAL_EPC2 BSP API Reference Manual][api]
+* [KIT_PSE84_EVAL_EPC2 Documentation](https://www.infineon.com/product-information/kit_pse84_eval)
 * [Infineon Technologies AG](https://www.infineon.com)
 * [Infineon GitHub](https://github.com/infineon)
 * [ModusToolbox™](https://www.infineon.com/modustoolbox)
 
-[api]: https://infineon.github.io/TARGET_KIT_PSE84_EVAL_EPC4/html/modules.html
-[settings]: https://infineon.github.io/TARGET_KIT_PSE84_EVAL_EPC4/html/md_bsp_settings.html
+[api]: https://infineon.github.io/TARGET_KIT_PSE84_EVAL_EPC2/html/modules.html
+[settings]: https://infineon.github.io/TARGET_KIT_PSE84_EVAL_EPC2/html/md_bsp_settings.html
 
 ---
 © Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2025.

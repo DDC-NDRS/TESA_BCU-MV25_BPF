@@ -125,7 +125,7 @@ SECTIONS
        see https://answers.launchpad.net/gcc-arm-embedded/+question/697333  */
     empty_section : ALIGN(32)
     {
-	__nsc_end = .;
+    	__nsc_end = .;
     } > m33s_nvm_sel_S
 
     PROVIDE(__nsc_region_start = __nsc_start);

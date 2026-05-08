@@ -71,6 +71,6 @@ SPDX-License-Identifier: Apache-2.0</para>
 <codeline lineno="60"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/cybsp_hw_config.h"/>
+    <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/cybsp_hw_config.h"/>
   </compounddef>
 </doxygen>

@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_ipc_config.h" line="54" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_ipc_config.h" bodystart="54" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_ipc_config.h" line="54" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_ipc_config.h" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__group__mtb__ipc__config_1ga8ded834ac1aaa7426402c9cddabe892c" prot="public" static="no">
         <name>MTB_IPC_SEMA_NUM_SRF</name>
@@ -26,7 +26,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_ipc_config.h" line="57" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_ipc_config.h" bodystart="57" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_ipc_config.h" line="57" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_ipc_config.h" bodystart="57" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__group__mtb__ipc__config_1ga80224b80366c129818211ed90a0c0264" prot="public" static="no">
         <name>MTB_IPC_IRQ_SEMA_SRF_RELAY</name>
@@ -38,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_ipc_config.h" line="60" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_ipc_config.h" bodystart="60" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_ipc_config.h" line="60" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_ipc_config.h" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__group__mtb__ipc__config_1ga3dae82792fe0868c9b46279aae892a2c" prot="public" static="no">
         <name>MTB_IPC_IRQ_QUEUE_SRF_RELAY</name>
@@ -50,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_ipc_config.h" line="63" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_ipc_config.h" bodystart="63" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_ipc_config.h" line="63" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_ipc_config.h" bodystart="63" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__group__mtb__ipc__config_1gaa6b0ecdaff0eab188f49fd7dda10d550" prot="public" static="no">
         <name>MTB_IPC_IRQ_SEMA_SRF_CLIENT</name>
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_ipc_config.h" line="66" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_ipc_config.h" bodystart="66" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_ipc_config.h" line="66" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_ipc_config.h" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__group__mtb__ipc__config_1ga9dd101ef211f3501c17780f49d780a1a" prot="public" static="no">
         <name>MTB_IPC_IRQ_QUEUE_SRF_CLIENT</name>
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_ipc_config.h" line="69" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC4/mtb_ipc_config.h" bodystart="69" bodyend="-1"/>
+        <location file="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_ipc_config.h" line="69" column="9" bodyfile="output/bsps/TARGET_KIT_PSE84_EVAL_EPC2/mtb_ipc_config.h" bodystart="69" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
