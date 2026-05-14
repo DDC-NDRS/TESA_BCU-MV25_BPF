@@ -45,7 +45,7 @@ void init_cycfg_peripheral_clocks(void)
     Cy_SysClk_PeriPclkSetDivider((en_clk_dst_t)CYBSP_I2C_CONTROLLER_CLK_DIV_GRP_NUM, CY_SYSCLK_DIV_16_BIT, 0U, 7U);
     Cy_SysClk_PeriPclkEnableDivider((en_clk_dst_t)CYBSP_I2C_CONTROLLER_CLK_DIV_GRP_NUM, CY_SYSCLK_DIV_16_BIT, 0U);
     Cy_SysClk_PeriPclkDisableDivider((en_clk_dst_t)CYBSP_DEBUG_UART_CLK_DIV_GRP_NUM, CY_SYSCLK_DIV_16_BIT, 1U);
-    Cy_SysClk_PeriPclkSetDivider((en_clk_dst_t)CYBSP_DEBUG_UART_CLK_DIV_GRP_NUM, CY_SYSCLK_DIV_16_BIT, 1U, 0U);
+    Cy_SysClk_PeriPclkSetDivider((en_clk_dst_t)CYBSP_DEBUG_UART_CLK_DIV_GRP_NUM, CY_SYSCLK_DIV_16_BIT, 1U, 4U);
     Cy_SysClk_PeriPclkEnableDivider((en_clk_dst_t)CYBSP_DEBUG_UART_CLK_DIV_GRP_NUM, CY_SYSCLK_DIV_16_BIT, 1U);
     Cy_SysClk_PeriPclkDisableDivider((en_clk_dst_t)CYBSP_GENERAL_PURPOSE_TIMER_CLK_DIV_GRP_NUM, CY_SYSCLK_DIV_16_BIT, 2U);
     Cy_SysClk_PeriPclkSetDivider((en_clk_dst_t)CYBSP_GENERAL_PURPOSE_TIMER_CLK_DIV_GRP_NUM, CY_SYSCLK_DIV_16_BIT, 2U, 9999U);
@@ -66,7 +66,7 @@ void init_cycfg_peripheral_clocks(void)
     Cy_SysClk_PeriPclkSetDivider((en_clk_dst_t)PERI_0_GROUP_2_DIV_8_0_GRP_NUM, CY_SYSCLK_DIV_8_BIT, 0U, 0U);
     Cy_SysClk_PeriPclkEnableDivider((en_clk_dst_t)PERI_0_GROUP_2_DIV_8_0_GRP_NUM, CY_SYSCLK_DIV_8_BIT, 0U);
     Cy_SysClk_PeriPclkDisableDivider((en_clk_dst_t)PERI_0_GROUP_3_DIV_8_0_GRP_NUM, CY_SYSCLK_DIV_8_BIT, 0U);
-    Cy_SysClk_PeriPclkSetDivider((en_clk_dst_t)PERI_0_GROUP_3_DIV_8_0_GRP_NUM, CY_SYSCLK_DIV_8_BIT, 0U, 0U);
+    Cy_SysClk_PeriPclkSetDivider((en_clk_dst_t)PERI_0_GROUP_3_DIV_8_0_GRP_NUM, CY_SYSCLK_DIV_8_BIT, 0U, 1U);
     Cy_SysClk_PeriPclkEnableDivider((en_clk_dst_t)PERI_0_GROUP_3_DIV_8_0_GRP_NUM, CY_SYSCLK_DIV_8_BIT, 0U);
     Cy_SysClk_PeriPclkDisableDivider((en_clk_dst_t)PERI_0_GROUP_4_DIV_8_0_GRP_NUM, CY_SYSCLK_DIV_8_BIT, 0U);
     Cy_SysClk_PeriPclkSetDivider((en_clk_dst_t)PERI_0_GROUP_4_DIV_8_0_GRP_NUM, CY_SYSCLK_DIV_8_BIT, 0U, 0U);
@@ -75,7 +75,7 @@ void init_cycfg_peripheral_clocks(void)
     Cy_SysClk_PeriPclkSetFracDivider((en_clk_dst_t)CYBSP_TRACE_CLK_DIV_GRP_NUM, CY_SYSCLK_DIV_16_5_BIT, 0U, 0U, 0U);
     Cy_SysClk_PeriPclkEnableDivider((en_clk_dst_t)CYBSP_TRACE_CLK_DIV_GRP_NUM, CY_SYSCLK_DIV_16_5_BIT, 0U);
     Cy_SysClk_PeriPclkDisableDivider((en_clk_dst_t)PERI_0_GROUP_8_DIV_16_0_GRP_NUM, CY_SYSCLK_DIV_16_BIT, 0U);
-    Cy_SysClk_PeriPclkSetDivider((en_clk_dst_t)PERI_0_GROUP_8_DIV_16_0_GRP_NUM, CY_SYSCLK_DIV_16_BIT, 0U, 0U);
+    Cy_SysClk_PeriPclkSetDivider((en_clk_dst_t)PERI_0_GROUP_8_DIV_16_0_GRP_NUM, CY_SYSCLK_DIV_16_BIT, 0U, 4U);
     Cy_SysClk_PeriPclkEnableDivider((en_clk_dst_t)PERI_0_GROUP_8_DIV_16_0_GRP_NUM, CY_SYSCLK_DIV_16_BIT, 0U);
     Cy_SysClk_PeriPclkDisableDivider((en_clk_dst_t)CYBSP_I3C_CONTROLLER_CLK_DIV_GRP_NUM, CY_SYSCLK_DIV_8_BIT, 0U);
     Cy_SysClk_PeriPclkSetDivider((en_clk_dst_t)CYBSP_I3C_CONTROLLER_CLK_DIV_GRP_NUM, CY_SYSCLK_DIV_8_BIT, 0U, 7U);

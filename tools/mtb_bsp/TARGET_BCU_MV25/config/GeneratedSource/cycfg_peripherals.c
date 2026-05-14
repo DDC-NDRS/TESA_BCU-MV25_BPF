@@ -408,67 +408,6 @@ const cy_stc_i3c_config_t CYBSP_I3C_CONTROLLER_config =
     .busAvailTime = 0U,
     .busIdleTime = 0U,
 };
-const cy_stc_scb_uart_config_t UART_LS_config =
-{
-    .uartMode = CY_SCB_UART_STANDARD,
-    .enableMultiProcessorMode = false,
-    .smartCardRetryOnNack = false,
-    .irdaInvertRx = false,
-    .irdaEnableLowPowerReceiver = false,
-    .oversample = 16,
-    .enableMsbFirst = false,
-    .dataWidth = 8UL,
-    .parity = CY_SCB_UART_PARITY_NONE,
-    .stopBits = CY_SCB_UART_STOP_BITS_1,
-    .enableInputFilter = false,
-    .breakWidth = 11UL,
-    .dropOnFrameError = false,
-    .dropOnParityError = false,
-    .breaklevel = false,
-    .receiverAddress = 0x0UL,
-    .receiverAddressMask = 0x0UL,
-    .acceptAddrInFifo = false,
-    .enableCts = false,
-    .ctsPolarity = CY_SCB_UART_ACTIVE_LOW,
-    .rtsRxFifoLevel = 0UL,
-    .rtsPolarity = CY_SCB_UART_ACTIVE_LOW,
-    .rxFifoTriggerLevel = 63UL,
-    .rxFifoIntEnableMask = 0UL,
-    .txFifoTriggerLevel = 63UL,
-    .txFifoIntEnableMask = 0UL,
-};
-
-#if defined (COMPONENT_MTB_HAL)
-const mtb_hal_peri_div_t UART_LS_clock_ref =
-{
-    .clk_dst = (en_clk_dst_t)peri_0_group_8_div_16_0_GRP_NUM,
-    .div_type = peri_0_group_8_div_16_0_HW,
-    .div_num = peri_0_group_8_div_16_0_NUM,
-};
-const mtb_hal_clock_t UART_LS_hal_clock =
-{
-    .clock_ref = &UART_LS_clock_ref,
-    .interface = &mtb_hal_clock_peri_interface,
-};
-#endif /* defined (COMPONENT_MTB_HAL) */
-
-#if defined (COMPONENT_MTB_HAL) && (MTB_HAL_DRIVER_AVAILABLE_UART)
-const mtb_hal_uart_configurator_t UART_LS_hal_config =
-{
-    .base = UART_LS_HW,
-    .clock = &UART_LS_hal_clock,
-    .tx_pin = 2,
-#if defined (COMPONENT_MW_ASYNC_TRANSFER)
-    .rts_pin = 0xFF,
-#endif /* defined (COMPONENT_MW_ASYNC_TRANSFER) */
-    .tx_port = 9,
-#if defined (COMPONENT_MW_ASYNC_TRANSFER)
-    .rts_port = 0xFF,
-    .rts_enable = 0UL,
-#endif /* defined (COMPONENT_MW_ASYNC_TRANSFER) */
-};
-#endif /* defined (COMPONENT_MTB_HAL) && (MTB_HAL_DRIVER_AVAILABLE_UART) */
-
 const cy_stc_scb_uart_config_t CYBSP_DEBUG_UART_config =
 {
     .uartMode = CY_SCB_UART_STANDARD,
@@ -476,7 +415,7 @@ const cy_stc_scb_uart_config_t CYBSP_DEBUG_UART_config =
     .smartCardRetryOnNack = false,
     .irdaInvertRx = false,
     .irdaEnableLowPowerReceiver = false,
-    .oversample = 16,
+    .oversample = 8,
     .enableMsbFirst = false,
     .dataWidth = 8UL,
     .parity = CY_SCB_UART_PARITY_NONE,
@@ -502,9 +441,9 @@ const cy_stc_scb_uart_config_t CYBSP_DEBUG_UART_config =
 #if defined (COMPONENT_MTB_HAL)
 const mtb_hal_peri_div_t CYBSP_DEBUG_UART_clock_ref =
 {
-    .clk_dst = (en_clk_dst_t)CYBSP_DEBUG_UART_CLK_DIV_GRP_NUM,
-    .div_type = CYBSP_DEBUG_UART_CLK_DIV_HW,
-    .div_num = CYBSP_DEBUG_UART_CLK_DIV_NUM,
+    .clk_dst = (en_clk_dst_t)peri_0_group_8_div_16_0_GRP_NUM,
+    .div_type = peri_0_group_8_div_16_0_HW,
+    .div_num = peri_0_group_8_div_16_0_NUM,
 };
 const mtb_hal_clock_t CYBSP_DEBUG_UART_hal_clock =
 {
@@ -518,6 +457,67 @@ const mtb_hal_uart_configurator_t CYBSP_DEBUG_UART_hal_config =
 {
     .base = CYBSP_DEBUG_UART_HW,
     .clock = &CYBSP_DEBUG_UART_hal_clock,
+    .tx_pin = 2,
+#if defined (COMPONENT_MW_ASYNC_TRANSFER)
+    .rts_pin = 0xFF,
+#endif /* defined (COMPONENT_MW_ASYNC_TRANSFER) */
+    .tx_port = 9,
+#if defined (COMPONENT_MW_ASYNC_TRANSFER)
+    .rts_port = 0xFF,
+    .rts_enable = 0UL,
+#endif /* defined (COMPONENT_MW_ASYNC_TRANSFER) */
+};
+#endif /* defined (COMPONENT_MTB_HAL) && (MTB_HAL_DRIVER_AVAILABLE_UART) */
+
+const cy_stc_scb_uart_config_t UART_HS_config =
+{
+    .uartMode = CY_SCB_UART_STANDARD,
+    .enableMultiProcessorMode = false,
+    .smartCardRetryOnNack = false,
+    .irdaInvertRx = false,
+    .irdaEnableLowPowerReceiver = false,
+    .oversample = 8,
+    .enableMsbFirst = false,
+    .dataWidth = 8UL,
+    .parity = CY_SCB_UART_PARITY_NONE,
+    .stopBits = CY_SCB_UART_STOP_BITS_1,
+    .enableInputFilter = false,
+    .breakWidth = 11UL,
+    .dropOnFrameError = false,
+    .dropOnParityError = false,
+    .breaklevel = false,
+    .receiverAddress = 0x0UL,
+    .receiverAddressMask = 0x0UL,
+    .acceptAddrInFifo = false,
+    .enableCts = false,
+    .ctsPolarity = CY_SCB_UART_ACTIVE_LOW,
+    .rtsRxFifoLevel = 0UL,
+    .rtsPolarity = CY_SCB_UART_ACTIVE_LOW,
+    .rxFifoTriggerLevel = 63UL,
+    .rxFifoIntEnableMask = 0UL,
+    .txFifoTriggerLevel = 63UL,
+    .txFifoIntEnableMask = 0UL,
+};
+
+#if defined (COMPONENT_MTB_HAL)
+const mtb_hal_peri_div_t UART_HS_clock_ref =
+{
+    .clk_dst = (en_clk_dst_t)CYBSP_DEBUG_UART_CLK_DIV_GRP_NUM,
+    .div_type = CYBSP_DEBUG_UART_CLK_DIV_HW,
+    .div_num = CYBSP_DEBUG_UART_CLK_DIV_NUM,
+};
+const mtb_hal_clock_t UART_HS_hal_clock =
+{
+    .clock_ref = &UART_HS_clock_ref,
+    .interface = &mtb_hal_clock_peri_interface,
+};
+#endif /* defined (COMPONENT_MTB_HAL) */
+
+#if defined (COMPONENT_MTB_HAL) && (MTB_HAL_DRIVER_AVAILABLE_UART)
+const mtb_hal_uart_configurator_t UART_HS_hal_config =
+{
+    .base = UART_HS_HW,
+    .clock = &UART_HS_hal_clock,
     .tx_pin = 7,
 #if defined (COMPONENT_MW_ASYNC_TRANSFER)
     .rts_pin = 0xFF,
@@ -1260,7 +1260,7 @@ const cy_stc_smif_config_t SMIF1_HYPERRAM_config =
     .mode = (uint32_t)CY_SMIF_NORMAL,
     .deselectDelay = SMIF1_HYPERRAM_DESELECT_DELAY,
     .blockEvent = (uint32_t)CY_SMIF_BUS_ERROR,
-    .inputFrequencyMHz = 320,
+    .inputFrequencyMHz = 160,
     .enable_internal_dll = false,
     .dll_divider_value = CY_SMIF_DLL_DIVIDE_BY_2,
     .rx_capture_mode = CY_SMIF_SEL_NORMAL_SPI,

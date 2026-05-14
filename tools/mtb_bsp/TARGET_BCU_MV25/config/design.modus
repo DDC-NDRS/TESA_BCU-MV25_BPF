@@ -40,7 +40,7 @@
                 </Block>
                 <Block location="scb[10]">
                     <Aliases>
-                        <Alias value="BSP_SPI_CONTROLLER"/>
+                        <Alias value="CYBSP_SPI_CONTROLLER"/>
                     </Aliases>
                 </Block>
                 <Block location="sdhc[1]">
@@ -6712,7 +6712,7 @@
                         </Aliases>
                     </Block>
                     <Parameters>
-                        <Param id="intDivider" value="1"/>
+                        <Param id="intDivider" value="5"/>
                         <Param id="startOnReset" value="true"/>
                     </Parameters>
                 </Personality>
@@ -6784,7 +6784,7 @@
                 <Personality template="pclk_v2" version="1.1" instance="WHv4xLtZyOA">
                     <Block location="peri[0].group[3].div_8[0]" locked="true"/>
                     <Parameters>
-                        <Param id="intDivider" value="1"/>
+                        <Param id="intDivider" value="2"/>
                         <Param id="startOnReset" value="true"/>
                     </Parameters>
                 </Personality>
@@ -6810,7 +6810,7 @@
                 <Personality template="pclk_v2" version="1.1" instance="Gn02QSI6VQc">
                     <Block location="peri[0].group[8].div_16[0]" locked="true"/>
                     <Parameters>
-                        <Param id="intDivider" value="1"/>
+                        <Param id="intDivider" value="5"/>
                         <Param id="startOnReset" value="true"/>
                     </Parameters>
                 </Personality>
@@ -6868,6 +6868,7 @@
                 <Personality template="uart" version="3.0" instance="1rFZn4Y3dgA">
                     <Block location="scb[1]" locked="true">
                         <Aliases>
+                            <Alias value="CYBSP_DEBUG_UART"/>
                             <Alias value="UART_LS"/>
                         </Aliases>
                     </Block>
@@ -6908,7 +6909,7 @@
                         <Param id="MpRxAddress" value="0"/>
                         <Param id="MpRxAddressMask" value="255"/>
                         <Param id="MultiProc" value="false"/>
-                        <Param id="Oversample" value="16"/>
+                        <Param id="Oversample" value="8"/>
                         <Param id="ParityType" value="CY_SCB_UART_PARITY_NONE"/>
                         <Param id="RtsPolarity" value="CY_SCB_UART_ACTIVE_LOW"/>
                         <Param id="RtsTriggerLevel" value="63"/>
@@ -6922,13 +6923,12 @@
                 <Personality template="uart" version="3.0" instance="TFNlT-F3wpU">
                     <Block location="scb[2]" locked="true">
                         <Aliases>
-                            <Alias value="CYBSP_DEBUG_UART"/>
-                            <Alias value="DEBUG_UART_HS"/>
+                            <Alias value="UART_HS"/>
                         </Aliases>
                     </Block>
                     <Parameters>
                         <Param id="ApiMode" value="HIGH_LEVEL"/>
-                        <Param id="BaudRate" value="4000000"/>
+                        <Param id="BaudRate" value="2000000"/>
                         <Param id="BitsOrder" value="CY_SCB_UART_LSB_FIRST"/>
                         <Param id="BreakLevel" value="0"/>
                         <Param id="BreakSignalBits" value="11"/>
@@ -6963,7 +6963,7 @@
                         <Param id="MpRxAddress" value="0"/>
                         <Param id="MpRxAddressMask" value="255"/>
                         <Param id="MultiProc" value="false"/>
-                        <Param id="Oversample" value="16"/>
+                        <Param id="Oversample" value="8"/>
                         <Param id="ParityType" value="CY_SCB_UART_PARITY_NONE"/>
                         <Param id="RtsPolarity" value="CY_SCB_UART_ACTIVE_LOW"/>
                         <Param id="RtsTriggerLevel" value="63"/>
@@ -7404,6 +7404,14 @@
                         <Param id="sourceClockNumber" value="0"/>
                     </Parameters>
                 </Personality>
+                <Personality template="hfclk_v2" version="1.0" instance="_5JmT3VRW1c">
+                    <Block location="srss[0].clock[0].hfclk[2]" locked="true"/>
+                    <Parameters>
+                        <Param id="ClkHfCsv" value="false"/>
+                        <Param id="divider" value="2"/>
+                        <Param id="sourceClockNumber" value="0"/>
+                    </Parameters>
+                </Personality>
                 <Personality template="hfclk_v2" version="1.0" instance="IH9boxY04UM">
                     <Block location="srss[0].clock[0].hfclk[3]" locked="true"/>
                     <Parameters>
@@ -7416,7 +7424,7 @@
                     <Block location="srss[0].clock[0].hfclk[4]" locked="true"/>
                     <Parameters>
                         <Param id="ClkHfCsv" value="false"/>
-                        <Param id="divider" value="1"/>
+                        <Param id="divider" value="2"/>
                         <Param id="sourceClockNumber" value="0"/>
                     </Parameters>
                 </Personality>
@@ -7432,8 +7440,8 @@
                     <Block location="srss[0].clock[0].hfclk[6]" locked="true"/>
                     <Parameters>
                         <Param id="ClkHfCsv" value="false"/>
-                        <Param id="divider" value="2"/>
-                        <Param id="sourceClockNumber" value="0"/>
+                        <Param id="divider" value="1"/>
+                        <Param id="sourceClockNumber" value="1"/>
                     </Parameters>
                 </Personality>
                 <Personality template="hfclk_v2" version="1.0" instance="oZ8lqZyblSI">
@@ -7441,7 +7449,7 @@
                     <Parameters>
                         <Param id="ClkHfCsv" value="false"/>
                         <Param id="divider" value="4"/>
-                        <Param id="sourceClockNumber" value="0"/>
+                        <Param id="sourceClockNumber" value="1"/>
                     </Parameters>
                 </Personality>
                 <Personality template="hfclk_v2" version="1.0" instance="gyadgBkRKjc">
@@ -7456,7 +7464,7 @@
                     <Block location="srss[0].clock[0].hfclk[11]" locked="true"/>
                     <Parameters>
                         <Param id="ClkHfCsv" value="false"/>
-                        <Param id="divider" value="8"/>
+                        <Param id="divider" value="4"/>
                         <Param id="sourceClockNumber" value="0"/>
                     </Parameters>
                 </Personality>
@@ -7496,7 +7504,7 @@
                 <Personality template="pathmux" version="3.0" instance="X-ZUHIcDn5E">
                     <Block location="srss[0].clock[0].pathmux[2]" locked="true"/>
                     <Parameters>
-                        <Param id="sourceClock" value="iho"/>
+                        <Param id="sourceClock" value="eco"/>
                     </Parameters>
                 </Personality>
                 <Personality template="pathmux" version="3.0" instance="I5nqg21Rclw">
@@ -7508,7 +7516,7 @@
                 <Personality template="pathmux" version="3.0" instance="DuegbJu3hls">
                     <Block location="srss[0].clock[0].pathmux[4]" locked="true"/>
                     <Parameters>
-                        <Param id="sourceClock" value="ext"/>
+                        <Param id="sourceClock" value="iho"/>
                     </Parameters>
                 </Personality>
                 <Personality template="pathmux" version="3.0" instance="_P3lRUDkQl4">
@@ -7538,7 +7546,7 @@
                     <Block location="srss[0].clock[0].pll500m[0]" locked="true"/>
                     <Parameters>
                         <Param id="configuration" value="auto"/>
-                        <Param id="desiredFrequency" value="240.000"/>
+                        <Param id="desiredFrequency" value="300.000"/>
                     </Parameters>
                 </Personality>
                 <Personality template="timerclk" version="3.0" instance="OPPU-xn3eqE">

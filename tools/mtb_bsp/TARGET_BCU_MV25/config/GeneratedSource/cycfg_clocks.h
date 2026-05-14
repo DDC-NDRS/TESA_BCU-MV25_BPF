@@ -73,6 +73,8 @@ extern "C" {
 #define CY_CFG_SYSCLK_CLKHF0 0UL
 #define srss_0_clock_0_hfclk_1_ENABLED 1U
 #define CY_CFG_SYSCLK_CLKHF1 1UL
+#define srss_0_clock_0_hfclk_2_ENABLED 1U
+#define CY_CFG_SYSCLK_CLKHF2 2UL
 #define srss_0_clock_0_hfclk_3_ENABLED 1U
 #define CY_CFG_SYSCLK_CLKHF3 3UL
 #define srss_0_clock_0_hfclk_4_ENABLED 1U
@@ -93,6 +95,7 @@ extern "C" {
 extern const cy_stc_rtc_config_t CYBSP_RTC_config;
 extern const cycfg_clkhf_config_t cycfg_hf0Config;
 extern const cycfg_clkhf_config_t cycfg_hf1Config;
+extern const cycfg_clkhf_config_t cycfg_hf2Config;
 extern const cycfg_clkhf_config_t cycfg_hf3Config;
 extern const cycfg_clkhf_config_t cycfg_hf4Config;
 extern const cycfg_clkhf_config_t cycfg_hf5Config;
