@@ -56,7 +56,7 @@
                 "mtb-dsl-pse8xxgp": "release-v1.5.0",
                 "mtb-ipc": "release-v1.2.0",
                 "mtb-srf": "release-v1.1.1",
-                "se-rt-services-utils": "release-v1.2.0"
+                "se-rt-services-utils": "release-v1.4.0"
             },
             "flow_version": "2.0",
             "min_tools": "3.6.0",

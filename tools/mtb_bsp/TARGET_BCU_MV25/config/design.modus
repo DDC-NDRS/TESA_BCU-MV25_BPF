@@ -3,6 +3,17 @@
     <Devices>
         <Device mpn="PSE846GPS2DBZC4A">
             <BlockConfig>
+                <Block location="ioss[0].port[18].pin[0]">
+                    <Aliases>
+                        <Alias value="CYBSP_WCO_OUT"/>
+                    </Aliases>
+                </Block>
+                <Block location="ioss[0].port[18].pin[1]">
+                    <Aliases>
+                        <Alias value="CYBSP_WCO_IN"/>
+                        <Alias value="RTC_CLK32"/>
+                    </Aliases>
+                </Block>
                 <Block location="m33syscpuss[0].dw0[0].chan[1]">
                     <Aliases>
                         <Alias value="CYBSP_DMA_TX_SPI_CONTROLLER"/>
@@ -5286,7 +5297,7 @@
                         <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
                         <Param id="extended_drive_sel" value="false"/>
                         <Param id="inFlash" value="true"/>
-                        <Param id="initialState" value="1"/>
+                        <Param id="initialState" value="0"/>
                         <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
                         <Param id="nonSec" value="1"/>
                         <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
@@ -6078,33 +6089,6 @@
                         <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
                         <Param id="nonSec" value="1"/>
                         <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                    </Parameters>
-                </Personality>
-                <Personality template="pin" version="3.0" instance="ECQVbypk2L8">
-                    <Block location="ioss[0].port[18].pin[0]" locked="true">
-                        <Aliases>
-                            <Alias value="CYBSP_WCO_OUT"/>
-                        </Aliases>
-                    </Block>
-                    <Parameters>
-                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
-                        <Param id="inFlash" value="true"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="nonSec" value="1"/>
-                    </Parameters>
-                </Personality>
-                <Personality template="pin" version="3.0" instance="AP03uvWLw3E">
-                    <Block location="ioss[0].port[18].pin[1]" locked="true">
-                        <Aliases>
-                            <Alias value="CYBSP_WCO_IN"/>
-                            <Alias value="RTC_CLK32"/>
-                        </Aliases>
-                    </Block>
-                    <Parameters>
-                        <Param id="DriveModes" value="CY_GPIO_DM_HIGHZ"/>
-                        <Param id="inFlash" value="true"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="nonSec" value="1"/>
                     </Parameters>
                 </Personality>
                 <Personality template="pin" version="3.0" instance="3cq45SmNLGo">
@@ -7362,7 +7346,7 @@
                 <Personality template="bakclk" version="3.0" instance="BEdPR4F59xg">
                     <Block location="srss[0].clock[0].bakclk[0]" locked="true"/>
                     <Parameters>
-                        <Param id="sourceClock" value="wco"/>
+                        <Param id="sourceClock" value="pilo"/>
                     </Parameters>
                 </Personality>
                 <Personality template="eco" version="4.0" instance="UkGtniiUYyI">
@@ -7486,7 +7470,7 @@
                     <Block location="srss[0].clock[0].lfclk[0]" locked="true"/>
                     <Parameters>
                         <Param id="ClkLfCsv" value="false"/>
-                        <Param id="sourceClock" value="wco"/>
+                        <Param id="sourceClock" value="pilo"/>
                     </Parameters>
                 </Personality>
                 <Personality template="pathmux" version="3.0" instance="02SXcT-qcc4">
@@ -7551,14 +7535,6 @@
                 </Personality>
                 <Personality template="timerclk" version="3.0" instance="OPPU-xn3eqE">
                     <Block location="srss[0].clock[0].timerclk[0]" locked="true"/>
-                </Personality>
-                <Personality template="wco" version="3.0" instance="t7_qEhJyU1M">
-                    <Block location="srss[0].clock[0].wco[0]" locked="true"/>
-                    <Parameters>
-                        <Param id="accuracyPpm" value="150"/>
-                        <Param id="clockPort" value="CY_SYSCLK_WCO_BYPASSED"/>
-                        <Param id="extOscillator" value="WCO"/>
-                    </Parameters>
                 </Personality>
                 <Personality template="mcwdt" version="3.0" instance="mvym-rkCo3g">
                     <Block location="srss[0].mcwdt[0]" locked="true">
@@ -8659,14 +8635,6 @@
                 <Net>
                     <Port name="ioss[0].port[17].pin[6].digital_inout[0]"/>
                     <Port name="scb[11].spi_select0[0]"/>
-                </Net>
-                <Net>
-                    <Port name="ioss[0].port[18].pin[0].analog[0]"/>
-                    <Port name="srss[0].clock[0].wco[0].wco_out[0]"/>
-                </Net>
-                <Net>
-                    <Port name="ioss[0].port[18].pin[1].analog[0]"/>
-                    <Port name="srss[0].clock[0].wco[0].wco_in[0]"/>
                 </Net>
                 <Net>
                     <Port name="ioss[0].port[19].pin[0].analog[0]"/>

@@ -56,12 +56,6 @@
 #define CY_CFG_SYSCLK_EXTCLK_GPIO_PIN 4
 #define CY_CFG_SYSCLK_EXTCLK_GPIO_HSIOM P7_4_SRSS_EXT_CLK
 #define CY_CFG_SYSCLK_IHO_ENABLED 1
-#define CY_CFG_SYSCLK_WCO_ENABLED 1
-#define CY_CFG_SYSCLK_WCO_IN_PRT GPIO_PRT18
-#define CY_CFG_SYSCLK_WCO_IN_PIN 1U
-#define CY_CFG_SYSCLK_WCO_OUT_PRT GPIO_PRT18
-#define CY_CFG_SYSCLK_WCO_OUT_PIN 0U
-#define CY_CFG_SYSCLK_WCO_BYPASS CY_SYSCLK_WCO_BYPASSED
 #define CY_CFG_SYSCLK_PILO_ENABLED 1
 #define CY_CFG_SYSCLK_CLKLF_ENABLED 1
 #define CY_CFG_SYSCLK_CLKPATH0_SOURCE CY_SYSCLK_CLKPATH_IN_EXT
@@ -71,7 +65,7 @@
 #define CY_CFG_SYSCLK_CLKPATH4_SOURCE CY_SYSCLK_CLKPATH_IN_IHO
 #define CY_CFG_SYSCLK_CLKPATH5_SOURCE CY_SYSCLK_CLKPATH_IN_IHO
 #define CY_CFG_SYSCLK_CLKBAK_ENABLED 1
-#define CY_CFG_SYSCLK_CLKBAK_SOURCE CY_SYSCLK_BAK_IN_WCO
+#define CY_CFG_SYSCLK_CLKBAK_SOURCE CY_SYSCLK_BAK_IN_PILO
 #define CY_CFG_SYSCLK_DPLL_LP0_ENABLED 1
 #define CY_CFG_SYSCLK_DPLL_LP0_FEEDBACK_DIV 40
 #define CY_CFG_SYSCLK_DPLL_LP0_REFERENCE_DIV 3
@@ -348,7 +342,6 @@ __WEAK void __NO_RETURN cycfg_ClockStartupError(uint32_t error);
 __STATIC_INLINE void Cy_SysClk_EcoInit(void);
 __STATIC_INLINE void Cy_SysClk_ExtClkInit(void);
 __STATIC_INLINE void Cy_SysClk_IhoInit(void);
-__STATIC_INLINE void Cy_SysClk_WcoInit(void);
 __STATIC_INLINE void Cy_SysClk_PiloInit(void);
 __STATIC_INLINE void Cy_SysClk_ClkLfInit(void);
 __STATIC_INLINE void Cy_SysClk_ClkBakInit(void);
@@ -424,16 +417,6 @@ __STATIC_INLINE void Cy_SysClk_IhoInit(void)
 {
     Cy_SysClk_IhoEnable();
 }
-__STATIC_INLINE void Cy_SysClk_WcoInit(void)
-{
-    (void)Cy_GPIO_Pin_FastInit(GPIO_PRT18, 1U, 0x00U, 0x00U, HSIOM_SEL_GPIO);
-    (void)Cy_GPIO_Pin_FastInit(GPIO_PRT18, 0U, 0x00U, 0x00U, HSIOM_SEL_GPIO);
-    Cy_SysClk_WcoBypass(CY_SYSCLK_WCO_BYPASSED);
-    if (CY_SYSCLK_SUCCESS != Cy_SysClk_WcoEnable(1000000UL))
-    {
-        cycfg_ClockStartupError(CY_CFG_SYSCLK_WCO_ERROR);
-    }
-}
 __STATIC_INLINE void Cy_SysClk_PiloInit(void)
 {
     Cy_SysClk_PiloEnable();
@@ -441,11 +424,11 @@ __STATIC_INLINE void Cy_SysClk_PiloInit(void)
 __STATIC_INLINE void Cy_SysClk_ClkLfInit(void)
 {
     /* The WDT is unlocked in the default startup code */
-    Cy_SysClk_ClkLfSetSource(CY_SYSCLK_CLKLF_IN_WCO);
+    Cy_SysClk_ClkLfSetSource(CY_SYSCLK_CLKLF_IN_PILO);
 }
 __STATIC_INLINE void Cy_SysClk_ClkBakInit(void)
 {
-    Cy_SysClk_ClkBakSetSource(CY_SYSCLK_BAK_IN_WCO);
+    Cy_SysClk_ClkBakSetSource(CY_SYSCLK_BAK_IN_PILO);
 }
 __STATIC_INLINE void Cy_SysClk_Dpll_Lp0_Init(void)
 {
@@ -562,7 +545,6 @@ void init_cycfg_clocks(void)
     
     /* Enable all source clocks */
     Cy_SysClk_PiloInit();
-    Cy_SysClk_WcoInit();
     Cy_SysClk_EcoInit();
     Cy_SysClk_ClkLfInit();
     Cy_SysClk_ExtClkInit();

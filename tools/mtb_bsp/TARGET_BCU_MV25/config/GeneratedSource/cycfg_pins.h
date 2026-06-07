@@ -927,7 +927,7 @@ extern "C" {
 #define CYBSP_WIFI_WL_REG_ON_PIN 6U
 #define CYBSP_WIFI_WL_REG_ON_NUM 6U
 #define CYBSP_WIFI_WL_REG_ON_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
-#define CYBSP_WIFI_WL_REG_ON_INIT_DRIVESTATE 1
+#define CYBSP_WIFI_WL_REG_ON_INIT_DRIVESTATE 0
 #ifndef ioss_0_port_11_pin_6_HSIOM
     #define ioss_0_port_11_pin_6_HSIOM HSIOM_SEL_GPIO
 #endif
@@ -1542,39 +1542,6 @@ extern "C" {
 #endif
 #define BMS_COM1_DIO2_HSIOM ioss_0_port_17_pin_7_HSIOM
 #define BMS_COM1_DIO2_IRQ ioss_interrupts_gpio_17_IRQn
-#define CYBSP_WCO_OUT_ENABLED 1U
-#define CYBSP_WCO_OUT_PORT GPIO_PRT18
-#define CYBSP_WCO_OUT_PORT_NUM 18U
-#define CYBSP_WCO_OUT_PIN 0U
-#define CYBSP_WCO_OUT_NUM 0U
-#define CYBSP_WCO_OUT_DRIVEMODE CY_GPIO_DM_ANALOG
-#define CYBSP_WCO_OUT_INIT_DRIVESTATE 1
-#ifndef ioss_0_port_18_pin_0_HSIOM
-    #define ioss_0_port_18_pin_0_HSIOM HSIOM_SEL_GPIO
-#endif
-#define CYBSP_WCO_OUT_HSIOM ioss_0_port_18_pin_0_HSIOM
-#define CYBSP_WCO_OUT_IRQ ioss_interrupts_gpio_18_IRQn
-#define CYBSP_WCO_IN_ENABLED 1U
-#define RTC_CLK32_ENABLED CYBSP_WCO_IN_ENABLED
-#define CYBSP_WCO_IN_PORT GPIO_PRT18
-#define RTC_CLK32_PORT CYBSP_WCO_IN_PORT
-#define CYBSP_WCO_IN_PORT_NUM 18U
-#define RTC_CLK32_PORT_NUM CYBSP_WCO_IN_PORT_NUM
-#define CYBSP_WCO_IN_PIN 1U
-#define RTC_CLK32_PIN CYBSP_WCO_IN_PIN
-#define CYBSP_WCO_IN_NUM 1U
-#define RTC_CLK32_NUM CYBSP_WCO_IN_NUM
-#define CYBSP_WCO_IN_DRIVEMODE CY_GPIO_DM_HIGHZ
-#define RTC_CLK32_DRIVEMODE CYBSP_WCO_IN_DRIVEMODE
-#define CYBSP_WCO_IN_INIT_DRIVESTATE 1
-#define RTC_CLK32_INIT_DRIVESTATE CYBSP_WCO_IN_INIT_DRIVESTATE
-#ifndef ioss_0_port_18_pin_1_HSIOM
-    #define ioss_0_port_18_pin_1_HSIOM HSIOM_SEL_GPIO
-#endif
-#define CYBSP_WCO_IN_HSIOM ioss_0_port_18_pin_1_HSIOM
-#define RTC_CLK32_HSIOM CYBSP_WCO_IN_HSIOM
-#define CYBSP_WCO_IN_IRQ ioss_interrupts_gpio_18_IRQn
-#define RTC_CLK32_IRQ CYBSP_WCO_IN_IRQ
 #define CYBSP_ECO_IN_ENABLED 1U
 #define CYBSP_ECO_IN_PORT GPIO_PRT19
 #define CYBSP_ECO_IN_PORT_NUM 19U
@@ -1942,11 +1909,6 @@ extern const cy_stc_gpio_pin_config_t BMS_COM1_CS0_config;
 #define CYBSP_BOOT_config BMS_COM1_CS0_config
 
 extern const cy_stc_gpio_pin_config_t BMS_COM1_DIO2_config;
-extern const cy_stc_gpio_pin_config_t CYBSP_WCO_OUT_config;
-extern const cy_stc_gpio_pin_config_t CYBSP_WCO_IN_config;
-
-#define RTC_CLK32_config CYBSP_WCO_IN_config
-
 extern const cy_stc_gpio_pin_config_t CYBSP_ECO_IN_config;
 extern const cy_stc_gpio_pin_config_t CYBSP_ECO_OUT_config;
 extern const cy_stc_gpio_pin_config_t CYBSP_TRACE_CLK_config;

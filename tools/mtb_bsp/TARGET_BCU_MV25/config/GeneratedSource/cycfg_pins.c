@@ -1182,7 +1182,7 @@ const cy_stc_gpio_pin_config_t CYBSP_BT_DEVICE_WAKE_config =
 };
 const cy_stc_gpio_pin_config_t CYBSP_WIFI_WL_REG_ON_config =
 {
-    .outVal = 1,
+    .outVal = 0,
     .driveMode = CY_GPIO_DM_STRONG_IN_OFF,
     .hsiom = CYBSP_WIFI_WL_REG_ON_HSIOM,
     .intEdge = CY_GPIO_INTR_DISABLE,
@@ -2031,42 +2031,6 @@ const cy_stc_gpio_pin_config_t BMS_COM1_DIO2_config =
     .outVal = 0,
     .driveMode = CY_GPIO_DM_PULLUP,
     .hsiom = BMS_COM1_DIO2_HSIOM,
-    .intEdge = CY_GPIO_INTR_DISABLE,
-    .intMask = 0UL,
-    .vtrip = CY_GPIO_VTRIP_CMOS,
-    .slewRate = CY_GPIO_SLEW_FAST,
-    .driveSel = CY_GPIO_DRIVE_1_2,
-    .vregEn = 0UL,
-    .ibufMode = 0UL,
-    .vtripSel = 0UL,
-    .vrefSel = 0UL,
-    .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
-    .nonSec = 1,
-};
-const cy_stc_gpio_pin_config_t CYBSP_WCO_OUT_config =
-{
-    .outVal = 1,
-    .driveMode = CY_GPIO_DM_ANALOG,
-    .hsiom = CYBSP_WCO_OUT_HSIOM,
-    .intEdge = CY_GPIO_INTR_DISABLE,
-    .intMask = 0UL,
-    .vtrip = CY_GPIO_VTRIP_CMOS,
-    .slewRate = CY_GPIO_SLEW_FAST,
-    .driveSel = CY_GPIO_DRIVE_1_2,
-    .vregEn = 0UL,
-    .ibufMode = 0UL,
-    .vtripSel = 0UL,
-    .vrefSel = 0UL,
-    .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
-    .nonSec = 1,
-};
-const cy_stc_gpio_pin_config_t CYBSP_WCO_IN_config =
-{
-    .outVal = 1,
-    .driveMode = CY_GPIO_DM_HIGHZ,
-    .hsiom = CYBSP_WCO_IN_HSIOM,
     .intEdge = CY_GPIO_INTR_DISABLE,
     .intMask = 0UL,
     .vtrip = CY_GPIO_VTRIP_CMOS,

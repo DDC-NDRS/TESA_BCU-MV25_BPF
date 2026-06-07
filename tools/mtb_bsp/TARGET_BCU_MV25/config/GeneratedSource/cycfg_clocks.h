@@ -53,12 +53,11 @@ extern "C" {
 #define srss_0_clock_0_eco_0_ENABLED 1U
 #define srss_0_clock_0_ext_0_ENABLED 1U
 #define srss_0_clock_0_iho_0_ENABLED 1U
-#define srss_0_clock_0_wco_0_ENABLED 1U
 #define srss_0_clock_0_timerclk_0_ENABLED 1U
 #define srss_0_clock_0_pilo_0_ENABLED 1U
 #define srss_0_clock_0_lfclk_0_ENABLED 1U
 #define CY_CFG_SYSCLK_CLKLF_FREQ_HZ 32768
-#define CY_CFG_SYSCLK_CLKLF_SOURCE CY_SYSCLK_CLKLF_IN_WCO
+#define CY_CFG_SYSCLK_CLKLF_SOURCE CY_SYSCLK_CLKLF_IN_PILO
 #define srss_0_clock_0_pathmux_0_ENABLED 1U
 #define srss_0_clock_0_pathmux_1_ENABLED 1U
 #define srss_0_clock_0_pathmux_2_ENABLED 1U
