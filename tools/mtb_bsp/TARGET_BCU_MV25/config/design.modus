@@ -5328,8 +5328,8 @@
                     </Block>
                     <Parameters>
                         <Param id="DriveModes" value="CY_GPIO_DM_STRONG"/>
-                        <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
-                        <Param id="extended_drive_sel" value="false"/>
+                        <Param id="extended_driveStrength" value="CY_GPIO_DRIVE_SEL_5"/>
+                        <Param id="extended_drive_sel" value="true"/>
                         <Param id="inFlash" value="true"/>
                         <Param id="initialState" value="1"/>
                         <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
@@ -5345,8 +5345,8 @@
                     </Block>
                     <Parameters>
                         <Param id="DriveModes" value="CY_GPIO_DM_STRONG"/>
-                        <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
-                        <Param id="extended_drive_sel" value="false"/>
+                        <Param id="extended_driveStrength" value="CY_GPIO_DRIVE_SEL_5"/>
+                        <Param id="extended_drive_sel" value="true"/>
                         <Param id="inFlash" value="true"/>
                         <Param id="initialState" value="1"/>
                         <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
@@ -5362,8 +5362,8 @@
                     </Block>
                     <Parameters>
                         <Param id="DriveModes" value="CY_GPIO_DM_STRONG"/>
-                        <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
-                        <Param id="extended_drive_sel" value="false"/>
+                        <Param id="extended_driveStrength" value="CY_GPIO_DRIVE_SEL_5"/>
+                        <Param id="extended_drive_sel" value="true"/>
                         <Param id="inFlash" value="true"/>
                         <Param id="initialState" value="1"/>
                         <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
@@ -5397,8 +5397,8 @@
                     </Block>
                     <Parameters>
                         <Param id="DriveModes" value="CY_GPIO_DM_STRONG"/>
-                        <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
-                        <Param id="extended_drive_sel" value="false"/>
+                        <Param id="extended_driveStrength" value="CY_GPIO_DRIVE_SEL_5"/>
+                        <Param id="extended_drive_sel" value="true"/>
                         <Param id="inFlash" value="true"/>
                         <Param id="initialState" value="1"/>
                         <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
@@ -5414,8 +5414,8 @@
                     </Block>
                     <Parameters>
                         <Param id="DriveModes" value="CY_GPIO_DM_STRONG"/>
-                        <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
-                        <Param id="extended_drive_sel" value="false"/>
+                        <Param id="extended_driveStrength" value="CY_GPIO_DRIVE_SEL_5"/>
+                        <Param id="extended_drive_sel" value="true"/>
                         <Param id="inFlash" value="true"/>
                         <Param id="initialState" value="1"/>
                         <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
@@ -6261,8 +6261,8 @@
                     </Block>
                     <Parameters>
                         <Param id="DriveModes" value="CY_GPIO_DM_STRONG"/>
-                        <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
-                        <Param id="extended_drive_sel" value="false"/>
+                        <Param id="extended_driveStrength" value="CY_GPIO_DRIVE_SEL_5"/>
+                        <Param id="extended_drive_sel" value="true"/>
                         <Param id="inFlash" value="true"/>
                         <Param id="initialState" value="1"/>
                         <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
