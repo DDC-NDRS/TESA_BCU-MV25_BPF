@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration app="BACKEND" formatVersion="15" lastSavedWith="Configurator Backend" lastSavedWithVersion="3.80.0" toolsPackage="ModusToolbox 3.8.0" xmlns="http://cypress.com/xsd/cydesignfile_v7">
+<Configuration app="BACKEND" formatVersion="15" lastSavedWith="Configurator Backend" lastSavedWithVersion="3.90.0" toolsPackage="ModusToolbox 3.9.0" xmlns="http://cypress.com/xsd/cydesignfile_v7">
     <Devices>
         <Device mpn="PSE846GPS2DBZC4A">
             <BlockConfig>
@@ -7300,7 +7300,7 @@
                 <Personality template="smif_core" version="1.0" instance="Jl_Iqpc6QN8">
                     <Block location="smif[0].core[0]" locked="true">
                         <Aliases>
-                            <Alias value="SMIF0_QSPI_NOR"/>
+                            <Alias value="CYBSP_SMIF_CORE_0_XSPI_FLASH"/>
                         </Aliases>
                     </Block>
                     <Parameters>
@@ -7323,7 +7323,7 @@
                 <Personality template="smif_core" version="1.0" instance="ZQnl1IML2L8">
                     <Block location="smif[1].core[0]" locked="true">
                         <Aliases>
-                            <Alias value="SMIF1_HYPERRAM"/>
+                            <Alias value="CYBSP_SMIF_CORE_1_PSRAM"/>
                         </Aliases>
                     </Block>
                     <Parameters>

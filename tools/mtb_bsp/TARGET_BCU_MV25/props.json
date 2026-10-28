@@ -62,7 +62,7 @@
             "min_tools": "3.6.0",
             "template": {
                 "id": "mtb-template-pse8xxgp",
-                "version": "release-v1.3.0"
+                "version": "release-v1.5.0"
             }
         }
     }

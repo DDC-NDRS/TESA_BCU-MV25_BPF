@@ -179,7 +179,6 @@ void Cy_SysCM33Enable(uint32_t vectorTableOffset, uint32_t waitus);
 void Cy_SysCM33Reset(uint32_t waitus);
 #endif /* (CY_SYSTEM_CPU_M0P == 1UL) || defined(CY_DOXYGEN) */
 
-uint32_t cy_CbusRemapAddr(const void *addr) __attribute__((weak));
 /**
  *****************************************************************************
  ** \brief  CBUS address remap
@@ -190,7 +189,7 @@ uint32_t cy_CbusRemapAddr(const void *addr) __attribute__((weak));
  ** \retval remap address
  **
  *****************************************************************************/
-inline uint32_t cy_CbusRemapAddr(const void *addr)
+static inline uint32_t cy_CbusRemapAddr(const void *addr)
 {
   uint32_t remapAddr, offset;
 
@@ -228,7 +227,6 @@ inline uint32_t cy_CbusRemapAddr(const void *addr)
   return remapAddr;
 }
 
-uint32_t cy_crypto_CbusRemapAddr(const void *addr) __attribute__((weak));
 /**
  *****************************************************************************
  ** \brief  CBUS crypto address remap
@@ -239,7 +237,7 @@ uint32_t cy_crypto_CbusRemapAddr(const void *addr) __attribute__((weak));
  ** \retval remap address
  **
  *****************************************************************************/
-inline uint32_t cy_crypto_CbusRemapAddr(const void *addr)
+static inline uint32_t cy_crypto_CbusRemapAddr(const void *addr)
 {
   uint32_t remapAddr, offset;
 
@@ -278,7 +276,6 @@ inline uint32_t cy_crypto_CbusRemapAddr(const void *addr)
 }
 
 
-uint32_t cy_AhbRemapAddr(const void *addr) __attribute__((weak));
 /**
  *****************************************************************************
  ** \brief  AHB address remap
@@ -289,7 +286,7 @@ uint32_t cy_AhbRemapAddr(const void *addr) __attribute__((weak));
  ** \retval remap address
  **
  *****************************************************************************/
-inline uint32_t cy_AhbRemapAddr(const void *addr)
+static inline uint32_t cy_AhbRemapAddr(const void *addr)
 {
   uint32_t remapAddr, offset;
 
@@ -328,7 +325,6 @@ inline uint32_t cy_AhbRemapAddr(const void *addr)
   return remapAddr;
 }
 
-uint32_t cy_crypto_AhbRemapAddr(const void *addr) __attribute__((weak));
 /**
  *****************************************************************************
  ** \brief  AHB address remap for crypto
@@ -339,7 +335,7 @@ uint32_t cy_crypto_AhbRemapAddr(const void *addr) __attribute__((weak));
  ** \retval remap address
  **
  *****************************************************************************/
-inline uint32_t cy_crypto_AhbRemapAddr(const void *addr)
+static inline uint32_t cy_crypto_AhbRemapAddr(const void *addr)
 {
   uint32_t remapAddr, offset;
 
@@ -391,7 +387,6 @@ inline uint32_t cy_crypto_AhbRemapAddr(const void *addr)
  *****************************************************************************/
 #define CY_CM55_DTCM_REMAP_BASE 0x48040000UL
 
-uint32_t cy_DTCMRemapAddr(const void *addr) __attribute__((weak));
 /**
  *****************************************************************************
  ** \brief  DTCM address remap
@@ -402,7 +397,7 @@ uint32_t cy_DTCMRemapAddr(const void *addr) __attribute__((weak));
  ** \retval remap address
  **
  *****************************************************************************/
-inline uint32_t cy_DTCMRemapAddr(const void *addr)
+static inline uint32_t cy_DTCMRemapAddr(const void *addr)
 {
   uint32_t remapAddr, offset;
 
@@ -430,7 +425,6 @@ inline uint32_t cy_DTCMRemapAddr(const void *addr)
  ** \retval internal remap address
  **
  *****************************************************************************/
-uint32_t cy_DTCMInternalRemapAddr(const void *addr) __attribute__((weak));
 /**
  *****************************************************************************
  ** \brief  DTCM Internal address remap
@@ -441,7 +435,7 @@ uint32_t cy_DTCMInternalRemapAddr(const void *addr) __attribute__((weak));
  ** \retval internal remap address
  **
  *****************************************************************************/
-inline uint32_t cy_DTCMInternalRemapAddr(const void *addr)
+static inline uint32_t cy_DTCMInternalRemapAddr(const void *addr)
 {
   uint32_t remapAddr, offset;
 
