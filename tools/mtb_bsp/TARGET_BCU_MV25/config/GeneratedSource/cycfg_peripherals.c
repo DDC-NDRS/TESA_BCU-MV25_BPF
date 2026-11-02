@@ -6,7 +6,7 @@
  * This file was automatically generated and should not be modified.
  * Configurator Backend 3.90.0
  * device-db 4.41.0.11271
- * mtb-dsl-pse8xxgp 1.5.0.1072
+ * mtb-dsl-pse8xxgp 1.8.0.1436
  *
  *******************************************************************************
  * Copyright 2026, Infineon Technologies AG, or an affiliate of Infineon
@@ -368,8 +368,8 @@ const cy_stc_i3c_config_t CYBSP_I3C_CONTROLLER_config =
     .i3cBusMode = CY_I3C_BUS_PURE,
     .useDma = false,
     .manualDataRate = false,
-    .i3cClockHz = 10000000U,
-    .i3cSclRate = 12500000U,
+    .i3cClockHz = 80000000U,
+    .i3cSclRate = 8000000U,
     .openDrainSclRate = 4000000U,
     .txEmptyBufThld = CY_I3C_1_WORD_DEPTH,
     .rxBufThld = CY_I3C_1_WORD_DEPTH,
@@ -552,6 +552,8 @@ const cy_stc_scb_spi_config_t PMIC_FRAM_IF_config =
     .ssSetupDelay = false,
     .ssHoldDelay = false,
     .ssInterFrameDelay = false,
+    .enableEzMode = false,
+    .enableExternalClock = false,
     .enableWakeFromSleep = false,
     .rxFifoTriggerLevel = 63UL,
     .rxFifoIntEnableMask = 0UL,
@@ -616,9 +618,9 @@ const cy_stc_scb_uart_config_t CYBSP_BT_UART_config =
 #if defined (COMPONENT_MTB_HAL)
 const mtb_hal_peri_div_t CYBSP_BT_UART_clock_ref =
 {
-    .clk_dst = (en_clk_dst_t)CYBSP_UART_LOW_SPEED_CLK_GRP_NUM,
-    .div_type = CYBSP_UART_LOW_SPEED_CLK_HW,
-    .div_num = CYBSP_UART_LOW_SPEED_CLK_NUM,
+    .clk_dst = (en_clk_dst_t)CYBSP_BT_UART_CLK_DIV_GRP_NUM,
+    .div_type = CYBSP_BT_UART_CLK_DIV_HW,
+    .div_num = CYBSP_BT_UART_CLK_DIV_NUM,
 };
 const mtb_hal_clock_t CYBSP_BT_UART_hal_clock =
 {
@@ -666,6 +668,8 @@ const cy_stc_scb_spi_config_t BMS_COM2_IF_config =
     .ssSetupDelay = false,
     .ssHoldDelay = false,
     .ssInterFrameDelay = false,
+    .enableEzMode = false,
+    .enableExternalClock = false,
     .enableWakeFromSleep = false,
     .rxFifoTriggerLevel = 63UL,
     .rxFifoIntEnableMask = 0UL,
@@ -818,6 +822,8 @@ const cy_stc_scb_spi_config_t MC33HB2000_IF_config =
     .ssSetupDelay = false,
     .ssHoldDelay = false,
     .ssInterFrameDelay = false,
+    .enableEzMode = false,
+    .enableExternalClock = false,
     .enableWakeFromSleep = false,
     .rxFifoTriggerLevel = 63UL,
     .rxFifoIntEnableMask = 0UL,
@@ -871,6 +877,8 @@ const cy_stc_scb_spi_config_t BMS_COM1_IF_config =
     .ssSetupDelay = false,
     .ssHoldDelay = false,
     .ssInterFrameDelay = false,
+    .enableEzMode = false,
+    .enableExternalClock = false,
     .enableWakeFromSleep = false,
     .rxFifoTriggerLevel = 63UL,
     .rxFifoIntEnableMask = 0UL,
@@ -1224,10 +1232,10 @@ const cy_stc_smif_config_t CYBSP_SMIF_CORE_0_XSPI_FLASH_config =
     .dll_divider_value = CY_SMIF_DLL_DIVIDE_BY_2,
     .rx_capture_mode = CY_SMIF_SEL_NORMAL_SPI,
     .mdl_tap = CY_SMIF_MDL_8_TAP_DELAY,
-    .device0_sdl_tap = CY_SMIF_SDL_8_TAP_DELAY,
-    .device1_sdl_tap = CY_SMIF_SDL_8_TAP_DELAY,
-    .device2_sdl_tap = CY_SMIF_SDL_8_TAP_DELAY,
-    .device3_sdl_tap = CY_SMIF_SDL_8_TAP_DELAY,
+    .device0_sdl_tap = CY_SMIF_SDL_1_TAP_DELAY,
+    .device1_sdl_tap = CY_SMIF_SDL_1_TAP_DELAY,
+    .device2_sdl_tap = CY_SMIF_SDL_1_TAP_DELAY,
+    .device3_sdl_tap = CY_SMIF_SDL_1_TAP_DELAY,
     .tx_sdr_extra = CY_SMIF_TX_TWO_PERIOD_AHEAD,
 };
 
@@ -1250,7 +1258,7 @@ const mtb_hal_memoryspi_configurator_t CYBSP_SMIF_CORE_0_XSPI_FLASH_hal_config =
     .clock = &CYBSP_SMIF_CORE_0_XSPI_FLASH_hal_clock,
     .config = &CYBSP_SMIF_CORE_0_XSPI_FLASH_config,
     .csel = {true, false, false, false},
-    .irqs = CYBSP_SMIF_CORE_0_XSPI_FLASH_MEMORY_MODE_ALIGMENT_ERROR << 5 | CYBSP_SMIF_CORE_0_XSPI_FLASH_RX_DATA_FIFO_UNDERFLOW << 4 | CYBSP_SMIF_CORE_0_XSPI_FLASH_TX_COMMAND_FIFO_OVERFLOW << 3 | CYBSP_SMIF_CORE_0_XSPI_FLASH_TX_DATA_FIFO_OVERFLOW << 2 | (uint8_t)(CYBSP_SMIF_CORE_0_XSPI_FLASH_RX_FIFO_TRIGGER_LEVEL != 0) << 1 | (uint8_t)(CYBSP_SMIF_CORE_0_XSPI_FLASH_TX_FIFO_TRIGGER_LEVEL != 0) << 0,
+    .irqs = CYBSP_SMIF_CORE_0_XSPI_FLASH_MEMORY_MODE_ALIGNMENT_ERROR << 5 | CYBSP_SMIF_CORE_0_XSPI_FLASH_RX_DATA_FIFO_UNDERFLOW << 4 | CYBSP_SMIF_CORE_0_XSPI_FLASH_TX_COMMAND_FIFO_OVERFLOW << 3 | CYBSP_SMIF_CORE_0_XSPI_FLASH_TX_DATA_FIFO_OVERFLOW << 2 | (uint8_t)(CYBSP_SMIF_CORE_0_XSPI_FLASH_RX_FIFO_TRIGGER_LEVEL != 0) << 1 | (uint8_t)(CYBSP_SMIF_CORE_0_XSPI_FLASH_TX_FIFO_TRIGGER_LEVEL != 0) << 0,
     .dmas = CYBSP_SMIF_CORE_0_XSPI_FLASH_RX_DMA_TRIGGER_OUT_USED << 1 | CYBSP_SMIF_CORE_0_XSPI_FLASH_TX_DMA_TRIGGER_OUT_USED << 0,
 };
 #endif /* defined (COMPONENT_MTB_HAL) && (MTB_HAL_DRIVER_AVAILABLE_MEMORYSPI) */
@@ -1265,10 +1273,10 @@ const cy_stc_smif_config_t CYBSP_SMIF_CORE_1_PSRAM_config =
     .dll_divider_value = CY_SMIF_DLL_DIVIDE_BY_2,
     .rx_capture_mode = CY_SMIF_SEL_NORMAL_SPI,
     .mdl_tap = CY_SMIF_MDL_8_TAP_DELAY,
-    .device0_sdl_tap = CY_SMIF_SDL_8_TAP_DELAY,
-    .device1_sdl_tap = CY_SMIF_SDL_8_TAP_DELAY,
-    .device2_sdl_tap = CY_SMIF_SDL_8_TAP_DELAY,
-    .device3_sdl_tap = CY_SMIF_SDL_8_TAP_DELAY,
+    .device0_sdl_tap = CY_SMIF_SDL_1_TAP_DELAY,
+    .device1_sdl_tap = CY_SMIF_SDL_1_TAP_DELAY,
+    .device2_sdl_tap = CY_SMIF_SDL_1_TAP_DELAY,
+    .device3_sdl_tap = CY_SMIF_SDL_1_TAP_DELAY,
     .tx_sdr_extra = CY_SMIF_TX_TWO_PERIOD_AHEAD,
 };
 
@@ -1291,7 +1299,7 @@ const mtb_hal_memoryspi_configurator_t CYBSP_SMIF_CORE_1_PSRAM_hal_config =
     .clock = &CYBSP_SMIF_CORE_1_PSRAM_hal_clock,
     .config = &CYBSP_SMIF_CORE_1_PSRAM_config,
     .csel = {false, false, true, false},
-    .irqs = CYBSP_SMIF_CORE_1_PSRAM_MEMORY_MODE_ALIGMENT_ERROR << 5 | CYBSP_SMIF_CORE_1_PSRAM_RX_DATA_FIFO_UNDERFLOW << 4 | CYBSP_SMIF_CORE_1_PSRAM_TX_COMMAND_FIFO_OVERFLOW << 3 | CYBSP_SMIF_CORE_1_PSRAM_TX_DATA_FIFO_OVERFLOW << 2 | (uint8_t)(CYBSP_SMIF_CORE_1_PSRAM_RX_FIFO_TRIGGER_LEVEL != 0) << 1 | (uint8_t)(CYBSP_SMIF_CORE_1_PSRAM_TX_FIFO_TRIGGER_LEVEL != 0) << 0,
+    .irqs = CYBSP_SMIF_CORE_1_PSRAM_MEMORY_MODE_ALIGNMENT_ERROR << 5 | CYBSP_SMIF_CORE_1_PSRAM_RX_DATA_FIFO_UNDERFLOW << 4 | CYBSP_SMIF_CORE_1_PSRAM_TX_COMMAND_FIFO_OVERFLOW << 3 | CYBSP_SMIF_CORE_1_PSRAM_TX_DATA_FIFO_OVERFLOW << 2 | (uint8_t)(CYBSP_SMIF_CORE_1_PSRAM_RX_FIFO_TRIGGER_LEVEL != 0) << 1 | (uint8_t)(CYBSP_SMIF_CORE_1_PSRAM_TX_FIFO_TRIGGER_LEVEL != 0) << 0,
     .dmas = CYBSP_SMIF_CORE_1_PSRAM_RX_DMA_TRIGGER_OUT_USED << 1 | CYBSP_SMIF_CORE_1_PSRAM_TX_DMA_TRIGGER_OUT_USED << 0,
 };
 #endif /* defined (COMPONENT_MTB_HAL) && (MTB_HAL_DRIVER_AVAILABLE_MEMORYSPI) */
@@ -1308,6 +1316,10 @@ const cy_stc_mcwdt_config_t CYBSP_CM33_LPTIMER_0_config =
     .c1ClearOnMatch = false,
     .c0c1Cascade = true,
     .c1c2Cascade = false,
+    .c0c1carryoutconfig = false,
+    .c0c1matchconfig = false,
+    .c1c2carryoutconfig = false,
+    .c1c2matchconfig = false,
     .c0LowerLimitMode = CY_MCWDT_LOWER_LIMIT_MODE_NOTHING,
     .c0LowerLimit = 0U,
     .c1LowerLimitMode = CY_MCWDT_LOWER_LIMIT_MODE_NOTHING,
@@ -1334,6 +1346,10 @@ const cy_stc_mcwdt_config_t CYBSP_CM55_LPTIMER_1_config =
     .c1ClearOnMatch = false,
     .c0c1Cascade = true,
     .c1c2Cascade = false,
+    .c0c1carryoutconfig = false,
+    .c0c1matchconfig = false,
+    .c1c2carryoutconfig = false,
+    .c1c2matchconfig = false,
     .c0LowerLimitMode = CY_MCWDT_LOWER_LIMIT_MODE_NOTHING,
     .c0LowerLimit = 0U,
     .c1LowerLimitMode = CY_MCWDT_LOWER_LIMIT_MODE_NOTHING,
@@ -1870,7 +1886,7 @@ void init_cycfg_peripherals(void)
     Cy_SysClk_PeriGroupSlaveInit(CY_MMIO_SCB3_PERI_NR, CY_MMIO_SCB3_GROUP_NR, CY_MMIO_SCB3_SLAVE_NR, CY_MMIO_SCB3_CLK_HF_NR);
     Cy_SysClk_PeriPclkAssignDivider(PCLK_SCB3_CLOCK_SCB_EN, CY_SYSCLK_DIV_8_BIT, 1U);
     Cy_SysClk_PeriGroupSlaveInit(CY_MMIO_SCB4_PERI_NR, CY_MMIO_SCB4_GROUP_NR, CY_MMIO_SCB4_SLAVE_NR, CY_MMIO_SCB4_CLK_HF_NR);
-    Cy_SysClk_PeriPclkAssignDivider(PCLK_SCB4_CLOCK_SCB_EN, CY_SYSCLK_DIV_16_5_BIT, 0U);
+    Cy_SysClk_PeriPclkAssignDivider(PCLK_SCB4_CLOCK_SCB_EN, CY_SYSCLK_DIV_16_5_BIT, 1U);
     Cy_SysClk_PeriGroupSlaveInit(CY_MMIO_SCB5_PERI_NR, CY_MMIO_SCB5_GROUP_NR, CY_MMIO_SCB5_SLAVE_NR, CY_MMIO_SCB5_CLK_HF_NR);
     Cy_SysClk_PeriPclkAssignDivider(PCLK_SCB5_CLOCK_SCB_EN, CY_SYSCLK_DIV_8_BIT, 1U);
     Cy_SysClk_PeriGroupSlaveInit(CY_MMIO_SCB6_PERI_NR, CY_MMIO_SCB6_GROUP_NR, CY_MMIO_SCB6_SLAVE_NR, CY_MMIO_SCB6_CLK_HF_NR);
@@ -1898,29 +1914,29 @@ void init_cycfg_peripherals(void)
 #if defined (CY_DEVICE_CONFIGURATOR_IP_ENABLE_FEATURE)
     Cy_SysClk_PeriGroupSlaveInit(CY_MMIO_TCPWM0_PERI_NR, CY_MMIO_TCPWM0_GROUP_NR, CY_MMIO_TCPWM0_SLAVE_NR, CY_MMIO_TCPWM0_CLK_HF_NR);
 #endif /* defined (CY_DEVICE_CONFIGURATOR_IP_ENABLE_FEATURE) */
-    Cy_SysClk_PeriphAssignDivider(PCLK_TCPWM0_CLOCK_COUNTER_EN0, CY_SYSCLK_DIV_8_BIT, 3U);
+    Cy_SysClk_PeriPclkAssignDivider(PCLK_TCPWM0_CLOCK_COUNTER_EN0, CY_SYSCLK_DIV_8_BIT, 3U);
 #if defined (CY_DEVICE_CONFIGURATOR_IP_ENABLE_FEATURE)
     Cy_SysClk_PeriGroupSlaveInit(CY_MMIO_TCPWM0_PERI_NR, CY_MMIO_TCPWM0_GROUP_NR, CY_MMIO_TCPWM0_SLAVE_NR, CY_MMIO_TCPWM0_CLK_HF_NR);
 #endif /* defined (CY_DEVICE_CONFIGURATOR_IP_ENABLE_FEATURE) */
-    Cy_SysClk_PeriphAssignDivider(PCLK_TCPWM0_CLOCK_COUNTER_EN1, CY_SYSCLK_DIV_8_BIT, 3U);
+    Cy_SysClk_PeriPclkAssignDivider(PCLK_TCPWM0_CLOCK_COUNTER_EN1, CY_SYSCLK_DIV_8_BIT, 3U);
 #if defined (CY_DEVICE_CONFIGURATOR_IP_ENABLE_FEATURE)
     Cy_SysClk_PeriGroupSlaveInit(CY_MMIO_TCPWM0_PERI_NR, CY_MMIO_TCPWM0_GROUP_NR, CY_MMIO_TCPWM0_SLAVE_NR, CY_MMIO_TCPWM0_CLK_HF_NR);
 #endif /* defined (CY_DEVICE_CONFIGURATOR_IP_ENABLE_FEATURE) */
-    Cy_SysClk_PeriphAssignDivider(PCLK_TCPWM0_CLOCK_COUNTER_EN2, CY_SYSCLK_DIV_8_BIT, 3U);
+    Cy_SysClk_PeriPclkAssignDivider(PCLK_TCPWM0_CLOCK_COUNTER_EN2, CY_SYSCLK_DIV_8_BIT, 3U);
 #if defined (CY_DEVICE_CONFIGURATOR_IP_ENABLE_FEATURE)
     Cy_SysClk_PeriGroupSlaveInit(CY_MMIO_TCPWM0_PERI_NR, CY_MMIO_TCPWM0_GROUP_NR, CY_MMIO_TCPWM0_SLAVE_NR, CY_MMIO_TCPWM0_CLK_HF_NR);
 #endif /* defined (CY_DEVICE_CONFIGURATOR_IP_ENABLE_FEATURE) */
-    Cy_SysClk_PeriphAssignDivider(PCLK_TCPWM0_CLOCK_COUNTER_EN5, CY_SYSCLK_DIV_8_BIT, 3U);
+    Cy_SysClk_PeriPclkAssignDivider(PCLK_TCPWM0_CLOCK_COUNTER_EN5, CY_SYSCLK_DIV_8_BIT, 3U);
 #if defined (CY_DEVICE_CONFIGURATOR_IP_ENABLE_FEATURE)
     Cy_SysClk_PeriGroupSlaveInit(CY_MMIO_TCPWM0_PERI_NR, CY_MMIO_TCPWM0_GROUP_NR, CY_MMIO_TCPWM0_SLAVE_NR, CY_MMIO_TCPWM0_CLK_HF_NR);
 #endif /* defined (CY_DEVICE_CONFIGURATOR_IP_ENABLE_FEATURE) */
-    Cy_SysClk_PeriphAssignDivider(PCLK_TCPWM0_CLOCK_COUNTER_EN6, CY_SYSCLK_DIV_8_BIT, 3U);
+    Cy_SysClk_PeriPclkAssignDivider(PCLK_TCPWM0_CLOCK_COUNTER_EN6, CY_SYSCLK_DIV_8_BIT, 3U);
 #if defined (CY_DEVICE_CONFIGURATOR_IP_ENABLE_FEATURE)
     Cy_SysClk_PeriGroupSlaveInit(CY_MMIO_TCPWM0_PERI_NR, CY_MMIO_TCPWM0_GROUP_NR, CY_MMIO_TCPWM0_SLAVE_NR, CY_MMIO_TCPWM0_CLK_HF_NR);
 #endif /* defined (CY_DEVICE_CONFIGURATOR_IP_ENABLE_FEATURE) */
-    Cy_SysClk_PeriphAssignDivider(PCLK_TCPWM0_CLOCK_COUNTER_EN260, CY_SYSCLK_DIV_8_BIT, 3U);
+    Cy_SysClk_PeriPclkAssignDivider(PCLK_TCPWM0_CLOCK_COUNTER_EN260, CY_SYSCLK_DIV_8_BIT, 3U);
 #if defined (CY_DEVICE_CONFIGURATOR_IP_ENABLE_FEATURE)
     Cy_SysClk_PeriGroupSlaveInit(CY_MMIO_TCPWM0_PERI_NR, CY_MMIO_TCPWM0_GROUP_NR, CY_MMIO_TCPWM0_SLAVE_NR, CY_MMIO_TCPWM0_CLK_HF_NR);
 #endif /* defined (CY_DEVICE_CONFIGURATOR_IP_ENABLE_FEATURE) */
-    Cy_SysClk_PeriphAssignDivider(PCLK_TCPWM0_CLOCK_COUNTER_EN272, CY_SYSCLK_DIV_8_BIT, 3U);
+    Cy_SysClk_PeriPclkAssignDivider(PCLK_TCPWM0_CLOCK_COUNTER_EN272, CY_SYSCLK_DIV_8_BIT, 3U);
 }

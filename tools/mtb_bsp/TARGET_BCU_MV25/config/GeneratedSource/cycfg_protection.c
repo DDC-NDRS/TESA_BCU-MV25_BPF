@@ -6,7 +6,7 @@
  * This file was automatically generated and should not be modified.
  * Configurator Backend 3.90.0
  * device-db 4.41.0.11271
- * mtb-dsl-pse8xxgp 1.5.0.1072
+ * mtb-dsl-pse8xxgp 1.8.0.1436
  *
  *******************************************************************************
  * Copyright 2026, Infineon Technologies AG, or an affiliate of Infineon
@@ -51,11 +51,11 @@ const mtb_srf_memory_protection_s_t mtb_srf_memory_protection_s[] =
     },
     {
         .ranges = mxsramc_0_mpc_0_srf_protection_range_s,
-        .size = 3U,
+        .size = 4U,
     },
     {
         .ranges = mxsramc_1_mpc_0_srf_protection_range_s,
-        .size = 2U,
+        .size = 1U,
     },
 };
 const uint8_t mtb_srf_protection_range_s_count = sizeof(mtb_srf_memory_protection_s) / sizeof(mtb_srf_memory_protection_s_t);
@@ -63,15 +63,19 @@ const uint8_t mtb_srf_protection_range_s_count = sizeof(mtb_srf_memory_protectio
 
 void init_cycfg_protection(void)
 {
+#if (CY_SYSTEM_CPU_M33) && defined(COMPONENT_SECURE_DEVICE) && defined(CYBSP_SMIF_XIP_INIT)
+    /* Note: This code will be removed, when L1 Boot has XIP support */
+    init_smif_xip();
+#endif /* (CY_SYSTEM_CPU_M33) && defined(COMPONENT_SECURE_DEVICE) && defined(CYBSP_SMIF_XIP_INIT) */
 #if (CY_SYSTEM_CPU_M33) && defined(COMPONENT_SECURE_DEVICE) && !defined(CYBSP_SKIP_SAU_INIT)
     Cy_SAU_Init(SAU, SAU_config, sizeof(SAU_config) / sizeof(SAU_config[0]));
 #endif /* (CY_SYSTEM_CPU_M33) && defined(COMPONENT_SECURE_DEVICE) && !defined(CYBSP_SKIP_SAU_INIT) */
-#if  (CY_SYSTEM_CPU_M33) && defined(COMPONENT_SECURE_DEVICE) && defined(CY_PDL_TZ_ENABLED) && !defined(CYBSP_SKIP_MPC_INIT)
+#if  (CY_SYSTEM_CPU_M33) && defined(COMPONENT_SECURE_DEVICE) && defined(CY_PDL_TZ_ENABLED) && !defined(CYBSP_SKIP_MPC_INIT) && !defined(CY_DEVICE_FEATURE_MPC_LOCKED)
     init_cycfg_mpc();
-#endif /*  (CY_SYSTEM_CPU_M33) && defined(COMPONENT_SECURE_DEVICE) && defined(CY_PDL_TZ_ENABLED) && !defined(CYBSP_SKIP_MPC_INIT) */
-#if  (CY_SYSTEM_CPU_M33) && defined(COMPONENT_SECURE_DEVICE) && defined(CY_PDL_TZ_ENABLED) && !defined(CYCFG_PROTECTION_SE_ENABLE) && !defined(CYBSP_SKIP_PPC_INIT)
+#endif /*  (CY_SYSTEM_CPU_M33) && defined(COMPONENT_SECURE_DEVICE) && defined(CY_PDL_TZ_ENABLED) && !defined(CYBSP_SKIP_MPC_INIT) && !defined(CY_DEVICE_FEATURE_MPC_LOCKED) */
+#if  (CY_SYSTEM_CPU_M33) && defined(COMPONENT_SECURE_DEVICE) && defined(CY_PDL_TZ_ENABLED) && !defined(CYCFG_PROTECTION_SE_ENABLE) && !defined(CYBSP_SKIP_SERT_SERVICE) && !defined(CYBSP_SKIP_PPC_INIT)
     ifx_se_disable(NULL);
-#endif /*  (CY_SYSTEM_CPU_M33) && defined(COMPONENT_SECURE_DEVICE) && defined(CY_PDL_TZ_ENABLED) && !defined(CYCFG_PROTECTION_SE_ENABLE) && !defined(CYBSP_SKIP_PPC_INIT) */
+#endif /*  (CY_SYSTEM_CPU_M33) && defined(COMPONENT_SECURE_DEVICE) && defined(CY_PDL_TZ_ENABLED) && !defined(CYCFG_PROTECTION_SE_ENABLE) && !defined(CYBSP_SKIP_SERT_SERVICE) && !defined(CYBSP_SKIP_PPC_INIT) */
 #if (CY_SYSTEM_CPU_M33) && defined(COMPONENT_SECURE_DEVICE) && defined(CY_PDL_TZ_ENABLED) && !defined(CYBSP_SKIP_PPC_INIT)
     init_cycfg_ppc0();
     init_cycfg_ppc1();

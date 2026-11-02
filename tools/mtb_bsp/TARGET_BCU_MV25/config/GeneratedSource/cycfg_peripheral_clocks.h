@@ -6,7 +6,7 @@
  * This file was automatically generated and should not be modified.
  * Configurator Backend 3.90.0
  * device-db 4.41.0.11271
- * mtb-dsl-pse8xxgp 1.5.0.1072
+ * mtb-dsl-pse8xxgp 1.8.0.1436
  *
  *******************************************************************************
  * Copyright 2026, Infineon Technologies AG, or an affiliate of Infineon
@@ -142,18 +142,18 @@ extern "C" {
 #define CYBSP_UART_LOW_SPEED_CLK_GRP_NUM CYBSP_UART_LOW_SPEED_CLK_GRP_NUM
 #endif /* !defined (CYBSP_UART_LOW_SPEED_CLK_GRP_NUM) */
 
-#define CYBSP_SMARTIO_PWM_CLK_DIV_ENABLED 1U
+#define CYBSP_BT_UART_CLK_DIV_ENABLED 1U
 
 #if !defined (CY_USING_HAL) && !defined (CY_USING_HAL_LITE)
-#define CYBSP_SMARTIO_PWM_CLK_DIV_HW CY_SYSCLK_DIV_16_5_BIT
+#define CYBSP_BT_UART_CLK_DIV_HW CY_SYSCLK_DIV_16_5_BIT
 #endif /* !defined (CY_USING_HAL) && !defined (CY_USING_HAL_LITE) */
 
-#define CYBSP_SMARTIO_PWM_CLK_DIV_NUM 1U
-#define CYBSP_SMARTIO_PWM_CLK_DIV_GRP_NUM ((1U << PERI_PCLK_GR_NUM_Pos) | (0U << PERI_PCLK_INST_NUM_Pos))
+#define CYBSP_BT_UART_CLK_DIV_NUM 1U
+#define CYBSP_BT_UART_CLK_DIV_GRP_NUM ((1U << PERI_PCLK_GR_NUM_Pos) | (0U << PERI_PCLK_INST_NUM_Pos))
 
-#if !defined (CYBSP_SMARTIO_PWM_CLK_DIV_GRP_NUM)
-#define CYBSP_SMARTIO_PWM_CLK_DIV_GRP_NUM CYBSP_SMARTIO_PWM_CLK_DIV_GRP_NUM
-#endif /* !defined (CYBSP_SMARTIO_PWM_CLK_DIV_GRP_NUM) */
+#if !defined (CYBSP_BT_UART_CLK_DIV_GRP_NUM)
+#define CYBSP_BT_UART_CLK_DIV_GRP_NUM CYBSP_BT_UART_CLK_DIV_GRP_NUM
+#endif /* !defined (CYBSP_BT_UART_CLK_DIV_GRP_NUM) */
 
 #define CYBSP_SMART_IO_CLK_DIV_ENABLED 1U
 

@@ -6,7 +6,7 @@
  * This file was automatically generated and should not be modified.
  * Configurator Backend 3.90.0
  * device-db 4.41.0.11271
- * mtb-dsl-pse8xxgp 1.5.0.1072
+ * mtb-dsl-pse8xxgp 1.8.0.1436
  *
  *******************************************************************************
  * Copyright 2026, Infineon Technologies AG, or an affiliate of Infineon
@@ -72,7 +72,7 @@
 #define CY_CFG_SYSCLK_DPLL_LP0_OUTPUT_DIV 1
 #define CY_CFG_SYSCLK_DPLL_LP0_FRAC_DIV 0
 #define CY_CFG_SYSCLK_DPLL_LP0_FRAC_DITHER_EN false
-#define CY_CFG_SYSCLK_DPLL_LP0_FRAC_EN true
+#define CY_CFG_SYSCLK_DPLL_LP0_FRAC_EN false
 #define CY_CFG_SYSCLK_DPLL_LP0_LF_MODE false
 #define CY_CFG_SYSCLK_DPLL_LP0_OUTPUT_MODE CY_SYSCLK_FLLPLL_OUTPUT_AUTO
 #define CY_CFG_SYSCLK_DPLL_LP0_OUTPUT_FREQ 320000000
@@ -82,7 +82,7 @@
 #define CY_CFG_SYSCLK_DPLL_LP1_OUTPUT_DIV 1
 #define CY_CFG_SYSCLK_DPLL_LP1_FRAC_DIV 0
 #define CY_CFG_SYSCLK_DPLL_LP1_FRAC_DITHER_EN false
-#define CY_CFG_SYSCLK_DPLL_LP1_FRAC_EN true
+#define CY_CFG_SYSCLK_DPLL_LP1_FRAC_EN false
 #define CY_CFG_SYSCLK_DPLL_LP1_LF_MODE false
 #define CY_CFG_SYSCLK_DPLL_LP1_OUTPUT_MODE CY_SYSCLK_FLLPLL_OUTPUT_AUTO
 #define CY_CFG_SYSCLK_DPLL_LP1_OUTPUT_FREQ 200000000
@@ -98,56 +98,67 @@
 #define CY_CFG_SYSCLK_CLKHF0_FREQ_MHZ 160UL
 #define CY_CFG_SYSCLK_CLKHF0_CLKPATH CY_SYSCLK_CLKHF_IN_CLKPATH0
 #define CY_CFG_SYSCLK_CLKHF0_CLKPATH_NUM 0UL
+#define CY_CFG_SYSCLK_CLKHF0_DIRECT_SEL 0
 #define CY_CFG_SYSCLK_CLKHF1_ENABLED 1
 #define CY_CFG_SYSCLK_CLKHF1_DIVIDER CY_SYSCLK_CLKHF_NO_DIVIDE
 #define CY_CFG_SYSCLK_CLKHF1_FREQ_MHZ 320UL
 #define CY_CFG_SYSCLK_CLKHF1_CLKPATH CY_SYSCLK_CLKHF_IN_CLKPATH0
 #define CY_CFG_SYSCLK_CLKHF1_CLKPATH_NUM 0UL
+#define CY_CFG_SYSCLK_CLKHF1_DIRECT_SEL 0
 #define CY_CFG_SYSCLK_CLKHF2_ENABLED 1
 #define CY_CFG_SYSCLK_CLKHF2_DIVIDER CY_SYSCLK_CLKHF_DIVIDE_BY_2
 #define CY_CFG_SYSCLK_CLKHF2_FREQ_MHZ 160UL
 #define CY_CFG_SYSCLK_CLKHF2_CLKPATH CY_SYSCLK_CLKHF_IN_CLKPATH0
 #define CY_CFG_SYSCLK_CLKHF2_CLKPATH_NUM 0UL
+#define CY_CFG_SYSCLK_CLKHF2_DIRECT_SEL 0
 #define CY_CFG_SYSCLK_CLKHF3_ENABLED 1
 #define CY_CFG_SYSCLK_CLKHF3_DIVIDER CY_SYSCLK_CLKHF_DIVIDE_BY_2
 #define CY_CFG_SYSCLK_CLKHF3_FREQ_MHZ 160UL
 #define CY_CFG_SYSCLK_CLKHF3_CLKPATH CY_SYSCLK_CLKHF_IN_CLKPATH0
 #define CY_CFG_SYSCLK_CLKHF3_CLKPATH_NUM 0UL
+#define CY_CFG_SYSCLK_CLKHF3_DIRECT_SEL 0
 #define CY_CFG_SYSCLK_CLKHF4_ENABLED 1
 #define CY_CFG_SYSCLK_CLKHF4_DIVIDER CY_SYSCLK_CLKHF_DIVIDE_BY_2
 #define CY_CFG_SYSCLK_CLKHF4_FREQ_MHZ 160UL
 #define CY_CFG_SYSCLK_CLKHF4_CLKPATH CY_SYSCLK_CLKHF_IN_CLKPATH0
 #define CY_CFG_SYSCLK_CLKHF4_CLKPATH_NUM 0UL
+#define CY_CFG_SYSCLK_CLKHF4_DIRECT_SEL 0
 #define CY_CFG_SYSCLK_CLKHF5_ENABLED 1
 #define CY_CFG_SYSCLK_CLKHF5_DIVIDER CY_SYSCLK_CLKHF_NO_DIVIDE
 #define CY_CFG_SYSCLK_CLKHF5_FREQ_MHZ 200UL
 #define CY_CFG_SYSCLK_CLKHF5_CLKPATH CY_SYSCLK_CLKHF_IN_CLKPATH1
 #define CY_CFG_SYSCLK_CLKHF5_CLKPATH_NUM 1UL
+#define CY_CFG_SYSCLK_CLKHF5_DIRECT_SEL 0
 #define CY_CFG_SYSCLK_CLKHF6_ENABLED 1
 #define CY_CFG_SYSCLK_CLKHF6_DIVIDER CY_SYSCLK_CLKHF_NO_DIVIDE
 #define CY_CFG_SYSCLK_CLKHF6_FREQ_MHZ 200UL
 #define CY_CFG_SYSCLK_CLKHF6_CLKPATH CY_SYSCLK_CLKHF_IN_CLKPATH1
 #define CY_CFG_SYSCLK_CLKHF6_CLKPATH_NUM 1UL
+#define CY_CFG_SYSCLK_CLKHF6_DIRECT_SEL 0
 #define CY_CFG_SYSCLK_CLKHF9_ENABLED 1
 #define CY_CFG_SYSCLK_CLKHF9_DIVIDER CY_SYSCLK_CLKHF_DIVIDE_BY_4
 #define CY_CFG_SYSCLK_CLKHF9_FREQ_MHZ 50UL
 #define CY_CFG_SYSCLK_CLKHF9_CLKPATH CY_SYSCLK_CLKHF_IN_CLKPATH1
 #define CY_CFG_SYSCLK_CLKHF9_CLKPATH_NUM 1UL
+#define CY_CFG_SYSCLK_CLKHF9_DIRECT_SEL 0
 #define CY_CFG_SYSCLK_CLKHF10_ENABLED 1
 #define CY_CFG_SYSCLK_CLKHF10_DIVIDER CY_SYSCLK_CLKHF_DIVIDE_BY_4
 #define CY_CFG_SYSCLK_CLKHF10_FREQ_MHZ 80UL
 #define CY_CFG_SYSCLK_CLKHF10_CLKPATH CY_SYSCLK_CLKHF_IN_CLKPATH0
 #define CY_CFG_SYSCLK_CLKHF10_CLKPATH_NUM 0UL
+#define CY_CFG_SYSCLK_CLKHF10_DIRECT_SEL 0
 #define CY_CFG_SYSCLK_CLKHF11_ENABLED 1
 #define CY_CFG_SYSCLK_CLKHF11_DIVIDER CY_SYSCLK_CLKHF_DIVIDE_BY_4
 #define CY_CFG_SYSCLK_CLKHF11_FREQ_MHZ 80UL
 #define CY_CFG_SYSCLK_CLKHF11_CLKPATH CY_SYSCLK_CLKHF_IN_CLKPATH0
 #define CY_CFG_SYSCLK_CLKHF11_CLKPATH_NUM 0UL
+#define CY_CFG_SYSCLK_CLKHF11_DIRECT_SEL 0
 #define CY_CFG_SYSCLK_CLKHF13_ENABLED 1
 #define CY_CFG_SYSCLK_CLKHF13_DIVIDER CY_SYSCLK_CLKHF_DIVIDE_BY_4
 #define CY_CFG_SYSCLK_CLKHF13_FREQ_MHZ 80UL
 #define CY_CFG_SYSCLK_CLKHF13_CLKPATH CY_SYSCLK_CLKHF_IN_CLKPATH0
 #define CY_CFG_SYSCLK_CLKHF13_CLKPATH_NUM 0UL
+#define CY_CFG_SYSCLK_CLKHF13_DIRECT_SEL 0
 
 static const cycfg_clkhf_config_t * cycfg_clkhf_configs[] =
 {
@@ -220,7 +231,7 @@ static cy_stc_dpll_lp_config_t srss_0_clock_0_pll250m_0_lp_pllConfig =
     .outputMode = CY_SYSCLK_FLLPLL_OUTPUT_AUTO,
     .fracDiv = 0,
     .fracDitherEn = false,
-    .fracEn = true,
+    .fracEn = false,
     .dcoCode = 0xFU,
     .kiInt = 0xAU,
     .kiFrac = 0xBU,
@@ -242,7 +253,7 @@ static cy_stc_dpll_lp_config_t srss_0_clock_0_pll250m_1_lp_pllConfig =
     .outputMode = CY_SYSCLK_FLLPLL_OUTPUT_AUTO,
     .fracDiv = 0,
     .fracDitherEn = false,
-    .fracEn = true,
+    .fracEn = false,
     .dcoCode = 0xFU,
     .kiInt = 0xAU,
     .kiFrac = 0xBU,
@@ -392,6 +403,10 @@ void init_cycfg_ns_clocks(void)
     #endif /* CY_CFG_SYSCLK_CLKHF1_FREQ_MHZ */
     SystemCoreClockSetup((CY_SYSCLK_CLK_CORE_HF_PATH_NUM == 0 ? clk_hf0_freq_hz : clk_hf1_freq_hz), clk_hf0_freq_hz);
     
+    #ifdef CY_CFG_SYSCLK_CLKALTSYSTICK_ENABLED
+        Cy_SysClk_ClkAltSysTickInit();
+    #endif
+    
     #endif /* (!defined(COMPONENT_SECURE_DEVICE)) */
 }
 __STATIC_INLINE void Cy_SysClk_EcoInit(void)
@@ -402,7 +417,13 @@ __STATIC_INLINE void Cy_SysClk_EcoInit(void)
     {
         cycfg_ClockStartupError(CY_CFG_SYSCLK_ECO_ERROR);
     }
-    if (CY_SYSCLK_TIMEOUT == Cy_SysClk_EcoEnable(3000UL))
+    
+    #if defined(CY_IP_MXS22SRSS) && (CY_IP_MXS22SRSS_VERSION >= 2)
+    Cy_SysPm_PDResourceMapEnable(CY_PD_PDCM_SYSCPUSS, (uint32_t)(CY_SYSPM_PD_RESOURCE_ECO | CY_SYSPM_PD_RESOURCE_ECO_WAIT_FOR_LOCK), true);
+    Cy_SysPm_PDResourceMapEnable(CY_PD_PDCM_RRAM, (uint32_t)(CY_SYSPM_PD_RESOURCE_ECO | CY_SYSPM_PD_RESOURCE_ECO_WAIT_FOR_LOCK), true);
+    #endif /* defined(CY_IP_MXS22SRSS) && (CY_IP_MXS22SRSS_VERSION >= 2) */
+    
+    if (CY_SYSCLK_TIMEOUT == Cy_SysClk_EcoEnable(10000UL))
     {
         cycfg_ClockStartupError(CY_CFG_SYSCLK_ECO_ERROR);
     }
@@ -436,6 +457,11 @@ __STATIC_INLINE void Cy_SysClk_Dpll_Lp0_Init(void)
     if (Cy_SysClk_PllIsEnabled(SRSS_DPLL_LP_0_PATH_NUM))
         return;
     #endif
+    
+    #if defined(CY_IP_MXS22SRSS) && (CY_IP_MXS22SRSS_VERSION >= 2)
+    Cy_SysPm_PDResourceMapEnable(CY_PD_PDCM_SYSCPUSS, (uint32_t)CY_SYSPM_PD_RESOURCE_DPLL_0, true);
+    Cy_SysPm_PDResourceMapEnable(CY_PD_PDCM_RRAM, (uint32_t)CY_SYSPM_PD_RESOURCE_DPLL_0, true);
+    #endif /* defined(CY_IP_MXS22SRSS) && (CY_IP_MXS22SRSS_VERSION >= 2) */
     
     Cy_SysClk_PllDisable(SRSS_DPLL_LP_0_PATH_NUM);
     if (CY_SYSCLK_SUCCESS != Cy_SysClk_PllManualConfigure(SRSS_DPLL_LP_0_PATH_NUM, &srss_0_clock_0_pll250m_0_pllConfig))
@@ -473,6 +499,11 @@ __STATIC_INLINE void Cy_SysClk_Dpll_Lp1_Init(void)
     if (Cy_SysClk_PllIsEnabled(SRSS_DPLL_LP_1_PATH_NUM))
         return;
     #endif
+    
+    #if defined(CY_IP_MXS22SRSS) && (CY_IP_MXS22SRSS_VERSION >= 2)
+    Cy_SysPm_PDResourceMapEnable(CY_PD_PDCM_SYSCPUSS, (uint32_t)CY_SYSPM_PD_RESOURCE_DPLL_1, true);
+    Cy_SysPm_PDResourceMapEnable(CY_PD_PDCM_RRAM, (uint32_t)CY_SYSPM_PD_RESOURCE_DPLL_1, true);
+    #endif /* defined(CY_IP_MXS22SRSS) && (CY_IP_MXS22SRSS_VERSION >= 2) */
     
     Cy_SysClk_PllDisable(SRSS_DPLL_LP_1_PATH_NUM);
     if (CY_SYSCLK_SUCCESS != Cy_SysClk_PllManualConfigure(SRSS_DPLL_LP_1_PATH_NUM, &srss_0_clock_0_pll250m_1_pllConfig))
@@ -542,6 +573,7 @@ void init_cycfg_clocks(void)
     {
         (void)Cy_SysClk_PllDisable(pll);
     }
+    /* Explicitly disable unused DPLLs not re-enabled below */
     
     /* Enable all source clocks */
     Cy_SysClk_PiloInit();

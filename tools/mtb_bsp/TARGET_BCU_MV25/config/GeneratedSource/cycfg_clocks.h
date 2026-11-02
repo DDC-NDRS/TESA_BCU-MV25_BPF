@@ -6,7 +6,7 @@
  * This file was automatically generated and should not be modified.
  * Configurator Backend 3.90.0
  * device-db 4.41.0.11271
- * mtb-dsl-pse8xxgp 1.5.0.1072
+ * mtb-dsl-pse8xxgp 1.8.0.1436
  *
  *******************************************************************************
  * Copyright 2026, Infineon Technologies AG, or an affiliate of Infineon
@@ -36,6 +36,7 @@
 #include "cycfg_clock_types.h"
 #include "cy_rtc.h"
 #include "cy_gpio.h"
+#include "cy_syspm_pdcm.h"
 
 #if defined(__cplusplus)
 extern "C" {

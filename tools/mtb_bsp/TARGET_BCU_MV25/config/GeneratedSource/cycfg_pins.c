@@ -6,7 +6,7 @@
  * This file was automatically generated and should not be modified.
  * Configurator Backend 3.90.0
  * device-db 4.41.0.11271
- * mtb-dsl-pse8xxgp 1.5.0.1072
+ * mtb-dsl-pse8xxgp 1.8.0.1436
  *
  *******************************************************************************
  * Copyright 2026, Infineon Technologies AG, or an affiliate of Infineon
@@ -43,7 +43,6 @@ const cy_stc_gpio_pin_config_t SCB3_SPI_CS0_PMIC_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_OSPI_RAM_SS_config =
@@ -61,7 +60,6 @@ const cy_stc_gpio_pin_config_t CYBSP_OSPI_RAM_SS_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_QSPI_D0_config =
@@ -79,7 +77,6 @@ const cy_stc_gpio_pin_config_t CYBSP_QSPI_D0_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_QSPI_D1_config =
@@ -97,7 +94,6 @@ const cy_stc_gpio_pin_config_t CYBSP_QSPI_D1_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_QSPI_D2_config =
@@ -115,7 +111,6 @@ const cy_stc_gpio_pin_config_t CYBSP_QSPI_D2_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_QSPI_D3_config =
@@ -133,7 +128,6 @@ const cy_stc_gpio_pin_config_t CYBSP_QSPI_D3_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t ENT_BTN_config =
@@ -151,7 +145,6 @@ const cy_stc_gpio_pin_config_t ENT_BTN_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t RTC_TS_L_config =
@@ -169,7 +162,6 @@ const cy_stc_gpio_pin_config_t RTC_TS_L_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t RTC_INT_L_config =
@@ -187,7 +179,6 @@ const cy_stc_gpio_pin_config_t RTC_INT_L_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t SECURE_RST_L_config =
@@ -205,7 +196,6 @@ const cy_stc_gpio_pin_config_t SECURE_RST_L_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t BMS_COM1_RST_config =
@@ -223,7 +213,6 @@ const cy_stc_gpio_pin_config_t BMS_COM1_RST_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_I3C_SCL_config =
@@ -277,7 +266,6 @@ const cy_stc_gpio_pin_config_t CYBSP_OSPI_RAM_D0_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_OSPI_RAM_D1_config =
@@ -295,7 +283,6 @@ const cy_stc_gpio_pin_config_t CYBSP_OSPI_RAM_D1_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_OSPI_RAM_D2_config =
@@ -313,7 +300,6 @@ const cy_stc_gpio_pin_config_t CYBSP_OSPI_RAM_D2_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_OSPI_RAM_D3_config =
@@ -331,7 +317,6 @@ const cy_stc_gpio_pin_config_t CYBSP_OSPI_RAM_D3_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_OSPI_RAM_D4_config =
@@ -349,7 +334,6 @@ const cy_stc_gpio_pin_config_t CYBSP_OSPI_RAM_D4_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_OSPI_RAM_D5_config =
@@ -367,7 +351,6 @@ const cy_stc_gpio_pin_config_t CYBSP_OSPI_RAM_D5_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_OSPI_RAM_D6_config =
@@ -385,7 +368,6 @@ const cy_stc_gpio_pin_config_t CYBSP_OSPI_RAM_D6_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_OSPI_RAM_D7_config =
@@ -403,7 +385,6 @@ const cy_stc_gpio_pin_config_t CYBSP_OSPI_RAM_D7_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_QSPI_SS_config =
@@ -421,7 +402,6 @@ const cy_stc_gpio_pin_config_t CYBSP_QSPI_SS_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_SWJ_TDO_config =
@@ -439,7 +419,6 @@ const cy_stc_gpio_pin_config_t CYBSP_SWJ_TDO_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_SWJ_TDI_config =
@@ -457,7 +436,6 @@ const cy_stc_gpio_pin_config_t CYBSP_SWJ_TDI_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_SWJ_SWDIO_config =
@@ -475,7 +453,6 @@ const cy_stc_gpio_pin_config_t CYBSP_SWJ_SWDIO_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_SWDCK_config =
@@ -493,7 +470,6 @@ const cy_stc_gpio_pin_config_t CYBSP_SWDCK_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t K1_FDO_config =
@@ -511,7 +487,6 @@ const cy_stc_gpio_pin_config_t K1_FDO_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t SCB2_UART_RX_UART_HS_config =
@@ -529,7 +504,6 @@ const cy_stc_gpio_pin_config_t SCB2_UART_RX_UART_HS_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t K3_FDO_config =
@@ -547,7 +521,6 @@ const cy_stc_gpio_pin_config_t K3_FDO_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t SCB2_UART_TX_UART_HS_config =
@@ -565,7 +538,6 @@ const cy_stc_gpio_pin_config_t SCB2_UART_TX_UART_HS_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t F1_FS_config =
@@ -583,7 +555,6 @@ const cy_stc_gpio_pin_config_t F1_FS_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t F3_FS_config =
@@ -601,7 +572,6 @@ const cy_stc_gpio_pin_config_t F3_FS_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t PWM_IL_OUT_config =
@@ -619,7 +589,6 @@ const cy_stc_gpio_pin_config_t PWM_IL_OUT_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t LOAD_SW_IN3_config =
@@ -637,13 +606,12 @@ const cy_stc_gpio_pin_config_t LOAD_SW_IN3_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_EXT_CLK_config =
 {
     .outVal = 1,
-    .driveMode = CY_GPIO_DM_ANALOG,
+    .driveMode = CY_GPIO_DM_HIGHZ,
     .hsiom = CYBSP_EXT_CLK_HSIOM,
     .intEdge = CY_GPIO_INTR_DISABLE,
     .intMask = 0UL,
@@ -655,7 +623,6 @@ const cy_stc_gpio_pin_config_t CYBSP_EXT_CLK_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t PWM_IL_IN_config =
@@ -673,7 +640,6 @@ const cy_stc_gpio_pin_config_t PWM_IL_IN_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t K1_PWM_FB_config =
@@ -691,7 +657,6 @@ const cy_stc_gpio_pin_config_t K1_PWM_FB_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t K3_PWM_FB_config =
@@ -709,7 +674,6 @@ const cy_stc_gpio_pin_config_t K3_PWM_FB_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t BMS_COM2_DIO2_config =
@@ -727,7 +691,6 @@ const cy_stc_gpio_pin_config_t BMS_COM2_DIO2_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t BMS_COM2_DIO2_DIR_config =
@@ -745,7 +708,6 @@ const cy_stc_gpio_pin_config_t BMS_COM2_DIO2_DIR_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t FRAM_WP_L_config =
@@ -763,7 +725,6 @@ const cy_stc_gpio_pin_config_t FRAM_WP_L_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t SEL_BTN_config =
@@ -781,7 +742,6 @@ const cy_stc_gpio_pin_config_t SEL_BTN_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t LOAD_SW_RST_config =
@@ -799,7 +759,6 @@ const cy_stc_gpio_pin_config_t LOAD_SW_RST_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t LOAD_SW_FAULT_config =
@@ -817,7 +776,6 @@ const cy_stc_gpio_pin_config_t LOAD_SW_FAULT_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t LOAD_SW_IN4_config =
@@ -835,7 +793,6 @@ const cy_stc_gpio_pin_config_t LOAD_SW_IN4_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t LOAD_SW_LHM_config =
@@ -853,7 +810,6 @@ const cy_stc_gpio_pin_config_t LOAD_SW_LHM_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t K_ENBL_config =
@@ -871,7 +827,6 @@ const cy_stc_gpio_pin_config_t K_ENBL_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_USER_LED3_config =
@@ -889,7 +844,6 @@ const cy_stc_gpio_pin_config_t CYBSP_USER_LED3_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t SCB1_UART_TX_UART_LS_config =
@@ -907,7 +861,6 @@ const cy_stc_gpio_pin_config_t SCB1_UART_TX_UART_LS_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t SCB1_UART_RX_UART_LS_config =
@@ -925,7 +878,6 @@ const cy_stc_gpio_pin_config_t SCB1_UART_RX_UART_LS_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_BT_UART_RX_config =
@@ -943,7 +895,6 @@ const cy_stc_gpio_pin_config_t CYBSP_BT_UART_RX_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_BT_UART_TX_config =
@@ -961,7 +912,6 @@ const cy_stc_gpio_pin_config_t CYBSP_BT_UART_TX_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_BT_UART_CTS_config =
@@ -979,7 +929,6 @@ const cy_stc_gpio_pin_config_t CYBSP_BT_UART_CTS_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_BT_UART_RTS_config =
@@ -997,7 +946,6 @@ const cy_stc_gpio_pin_config_t CYBSP_BT_UART_RTS_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_BT_POWER_config =
@@ -1015,7 +963,6 @@ const cy_stc_gpio_pin_config_t CYBSP_BT_POWER_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t RMII_ETH_RX_CTL_config =
@@ -1033,7 +980,6 @@ const cy_stc_gpio_pin_config_t RMII_ETH_RX_CTL_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t RMII_ETH_RXD0_config =
@@ -1051,7 +997,6 @@ const cy_stc_gpio_pin_config_t RMII_ETH_RXD0_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t RMII_ETH_RXD1_config =
@@ -1069,7 +1014,6 @@ const cy_stc_gpio_pin_config_t RMII_ETH_RXD1_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_I2C_SCL_config =
@@ -1087,7 +1031,6 @@ const cy_stc_gpio_pin_config_t CYBSP_I2C_SCL_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_I2C_SDA_config =
@@ -1105,7 +1048,6 @@ const cy_stc_gpio_pin_config_t CYBSP_I2C_SDA_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t RMII_ETH_TXD0_config =
@@ -1123,7 +1065,6 @@ const cy_stc_gpio_pin_config_t RMII_ETH_TXD0_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t RMII_ETH_TXD1_config =
@@ -1141,7 +1082,6 @@ const cy_stc_gpio_pin_config_t RMII_ETH_TXD1_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t RMII_ETH_TX_CTL_config =
@@ -1159,7 +1099,6 @@ const cy_stc_gpio_pin_config_t RMII_ETH_TX_CTL_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_BT_DEVICE_WAKE_config =
@@ -1177,7 +1116,6 @@ const cy_stc_gpio_pin_config_t CYBSP_BT_DEVICE_WAKE_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_WIFI_WL_REG_ON_config =
@@ -1195,7 +1133,6 @@ const cy_stc_gpio_pin_config_t CYBSP_WIFI_WL_REG_ON_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t RMII_ETH_REF_CLK_config =
@@ -1213,7 +1150,6 @@ const cy_stc_gpio_pin_config_t RMII_ETH_REF_CLK_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_WIFI_SDIO_CLK_config =
@@ -1231,7 +1167,6 @@ const cy_stc_gpio_pin_config_t CYBSP_WIFI_SDIO_CLK_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_WIFI_SDIO_D0_config =
@@ -1249,7 +1184,6 @@ const cy_stc_gpio_pin_config_t CYBSP_WIFI_SDIO_D0_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_WIFI_SDIO_D1_config =
@@ -1267,7 +1201,6 @@ const cy_stc_gpio_pin_config_t CYBSP_WIFI_SDIO_D1_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_WL_DEV_WAKE_config =
@@ -1285,7 +1218,6 @@ const cy_stc_gpio_pin_config_t CYBSP_WL_DEV_WAKE_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_WIFI_SDIO_D2_config =
@@ -1303,7 +1235,6 @@ const cy_stc_gpio_pin_config_t CYBSP_WIFI_SDIO_D2_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_WIFI_SDIO_D3_config =
@@ -1321,7 +1252,6 @@ const cy_stc_gpio_pin_config_t CYBSP_WIFI_SDIO_D3_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_BT_HOST_WAKE_config =
@@ -1339,7 +1269,6 @@ const cy_stc_gpio_pin_config_t CYBSP_BT_HOST_WAKE_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t ETH_MDC_config =
@@ -1357,7 +1286,6 @@ const cy_stc_gpio_pin_config_t ETH_MDC_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_USER_LED1_config =
@@ -1375,7 +1303,6 @@ const cy_stc_gpio_pin_config_t CYBSP_USER_LED1_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_USER_LED2_config =
@@ -1393,7 +1320,6 @@ const cy_stc_gpio_pin_config_t CYBSP_USER_LED2_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t RMII_ETH_NRST_config =
@@ -1411,7 +1337,6 @@ const cy_stc_gpio_pin_config_t RMII_ETH_NRST_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_WIFI_HOST_WAKE_config =
@@ -1429,7 +1354,6 @@ const cy_stc_gpio_pin_config_t CYBSP_WIFI_HOST_WAKE_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t ETH_MDIO_config =
@@ -1447,7 +1371,6 @@ const cy_stc_gpio_pin_config_t ETH_MDIO_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t RS485_DE_RE_L_config =
@@ -1465,7 +1388,6 @@ const cy_stc_gpio_pin_config_t RS485_DE_RE_L_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t PMIC_INT_config =
@@ -1483,7 +1405,6 @@ const cy_stc_gpio_pin_config_t PMIC_INT_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t PMIC_WDI_config =
@@ -1501,7 +1422,6 @@ const cy_stc_gpio_pin_config_t PMIC_WDI_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t BMS_COM2_RST_config =
@@ -1519,7 +1439,6 @@ const cy_stc_gpio_pin_config_t BMS_COM2_RST_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t SCB8_UART_TX_config =
@@ -1537,7 +1456,6 @@ const cy_stc_gpio_pin_config_t SCB8_UART_TX_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t SCB8_UART_RX_config =
@@ -1555,7 +1473,6 @@ const cy_stc_gpio_pin_config_t SCB8_UART_RX_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t BMS_COM2_INT_config =
@@ -1573,7 +1490,6 @@ const cy_stc_gpio_pin_config_t BMS_COM2_INT_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CAN1_STB_config =
@@ -1591,7 +1507,6 @@ const cy_stc_gpio_pin_config_t CAN1_STB_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CAN0_STB_config =
@@ -1609,7 +1524,6 @@ const cy_stc_gpio_pin_config_t CAN0_STB_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t SCB9_SPI_CLK_config =
@@ -1627,7 +1541,6 @@ const cy_stc_gpio_pin_config_t SCB9_SPI_CLK_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t SCB9_SPI_MOSI_config =
@@ -1645,7 +1558,6 @@ const cy_stc_gpio_pin_config_t SCB9_SPI_MOSI_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t SCB9_SPI_MISO_config =
@@ -1663,7 +1575,6 @@ const cy_stc_gpio_pin_config_t SCB9_SPI_MISO_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t SCB9_SPI_CS0_K1_CSB_config =
@@ -1681,7 +1592,6 @@ const cy_stc_gpio_pin_config_t SCB9_SPI_CS0_K1_CSB_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t SCB9_SPI_CS1_K3_CSB_config =
@@ -1699,7 +1609,6 @@ const cy_stc_gpio_pin_config_t SCB9_SPI_CS1_K3_CSB_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t ADC_SAR5_K1_CSNS_config =
@@ -1717,7 +1626,6 @@ const cy_stc_gpio_pin_config_t ADC_SAR5_K1_CSNS_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t ADC_SAR6_K3_CSNS_config =
@@ -1735,7 +1643,6 @@ const cy_stc_gpio_pin_config_t ADC_SAR6_K3_CSNS_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t ADC_TEMP_SENS_config =
@@ -1753,7 +1660,6 @@ const cy_stc_gpio_pin_config_t ADC_TEMP_SENS_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CAN0_RX_config =
@@ -1771,7 +1677,6 @@ const cy_stc_gpio_pin_config_t CAN0_RX_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CAN0_TX_config =
@@ -1789,7 +1694,6 @@ const cy_stc_gpio_pin_config_t CAN0_TX_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CAN1_RX_config =
@@ -1807,7 +1711,6 @@ const cy_stc_gpio_pin_config_t CAN1_RX_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CAN1_TX_config =
@@ -1825,7 +1728,6 @@ const cy_stc_gpio_pin_config_t CAN1_TX_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t BMS_COM2_DIO1_config =
@@ -1843,7 +1745,6 @@ const cy_stc_gpio_pin_config_t BMS_COM2_DIO1_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t BMS_COM2_SPI_MISO_config =
@@ -1861,7 +1762,6 @@ const cy_stc_gpio_pin_config_t BMS_COM2_SPI_MISO_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t BMS_COM2_CS0_config =
@@ -1879,7 +1779,6 @@ const cy_stc_gpio_pin_config_t BMS_COM2_CS0_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t BMS_COM2_CS1_MC33XS2410_config =
@@ -1897,7 +1796,6 @@ const cy_stc_gpio_pin_config_t BMS_COM2_CS1_MC33XS2410_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t BMS_COM2_SPI_CLK_config =
@@ -1915,7 +1813,6 @@ const cy_stc_gpio_pin_config_t BMS_COM2_SPI_CLK_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t BMS_COM2_SPI_MOSI_config =
@@ -1933,7 +1830,6 @@ const cy_stc_gpio_pin_config_t BMS_COM2_SPI_MOSI_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t BMS_COM1_SPI_CLK_config =
@@ -1951,7 +1847,6 @@ const cy_stc_gpio_pin_config_t BMS_COM1_SPI_CLK_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t BMS_COM1_SPI_MOSI_config =
@@ -1969,7 +1864,6 @@ const cy_stc_gpio_pin_config_t BMS_COM1_SPI_MOSI_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t BMS_COM1_DIO1_config =
@@ -1987,7 +1881,6 @@ const cy_stc_gpio_pin_config_t BMS_COM1_DIO1_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t BMS_COM1_MISO_config =
@@ -2005,7 +1898,6 @@ const cy_stc_gpio_pin_config_t BMS_COM1_MISO_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t BMS_COM1_CS0_config =
@@ -2023,7 +1915,6 @@ const cy_stc_gpio_pin_config_t BMS_COM1_CS0_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t BMS_COM1_DIO2_config =
@@ -2041,7 +1932,6 @@ const cy_stc_gpio_pin_config_t BMS_COM1_DIO2_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_ECO_IN_config =
@@ -2059,7 +1949,6 @@ const cy_stc_gpio_pin_config_t CYBSP_ECO_IN_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_ECO_OUT_config =
@@ -2077,7 +1966,6 @@ const cy_stc_gpio_pin_config_t CYBSP_ECO_OUT_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_TRACE_CLK_config =
@@ -2095,7 +1983,6 @@ const cy_stc_gpio_pin_config_t CYBSP_TRACE_CLK_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_TRACE_DATA3_config =
@@ -2113,7 +2000,6 @@ const cy_stc_gpio_pin_config_t CYBSP_TRACE_DATA3_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_TRACE_DATA2_config =
@@ -2131,7 +2017,6 @@ const cy_stc_gpio_pin_config_t CYBSP_TRACE_DATA2_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_TRACE_DATA1_config =
@@ -2149,7 +2034,6 @@ const cy_stc_gpio_pin_config_t CYBSP_TRACE_DATA1_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_TRACE_DATA0_config =
@@ -2167,7 +2051,6 @@ const cy_stc_gpio_pin_config_t CYBSP_TRACE_DATA0_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t BMS_COM1_INT_config =
@@ -2185,7 +2068,6 @@ const cy_stc_gpio_pin_config_t BMS_COM1_INT_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t K1_PWM_config =
@@ -2203,7 +2085,6 @@ const cy_stc_gpio_pin_config_t K1_PWM_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t K3_PWM_config =
@@ -2221,7 +2102,6 @@ const cy_stc_gpio_pin_config_t K3_PWM_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_WIFI_SDIO_CMD_config =
@@ -2239,7 +2119,6 @@ const cy_stc_gpio_pin_config_t CYBSP_WIFI_SDIO_CMD_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t CYBSP_MEMORY_RESET_config =
@@ -2257,7 +2136,6 @@ const cy_stc_gpio_pin_config_t CYBSP_MEMORY_RESET_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t LOAD_SW_IN1_config =
@@ -2275,7 +2153,6 @@ const cy_stc_gpio_pin_config_t LOAD_SW_IN1_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t LOAD_SW_IN2_config =
@@ -2293,7 +2170,6 @@ const cy_stc_gpio_pin_config_t LOAD_SW_IN2_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t SCB3_SPI_MISO_config =
@@ -2311,7 +2187,6 @@ const cy_stc_gpio_pin_config_t SCB3_SPI_MISO_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t SCB3_SPI_MOSI_config =
@@ -2329,7 +2204,6 @@ const cy_stc_gpio_pin_config_t SCB3_SPI_MOSI_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t SCB3_SPI_CLK_config =
@@ -2347,7 +2221,6 @@ const cy_stc_gpio_pin_config_t SCB3_SPI_CLK_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 const cy_stc_gpio_pin_config_t SCB3_SPI_CS1_FRAM_config =
@@ -2365,7 +2238,6 @@ const cy_stc_gpio_pin_config_t SCB3_SPI_CS1_FRAM_config =
     .vtripSel = 0UL,
     .vrefSel = 0UL,
     .vohSel = 0UL,
-    .pullUpRes = CY_GPIO_PULLUP_RES_DISABLE,
     .nonSec = 1,
 };
 
@@ -2379,36 +2251,56 @@ void init_cycfg_pins(void)
     Cy_GPIO_Pin_Init(CYBSP_QSPI_D3_PORT, CYBSP_QSPI_D3_PIN, &CYBSP_QSPI_D3_config);
 #if defined(CY_MMIO_SMIF0_PERI_NR)
     Cy_SysClk_PeriGroupSlaveInit(CY_MMIO_SMIF0_PERI_NR, CY_MMIO_SMIF0_GROUP_NR, CY_MMIO_SMIF0_SLAVE_NR, CY_MMIO_SMIF0_CLK_HF_NR);
-    Cy_GPIO_SetHSIOM((GPIO_PRT_Type*)SMIF0_CORE_SMIF_GPIO_SMIF_PRT0, ENT_BTN_PIN, HSIOM_SEL_ACT_14);
+#endif /* defined(CY_MMIO_SMIF0_PERI_NR) */
+    Cy_GPIO_SetHSIOM_SecPin(GPIO_PRT1, ENT_BTN_PIN, CY_GPIO_HSIOM_SECURE_ACCESS);
+#if defined(CY_MMIO_SMIF0_PERI_NR)
+    Cy_GPIO_SetHSIOM(GPIO_PRT1, ENT_BTN_PIN, HSIOM_SEL_ACT_14);
     Cy_GPIO_SetHSIOM(ENT_BTN_PORT, ENT_BTN_PIN, ENT_BTN_HSIOM);
     Cy_GPIO_SetDrivemode(ENT_BTN_PORT, ENT_BTN_PIN, CY_GPIO_DM_PULLUP);
+    Cy_GPIO_SetSlewRate(ENT_BTN_PORT, ENT_BTN_PIN, CY_GPIO_SLEW_FAST);
+    Cy_GPIO_SetDriveSel(ENT_BTN_PORT, ENT_BTN_PIN, CY_GPIO_DRIVE_1_2);
     Cy_GPIO_WriteDirectOut(ENT_BTN_PORT, ENT_BTN_PIN, 1);
 #endif /* defined(CY_MMIO_SMIF0_PERI_NR) */
     Cy_GPIO_SetHSIOM_SecPin(GPIO_PRT1, ENT_BTN_PIN, 1);
 #if defined(CY_MMIO_SMIF0_PERI_NR)
     Cy_SysClk_PeriGroupSlaveInit(CY_MMIO_SMIF0_PERI_NR, CY_MMIO_SMIF0_GROUP_NR, CY_MMIO_SMIF0_SLAVE_NR, CY_MMIO_SMIF0_CLK_HF_NR);
-    Cy_GPIO_SetHSIOM((GPIO_PRT_Type*)SMIF0_CORE_SMIF_GPIO_SMIF_PRT0, RTC_TS_L_PIN, HSIOM_SEL_ACT_14);
+#endif /* defined(CY_MMIO_SMIF0_PERI_NR) */
+    Cy_GPIO_SetHSIOM_SecPin(GPIO_PRT1, RTC_TS_L_PIN, CY_GPIO_HSIOM_SECURE_ACCESS);
+#if defined(CY_MMIO_SMIF0_PERI_NR)
+    Cy_GPIO_SetHSIOM(GPIO_PRT1, RTC_TS_L_PIN, HSIOM_SEL_ACT_14);
     Cy_GPIO_SetHSIOM(RTC_TS_L_PORT, RTC_TS_L_PIN, RTC_TS_L_HSIOM);
     Cy_GPIO_SetDrivemode(RTC_TS_L_PORT, RTC_TS_L_PIN, CY_GPIO_DM_STRONG_IN_OFF);
+    Cy_GPIO_SetSlewRate(RTC_TS_L_PORT, RTC_TS_L_PIN, CY_GPIO_SLEW_FAST);
+    Cy_GPIO_SetDriveSel(RTC_TS_L_PORT, RTC_TS_L_PIN, CY_GPIO_DRIVE_1_2);
     Cy_GPIO_WriteDirectOut(RTC_TS_L_PORT, RTC_TS_L_PIN, 1);
 #endif /* defined(CY_MMIO_SMIF0_PERI_NR) */
     Cy_GPIO_SetHSIOM_SecPin(GPIO_PRT1, RTC_TS_L_PIN, 1);
 #if defined(CY_MMIO_SMIF0_PERI_NR)
     Cy_SysClk_PeriGroupSlaveInit(CY_MMIO_SMIF0_PERI_NR, CY_MMIO_SMIF0_GROUP_NR, CY_MMIO_SMIF0_SLAVE_NR, CY_MMIO_SMIF0_CLK_HF_NR);
-    Cy_GPIO_SetHSIOM((GPIO_PRT_Type*)SMIF0_CORE_SMIF_GPIO_SMIF_PRT0, RTC_INT_L_PIN, HSIOM_SEL_ACT_14);
+#endif /* defined(CY_MMIO_SMIF0_PERI_NR) */
+    Cy_GPIO_SetHSIOM_SecPin(GPIO_PRT1, RTC_INT_L_PIN, CY_GPIO_HSIOM_SECURE_ACCESS);
+#if defined(CY_MMIO_SMIF0_PERI_NR)
+    Cy_GPIO_SetHSIOM(GPIO_PRT1, RTC_INT_L_PIN, HSIOM_SEL_ACT_14);
     Cy_GPIO_SetHSIOM(RTC_INT_L_PORT, RTC_INT_L_PIN, RTC_INT_L_HSIOM);
     Cy_GPIO_SetDrivemode(RTC_INT_L_PORT, RTC_INT_L_PIN, CY_GPIO_DM_PULLUP);
+    Cy_GPIO_SetSlewRate(RTC_INT_L_PORT, RTC_INT_L_PIN, CY_GPIO_SLEW_FAST);
+    Cy_GPIO_SetDriveSel(RTC_INT_L_PORT, RTC_INT_L_PIN, CY_GPIO_DRIVE_1_2);
     Cy_GPIO_WriteDirectOut(RTC_INT_L_PORT, RTC_INT_L_PIN, 1);
 #endif /* defined(CY_MMIO_SMIF0_PERI_NR) */
-    Cy_GPIO_SetHSIOM_SecPin(GPIO_PRT1, RTC_INT_L_PIN, 1);
     Cy_GPIO_SetInterruptEdge(GPIO_PRT1, RTC_INT_L_PIN, CY_GPIO_INTR_FALLING);
     Cy_GPIO_ClearInterrupt(GPIO_PRT1, RTC_INT_L_PIN);
     Cy_GPIO_SetInterruptMask(GPIO_PRT1, RTC_INT_L_PIN, 1UL);
+    Cy_GPIO_SetHSIOM_SecPin(GPIO_PRT1, RTC_INT_L_PIN, 1);
 #if defined(CY_MMIO_SMIF0_PERI_NR)
     Cy_SysClk_PeriGroupSlaveInit(CY_MMIO_SMIF0_PERI_NR, CY_MMIO_SMIF0_GROUP_NR, CY_MMIO_SMIF0_SLAVE_NR, CY_MMIO_SMIF0_CLK_HF_NR);
-    Cy_GPIO_SetHSIOM((GPIO_PRT_Type*)SMIF0_CORE_SMIF_GPIO_SMIF_PRT0, SECURE_RST_L_PIN, HSIOM_SEL_ACT_14);
+#endif /* defined(CY_MMIO_SMIF0_PERI_NR) */
+    Cy_GPIO_SetHSIOM_SecPin(GPIO_PRT1, SECURE_RST_L_PIN, CY_GPIO_HSIOM_SECURE_ACCESS);
+#if defined(CY_MMIO_SMIF0_PERI_NR)
+    Cy_GPIO_SetHSIOM(GPIO_PRT1, SECURE_RST_L_PIN, HSIOM_SEL_ACT_14);
     Cy_GPIO_SetHSIOM(SECURE_RST_L_PORT, SECURE_RST_L_PIN, SECURE_RST_L_HSIOM);
     Cy_GPIO_SetDrivemode(SECURE_RST_L_PORT, SECURE_RST_L_PIN, CY_GPIO_DM_STRONG_IN_OFF);
+    Cy_GPIO_SetSlewRate(SECURE_RST_L_PORT, SECURE_RST_L_PIN, CY_GPIO_SLEW_FAST);
+    Cy_GPIO_SetDriveSel(SECURE_RST_L_PORT, SECURE_RST_L_PIN, CY_GPIO_DRIVE_1_2);
     Cy_GPIO_WriteDirectOut(SECURE_RST_L_PORT, SECURE_RST_L_PIN, 1);
 #endif /* defined(CY_MMIO_SMIF0_PERI_NR) */
     Cy_GPIO_SetHSIOM_SecPin(GPIO_PRT1, SECURE_RST_L_PIN, 1);

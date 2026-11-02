@@ -4174,7 +4174,7 @@
                         <Param id="OpenDrainHighCount" value="5"/>
                         <Param id="OpenDrainLowCount" value="27"/>
                         <Param id="ProvisionalID" value="0x112233445566"/>
-                        <Param id="PushPullDataRate" value="12500"/>
+                        <Param id="PushPullDataRate" value="8000"/>
                         <Param id="PushPullHighCount" value="5"/>
                         <Param id="PushPullLowCount" value="5"/>
                         <Param id="RXBufferStartThreshold" value="CY_I3C_1_WORD_DEPTH"/>
@@ -4776,7 +4776,7 @@
                         </Aliases>
                     </Block>
                     <Parameters>
-                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
+                        <Param id="DriveModes" value="CY_GPIO_DM_HIGHZ"/>
                         <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
                         <Param id="extended_drive_sel" value="false"/>
                         <Param id="inFlash" value="true"/>
@@ -6613,6 +6613,8 @@
                     <Parameters>
                         <Param id="conversionMode" value="true"/>
                         <Param id="debug" value="false"/>
+                        <Param id="setConversionRate" value="0"/>
+                        <Param id="setConversionTime" value="0"/>
                         <Param id="simultaneousSampling" value="false"/>
                     </Parameters>
                 </Personality>
@@ -6737,12 +6739,12 @@
                 <Personality template="pclk_v2" version="1.1" instance="vy6xFOXZU08">
                     <Block location="peri[0].group[1].div_16_5[1]" locked="true">
                         <Aliases>
-                            <Alias value="CYBSP_SMARTIO_PWM_CLK_DIV"/>
+                            <Alias value="CYBSP_BT_UART_CLK_DIV"/>
                         </Aliases>
                     </Block>
                     <Parameters>
-                        <Param id="fracDivider" value="0"/>
-                        <Param id="intDivider" value="5000"/>
+                        <Param id="fracDivider" value="26"/>
+                        <Param id="intDivider" value="86"/>
                         <Param id="startOnReset" value="true"/>
                     </Parameters>
                 </Personality>
@@ -6805,7 +6807,7 @@
                         </Aliases>
                     </Block>
                     <Parameters>
-                        <Param id="intDivider" value="8"/>
+                        <Param id="intDivider" value="1"/>
                         <Param id="startOnReset" value="true"/>
                     </Parameters>
                 </Personality>
@@ -6888,7 +6890,6 @@
                         <Param id="IntrTxUartNack" value="false"/>
                         <Param id="IntrTxUnderflow" value="false"/>
                         <Param id="IrdaLowPower" value="false"/>
-                        <Param id="IrdaPolarity" value="NON_INVERTING"/>
                         <Param id="MpRxAcceptAddress" value="false"/>
                         <Param id="MpRxAddress" value="0"/>
                         <Param id="MpRxAddressMask" value="255"/>
@@ -6897,6 +6898,7 @@
                         <Param id="ParityType" value="CY_SCB_UART_PARITY_NONE"/>
                         <Param id="RtsPolarity" value="CY_SCB_UART_ACTIVE_LOW"/>
                         <Param id="RtsTriggerLevel" value="63"/>
+                        <Param id="RxPolarity" value="NON_INVERTING"/>
                         <Param id="RxTriggerLevel" value="63"/>
                         <Param id="SmCardRetryOnNack" value="false"/>
                         <Param id="StopBits" value="CY_SCB_UART_STOP_BITS_1"/>
@@ -6942,7 +6944,6 @@
                         <Param id="IntrTxUartNack" value="false"/>
                         <Param id="IntrTxUnderflow" value="false"/>
                         <Param id="IrdaLowPower" value="false"/>
-                        <Param id="IrdaPolarity" value="NON_INVERTING"/>
                         <Param id="MpRxAcceptAddress" value="false"/>
                         <Param id="MpRxAddress" value="0"/>
                         <Param id="MpRxAddressMask" value="255"/>
@@ -6951,6 +6952,7 @@
                         <Param id="ParityType" value="CY_SCB_UART_PARITY_NONE"/>
                         <Param id="RtsPolarity" value="CY_SCB_UART_ACTIVE_LOW"/>
                         <Param id="RtsTriggerLevel" value="63"/>
+                        <Param id="RxPolarity" value="NON_INVERTING"/>
                         <Param id="RxTriggerLevel" value="63"/>
                         <Param id="SmCardRetryOnNack" value="false"/>
                         <Param id="StopBits" value="CY_SCB_UART_STOP_BITS_1"/>
@@ -6958,7 +6960,7 @@
                         <Param id="inFlash" value="true"/>
                     </Parameters>
                 </Personality>
-                <Personality template="spi" version="3.0" instance="i78DUrK8Q-8">
+                <Personality template="spi" version="4.0" instance="FEh0nxGpanw">
                     <Block location="scb[3]" locked="true">
                         <Aliases>
                             <Alias value="PMIC_FRAM_IF"/>
@@ -6967,9 +6969,11 @@
                     <Parameters>
                         <Param id="ApiMode" value="HIGH_LEVEL"/>
                         <Param id="BitsOrder" value="MSB_FIRST"/>
+                        <Param id="ClockSource" value="INTERNAL"/>
                         <Param id="DataRate" value="4000"/>
                         <Param id="DeassertSelectLine" value="false"/>
                         <Param id="DropOnParityError" value="false"/>
+                        <Param id="EnableEzMode" value="false"/>
                         <Param id="EnableFreeRunSclk" value="false"/>
                         <Param id="EnableInputFilter" value="false"/>
                         <Param id="EnableLateMisoSample" value="true"/>
@@ -7044,7 +7048,6 @@
                         <Param id="IntrTxUartNack" value="false"/>
                         <Param id="IntrTxUnderflow" value="false"/>
                         <Param id="IrdaLowPower" value="false"/>
-                        <Param id="IrdaPolarity" value="NON_INVERTING"/>
                         <Param id="MpRxAcceptAddress" value="false"/>
                         <Param id="MpRxAddress" value="0"/>
                         <Param id="MpRxAddressMask" value="255"/>
@@ -7053,6 +7056,7 @@
                         <Param id="ParityType" value="CY_SCB_UART_PARITY_NONE"/>
                         <Param id="RtsPolarity" value="CY_SCB_UART_ACTIVE_LOW"/>
                         <Param id="RtsTriggerLevel" value="63"/>
+                        <Param id="RxPolarity" value="NON_INVERTING"/>
                         <Param id="RxTriggerLevel" value="63"/>
                         <Param id="SmCardRetryOnNack" value="false"/>
                         <Param id="StopBits" value="CY_SCB_UART_STOP_BITS_1"/>
@@ -7060,7 +7064,7 @@
                         <Param id="inFlash" value="true"/>
                     </Parameters>
                 </Personality>
-                <Personality template="spi" version="3.0" instance="VzDToSDijBc">
+                <Personality template="spi" version="4.0" instance="30RCLR0U3VM">
                     <Block location="scb[5]" locked="true">
                         <Aliases>
                             <Alias value="BMS_COM2_IF"/>
@@ -7069,9 +7073,11 @@
                     <Parameters>
                         <Param id="ApiMode" value="HIGH_LEVEL"/>
                         <Param id="BitsOrder" value="MSB_FIRST"/>
+                        <Param id="ClockSource" value="INTERNAL"/>
                         <Param id="DataRate" value="8000"/>
                         <Param id="DeassertSelectLine" value="false"/>
                         <Param id="DropOnParityError" value="false"/>
+                        <Param id="EnableEzMode" value="false"/>
                         <Param id="EnableFreeRunSclk" value="false"/>
                         <Param id="EnableInputFilter" value="false"/>
                         <Param id="EnableLateMisoSample" value="true"/>
@@ -7170,7 +7176,6 @@
                         <Param id="IntrTxUartNack" value="false"/>
                         <Param id="IntrTxUnderflow" value="false"/>
                         <Param id="IrdaLowPower" value="false"/>
-                        <Param id="IrdaPolarity" value="NON_INVERTING"/>
                         <Param id="MpRxAcceptAddress" value="false"/>
                         <Param id="MpRxAddress" value="0"/>
                         <Param id="MpRxAddressMask" value="255"/>
@@ -7179,6 +7184,7 @@
                         <Param id="ParityType" value="CY_SCB_UART_PARITY_NONE"/>
                         <Param id="RtsPolarity" value="CY_SCB_UART_ACTIVE_LOW"/>
                         <Param id="RtsTriggerLevel" value="63"/>
+                        <Param id="RxPolarity" value="NON_INVERTING"/>
                         <Param id="RxTriggerLevel" value="63"/>
                         <Param id="SmCardRetryOnNack" value="false"/>
                         <Param id="StopBits" value="CY_SCB_UART_STOP_BITS_1"/>
@@ -7186,7 +7192,7 @@
                         <Param id="inFlash" value="true"/>
                     </Parameters>
                 </Personality>
-                <Personality template="spi" version="3.0" instance="_kFqojCaiS4">
+                <Personality template="spi" version="4.0" instance="wKOXSzdGqrM">
                     <Block location="scb[9]" locked="true">
                         <Aliases>
                             <Alias value="MC33HB2000_IF"/>
@@ -7195,9 +7201,11 @@
                     <Parameters>
                         <Param id="ApiMode" value="HIGH_LEVEL"/>
                         <Param id="BitsOrder" value="MSB_FIRST"/>
+                        <Param id="ClockSource" value="INTERNAL"/>
                         <Param id="DataRate" value="8000"/>
                         <Param id="DeassertSelectLine" value="false"/>
                         <Param id="DropOnParityError" value="false"/>
+                        <Param id="EnableEzMode" value="false"/>
                         <Param id="EnableFreeRunSclk" value="false"/>
                         <Param id="EnableInputFilter" value="false"/>
                         <Param id="EnableLateMisoSample" value="true"/>
@@ -7234,7 +7242,7 @@
                         <Param id="inFlash" value="true"/>
                     </Parameters>
                 </Personality>
-                <Personality template="spi" version="3.0" instance="ulCbeZBMo0c">
+                <Personality template="spi" version="4.0" instance="UJdXdEcgwFY">
                     <Block location="scb[11]" locked="true">
                         <Aliases>
                             <Alias value="BMS_COM1_IF"/>
@@ -7243,9 +7251,11 @@
                     <Parameters>
                         <Param id="ApiMode" value="HIGH_LEVEL"/>
                         <Param id="BitsOrder" value="MSB_FIRST"/>
+                        <Param id="ClockSource" value="INTERNAL"/>
                         <Param id="DataRate" value="8000"/>
                         <Param id="DeassertSelectLine" value="false"/>
                         <Param id="DropOnParityError" value="false"/>
+                        <Param id="EnableEzMode" value="false"/>
                         <Param id="EnableFreeRunSclk" value="false"/>
                         <Param id="EnableInputFilter" value="false"/>
                         <Param id="EnableLateMisoSample" value="true"/>
@@ -7305,10 +7315,6 @@
                     </Block>
                     <Parameters>
                         <Param id="capture_mode" value="CY_SMIF_SEL_NORMAL_SPI"/>
-                        <Param id="device0_sdl_tap" value="CY_SMIF_SDL_8_TAP_DELAY"/>
-                        <Param id="device1_sdl_tap" value="CY_SMIF_SDL_8_TAP_DELAY"/>
-                        <Param id="device2_sdl_tap" value="CY_SMIF_SDL_8_TAP_DELAY"/>
-                        <Param id="device3_sdl_tap" value="CY_SMIF_SDL_8_TAP_DELAY"/>
                         <Param id="inFlash" value="true"/>
                         <Param id="isrAlignment" value="false"/>
                         <Param id="isrCmdOverflow" value="false"/>
@@ -7328,10 +7334,6 @@
                     </Block>
                     <Parameters>
                         <Param id="capture_mode" value="CY_SMIF_SEL_NORMAL_SPI"/>
-                        <Param id="device0_sdl_tap" value="CY_SMIF_SDL_8_TAP_DELAY"/>
-                        <Param id="device1_sdl_tap" value="CY_SMIF_SDL_8_TAP_DELAY"/>
-                        <Param id="device2_sdl_tap" value="CY_SMIF_SDL_8_TAP_DELAY"/>
-                        <Param id="device3_sdl_tap" value="CY_SMIF_SDL_8_TAP_DELAY"/>
                         <Param id="inFlash" value="true"/>
                         <Param id="isrAlignment" value="false"/>
                         <Param id="isrCmdOverflow" value="false"/>
@@ -7376,6 +7378,7 @@
                     <Block location="srss[0].clock[0].hfclk[0]" locked="true"/>
                     <Parameters>
                         <Param id="ClkHfCsv" value="false"/>
+                        <Param id="directSelect" value="false"/>
                         <Param id="divider" value="2"/>
                         <Param id="sourceClockNumber" value="0"/>
                     </Parameters>
@@ -7384,6 +7387,7 @@
                     <Block location="srss[0].clock[0].hfclk[1]" locked="true"/>
                     <Parameters>
                         <Param id="ClkHfCsv" value="false"/>
+                        <Param id="directSelect" value="false"/>
                         <Param id="divider" value="1"/>
                         <Param id="sourceClockNumber" value="0"/>
                     </Parameters>
@@ -7392,6 +7396,7 @@
                     <Block location="srss[0].clock[0].hfclk[2]" locked="true"/>
                     <Parameters>
                         <Param id="ClkHfCsv" value="false"/>
+                        <Param id="directSelect" value="false"/>
                         <Param id="divider" value="2"/>
                         <Param id="sourceClockNumber" value="0"/>
                     </Parameters>
@@ -7400,6 +7405,7 @@
                     <Block location="srss[0].clock[0].hfclk[3]" locked="true"/>
                     <Parameters>
                         <Param id="ClkHfCsv" value="false"/>
+                        <Param id="directSelect" value="false"/>
                         <Param id="divider" value="2"/>
                         <Param id="sourceClockNumber" value="0"/>
                     </Parameters>
@@ -7408,6 +7414,7 @@
                     <Block location="srss[0].clock[0].hfclk[4]" locked="true"/>
                     <Parameters>
                         <Param id="ClkHfCsv" value="false"/>
+                        <Param id="directSelect" value="false"/>
                         <Param id="divider" value="2"/>
                         <Param id="sourceClockNumber" value="0"/>
                     </Parameters>
@@ -7416,6 +7423,7 @@
                     <Block location="srss[0].clock[0].hfclk[5]" locked="true"/>
                     <Parameters>
                         <Param id="ClkHfCsv" value="false"/>
+                        <Param id="directSelect" value="false"/>
                         <Param id="divider" value="1"/>
                         <Param id="sourceClockNumber" value="1"/>
                     </Parameters>
@@ -7424,6 +7432,7 @@
                     <Block location="srss[0].clock[0].hfclk[6]" locked="true"/>
                     <Parameters>
                         <Param id="ClkHfCsv" value="false"/>
+                        <Param id="directSelect" value="false"/>
                         <Param id="divider" value="1"/>
                         <Param id="sourceClockNumber" value="1"/>
                     </Parameters>
@@ -7432,6 +7441,7 @@
                     <Block location="srss[0].clock[0].hfclk[9]" locked="true"/>
                     <Parameters>
                         <Param id="ClkHfCsv" value="false"/>
+                        <Param id="directSelect" value="false"/>
                         <Param id="divider" value="4"/>
                         <Param id="sourceClockNumber" value="1"/>
                     </Parameters>
@@ -7440,6 +7450,7 @@
                     <Block location="srss[0].clock[0].hfclk[10]" locked="true"/>
                     <Parameters>
                         <Param id="ClkHfCsv" value="false"/>
+                        <Param id="directSelect" value="false"/>
                         <Param id="divider" value="4"/>
                         <Param id="sourceClockNumber" value="0"/>
                     </Parameters>
@@ -7448,6 +7459,7 @@
                     <Block location="srss[0].clock[0].hfclk[11]" locked="true"/>
                     <Parameters>
                         <Param id="ClkHfCsv" value="false"/>
+                        <Param id="directSelect" value="false"/>
                         <Param id="divider" value="4"/>
                         <Param id="sourceClockNumber" value="0"/>
                     </Parameters>
@@ -7456,6 +7468,7 @@
                     <Block location="srss[0].clock[0].hfclk[13]" locked="true"/>
                     <Parameters>
                         <Param id="ClkHfCsv" value="false"/>
+                        <Param id="directSelect" value="false"/>
                         <Param id="divider" value="4"/>
                         <Param id="sourceClockNumber" value="0"/>
                     </Parameters>
@@ -7543,11 +7556,15 @@
                         </Aliases>
                     </Block>
                     <Parameters>
+                        <Param id="C0C1CarryoutConfig" value="false"/>
+                        <Param id="C0C1MatchConfig" value="false"/>
                         <Param id="C0ClearOnMatch" value="FREE_RUNNING"/>
                         <Param id="C0LowerLimit" value="0"/>
                         <Param id="C0LowerLimitMode" value="CY_MCWDT_LOWER_LIMIT_MODE_NOTHING"/>
                         <Param id="C0Match" value="32768"/>
                         <Param id="C0Mode" value="CY_MCWDT_MODE_INT"/>
+                        <Param id="C1C2CarryoutConfig" value="false"/>
+                        <Param id="C1C2MatchConfig" value="false"/>
                         <Param id="C1ClearOnMatch" value="FREE_RUNNING"/>
                         <Param id="C1LowerLimit" value="0"/>
                         <Param id="C1LowerLimitMode" value="CY_MCWDT_LOWER_LIMIT_MODE_NOTHING"/>
@@ -7567,11 +7584,15 @@
                         </Aliases>
                     </Block>
                     <Parameters>
+                        <Param id="C0C1CarryoutConfig" value="false"/>
+                        <Param id="C0C1MatchConfig" value="false"/>
                         <Param id="C0ClearOnMatch" value="FREE_RUNNING"/>
                         <Param id="C0LowerLimit" value="0"/>
                         <Param id="C0LowerLimitMode" value="CY_MCWDT_LOWER_LIMIT_MODE_NOTHING"/>
                         <Param id="C0Match" value="32768"/>
                         <Param id="C0Mode" value="CY_MCWDT_MODE_INT"/>
+                        <Param id="C1C2CarryoutConfig" value="false"/>
+                        <Param id="C1C2MatchConfig" value="false"/>
                         <Param id="C1ClearOnMatch" value="FREE_RUNNING"/>
                         <Param id="C1LowerLimit" value="0"/>
                         <Param id="C1LowerLimitMode" value="CY_MCWDT_LOWER_LIMIT_MODE_NOTHING"/>
@@ -8009,7 +8030,7 @@
                         <Param id="offset" value="0x00340000"/>
                         <Param id="regionId" value="m33_nvm"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
-                        <Param id="size" value="0x00200000"/>
+                        <Param id="size" value="0x001C0000"/>
                     </Parameters>
                 </Personality>
                 <Personality template="memory_region_data" version="1.0" instance="Qg-VSbBkSUE">
@@ -8021,7 +8042,7 @@
                         <Param id="offset" value="0x00580000"/>
                         <Param id="regionId" value="m55_nvm"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
-                        <Param id="size" value="0x002C0000"/>
+                        <Param id="size" value="0x00180000"/>
                     </Parameters>
                 </Personality>
                 <Personality template="memory_region_data" version="1.0" instance="CehRmLIVyTc">
@@ -8093,7 +8114,7 @@
                         <Param id="offset" value="0x00002000"/>
                         <Param id="regionId" value="m33s_code"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
-                        <Param id="size" value="0x00035000"/>
+                        <Param id="size" value="0x00008000"/>
                     </Parameters>
                 </Personality>
                 <Personality template="memory_region_data" version="1.0" instance="ddkQGS-VO4I">
@@ -8102,10 +8123,10 @@
                         <Param id="description" value="CM33 secure data region"/>
                         <Param id="domain" value="7cPl230VJyc"/>
                         <Param id="memoryId" value="SRAM"/>
-                        <Param id="offset" value="0x00037000"/>
+                        <Param id="offset" value="0x0000A000"/>
                         <Param id="regionId" value="m33s_data"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
-                        <Param id="size" value="0x00021000"/>
+                        <Param id="size" value="0x0002C000"/>
                     </Parameters>
                 </Personality>
                 <Personality template="memory_region_data" version="1.0" instance="0-n6OQnErF0">
@@ -8114,10 +8135,10 @@
                         <Param id="description" value="CM33 code region"/>
                         <Param id="domain" value="Xo07Phg6oz8"/>
                         <Param id="memoryId" value="SRAM"/>
-                        <Param id="offset" value="0x00058000"/>
+                        <Param id="offset" value="0x00036000"/>
                         <Param id="regionId" value="m33_code"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
-                        <Param id="size" value="0x00065000"/>
+                        <Param id="size" value="0x00018000"/>
                     </Parameters>
                 </Personality>
                 <Personality template="memory_region_data" version="1.0" instance="rF4o_hNHwc0">
@@ -8126,10 +8147,10 @@
                         <Param id="description" value="CM33 data region"/>
                         <Param id="domain" value="Rj_rAX1eb8U"/>
                         <Param id="memoryId" value="SRAM"/>
-                        <Param id="offset" value="0x000BD000"/>
+                        <Param id="offset" value="0x0004E000"/>
                         <Param id="regionId" value="m33_data"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
-                        <Param id="size" value="0x00040000"/>
+                        <Param id="size" value="0x000A4000"/>
                     </Parameters>
                 </Personality>
                 <Personality template="memory_region_data" version="1.0" instance="DhUV7mLaCmM">
@@ -8138,10 +8159,10 @@
                         <Param id="description" value="CM33 secure shared region"/>
                         <Param id="domain" value="Rj_rAX1eb8U"/>
                         <Param id="memoryId" value="SRAM"/>
-                        <Param id="offset" value="0x000FD000"/>
+                        <Param id="offset" value="0x000F2000"/>
                         <Param id="regionId" value="m33s_allocatable_shared"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
-                        <Param id="size" value="0x00001000"/>
+                        <Param id="size" value="0x00004000"/>
                     </Parameters>
                 </Personality>
                 <Personality template="memory_region_data" version="1.0" instance="mBBWdCYdOhU">
@@ -8150,10 +8171,10 @@
                         <Param id="description" value="CM33 shared region"/>
                         <Param id="domain" value="Rj_rAX1eb8U"/>
                         <Param id="memoryId" value="SRAM"/>
-                        <Param id="offset" value="0x000FE000"/>
+                        <Param id="offset" value="0x000F6000"/>
                         <Param id="regionId" value="m33_allocatable_shared"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
-                        <Param id="size" value="0x00001000"/>
+                        <Param id="size" value="0x00009000"/>
                     </Parameters>
                 </Personality>
                 <Personality template="memory_region_data" version="1.0" instance="SSEo_lVrya4">
@@ -8198,7 +8219,7 @@
                         <Param id="description" value="CM33 trailer"/>
                         <Param id="domain" value="Xo07Phg6oz8"/>
                         <Param id="memoryId" value="SMIF0MEM0"/>
-                        <Param id="offset" value="0x00540000"/>
+                        <Param id="offset" value="0x00500000"/>
                         <Param id="regionId" value="m33_trailer"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
                         <Param id="size" value="0x00040000"/>
@@ -8210,7 +8231,7 @@
                         <Param id="description" value="CM55 trailer"/>
                         <Param id="domain" value="P8kQl2DRYUQ"/>
                         <Param id="memoryId" value="SMIF0MEM0"/>
-                        <Param id="offset" value="0x00840000"/>
+                        <Param id="offset" value="0x00700000"/>
                         <Param id="regionId" value="m55_trailer"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
                         <Param id="size" value="0x00040000"/>
@@ -8681,6 +8702,14 @@
                     <Port name="scb[2].clock_scb_en[0]"/>
                 </Net>
                 <Net>
+                    <Port name="peri[0].group[1].div_16_5[0].clk[0]"/>
+                    <Port name="scb[8].clock_scb_en[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[0].group[1].div_16_5[1].clk[0]"/>
+                    <Port name="scb[4].clock_scb_en[0]"/>
+                </Net>
+                <Net>
                     <Port name="peri[0].group[8].div_16[0].clk[0]"/>
                     <Port name="scb[1].clock_scb_en[0]"/>
                 </Net>
@@ -8704,11 +8733,6 @@
                     <Port name="canfd[0].chan[0].clock_can_en[0]"/>
                     <Port name="canfd[0].chan[1].clock_can_en[0]"/>
                     <Port name="peri[0].group[1].div_8[4].clk[0]"/>
-                </Net>
-                <Net>
-                    <Port name="peri[0].group[1].div_16_5[0].clk[0]"/>
-                    <Port name="scb[4].clock_scb_en[0]"/>
-                    <Port name="scb[8].clock_scb_en[0]"/>
                 </Net>
                 <Net>
                     <Port name="peri[0].group[3].div_8[0].clk_pclk_root[0]"/>

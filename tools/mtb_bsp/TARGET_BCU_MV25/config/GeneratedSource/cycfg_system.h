@@ -6,7 +6,7 @@
  * This file was automatically generated and should not be modified.
  * Configurator Backend 3.90.0
  * device-db 4.41.0.11271
- * mtb-dsl-pse8xxgp 1.5.0.1072
+ * mtb-dsl-pse8xxgp 1.8.0.1436
  *
  *******************************************************************************
  * Copyright 2026, Infineon Technologies AG, or an affiliate of Infineon
@@ -74,7 +74,7 @@ extern "C" {
 #define CY_CFG_PWR_VDDIO1_MV 1800
 #define CY_CFG_PWR_CBUCK_VOLT CY_SYSPM_CORE_BUCK_VOLTAGE_0_90V
 #define CY_CFG_PWR_CBUCK_MODE CY_SYSPM_CORE_BUCK_MODE_HP
-#define CY_CFG_PWR_SRAMLDO_VOLT CY_SYSPM_SRAMLDO_VOLTAGE_0_80V
+#define CY_CFG_PWR_SRAMLDO_VOLT CY_SYSPM_SRAMLDO_VOLTAGE_0_90V
 #define CY_CFG_PWR_PD1_DOMAIN 1
 #define CY_CFG_PWR_PPU_MAIN PPU_V1_MODE_FULL_RET
 #define CY_CFG_PWR_PPU_PD1 PPU_V1_MODE_FULL_RET
@@ -114,9 +114,9 @@ extern "C" {
 #define mxrramc_0_mpc_0_RESPONSE CY_MPC_BUS_ERR
 #define mxrramc_0_mpc_0_REGION_COUNT 4U
 #define mxsramc_0_mpc_0_RESPONSE CY_MPC_BUS_ERR
-#define mxsramc_0_mpc_0_REGION_COUNT 3U
+#define mxsramc_0_mpc_0_REGION_COUNT 4U
 #define mxsramc_1_mpc_0_RESPONSE CY_MPC_BUS_ERR
-#define mxsramc_1_mpc_0_REGION_COUNT 2U
+#define mxsramc_1_mpc_0_REGION_COUNT 1U
 #define smif_0_mpc_0_RESPONSE CY_MPC_BUS_ERR
 #define smif_0_mpc_0_REGION_COUNT 6U
 #define smif_1_mpc_0_RESPONSE CY_MPC_BUS_ERR

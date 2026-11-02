@@ -6,7 +6,7 @@
  * This file was automatically generated and should not be modified.
  * Configurator Backend 3.90.0
  * device-db 4.41.0.11271
- * mtb-dsl-pse8xxgp 1.5.0.1072
+ * mtb-dsl-pse8xxgp 1.8.0.1436
  *
  *******************************************************************************
  * Copyright 2026, Infineon Technologies AG, or an affiliate of Infineon
@@ -197,7 +197,7 @@ const cy_stc_mpc_regions_t M33S_mpc_regions[] =
     {
         .base = (MPC_Type*)RAMC0_MPC0,
         .offset = 0x00001000,
-        .size = 0x00057000,
+        .size = 0x00035000,
     },
 };
 const cy_stc_mpc_regions_t M33_mpc_regions[] =
@@ -205,22 +205,17 @@ const cy_stc_mpc_regions_t M33_mpc_regions[] =
     {
         .base = (MPC_Type*)SMIF0_CACHE_BLOCK_CACHEBLK_AHB_MPC0,
         .offset = 0x00340000,
-        .size = 0x00240000,
+        .size = 0x00200000,
     },
     {
         .base = (MPC_Type*)SMIF0_CORE_AXI_MPC0,
         .offset = 0x00340000,
-        .size = 0x00240000,
+        .size = 0x00200000,
     },
     {
         .base = (MPC_Type*)RAMC0_MPC0,
-        .offset = 0x00058000,
-        .size = 0x00028000,
-    },
-    {
-        .base = (MPC_Type*)RAMC1_MPC0,
-        .offset = 0x00000000,
-        .size = 0x0003D000,
+        .offset = 0x00036000,
+        .size = 0x00018000,
     },
 };
 const cy_stc_mpc_regions_t M55_mpc_regions[] =
@@ -228,12 +223,12 @@ const cy_stc_mpc_regions_t M55_mpc_regions[] =
     {
         .base = (MPC_Type*)SMIF0_CACHE_BLOCK_CACHEBLK_AHB_MPC0,
         .offset = 0x00580000,
-        .size = 0x00300000,
+        .size = 0x001C0000,
     },
     {
         .base = (MPC_Type*)SMIF0_CORE_AXI_MPC0,
         .offset = 0x00580000,
-        .size = 0x00300000,
+        .size = 0x001C0000,
     },
     {
         .base = (MPC_Type*)SOCMEM_SRAM_MPC0,
@@ -255,9 +250,14 @@ const cy_stc_mpc_regions_t M33_M55_mpc_regions[] =
         .size = 0x004C0000,
     },
     {
+        .base = (MPC_Type*)RAMC0_MPC0,
+        .offset = 0x0004E000,
+        .size = 0x00032000,
+    },
+    {
         .base = (MPC_Type*)RAMC1_MPC0,
-        .offset = 0x0003D000,
-        .size = 0x00043000,
+        .offset = 0x00000000,
+        .size = 0x00080000,
     },
 };
 #endif /* defined(CY_PDL_TZ_ENABLED) */
@@ -308,7 +308,7 @@ const cy_stc_mpc_unified_t unified_mpc_domains[] =
 #if defined(CY_DEVICE_FEATURE_SOME_MPC_ROT_LOCKED)
         .locked_rot_regions = M33S_mpc_locked_rot_regions,
         .locked_rot_region_count = sizeof(M33S_mpc_locked_rot_regions) / sizeof(cy_stc_mpc_regions_t),
-        .locked_rot_cfg = M33S_mpc_locked_rot_cfg,
+        .locked_rot_cfg = &M33S_mpc_locked_rot_cfg,
 #endif /* defined(CY_DEVICE_FEATURE_SOME_MPC_ROT_LOCKED) */
     },
     {
@@ -319,7 +319,7 @@ const cy_stc_mpc_unified_t unified_mpc_domains[] =
 #if defined(CY_DEVICE_FEATURE_SOME_MPC_ROT_LOCKED)
         .locked_rot_regions = M33_mpc_locked_rot_regions,
         .locked_rot_region_count = sizeof(M33_mpc_locked_rot_regions) / sizeof(cy_stc_mpc_regions_t),
-        .locked_rot_cfg = M33_mpc_locked_rot_cfg,
+        .locked_rot_cfg = &M33_mpc_locked_rot_cfg,
 #endif /* defined(CY_DEVICE_FEATURE_SOME_MPC_ROT_LOCKED) */
     },
     {
@@ -330,7 +330,7 @@ const cy_stc_mpc_unified_t unified_mpc_domains[] =
 #if defined(CY_DEVICE_FEATURE_SOME_MPC_ROT_LOCKED)
         .locked_rot_regions = M55_mpc_locked_rot_regions,
         .locked_rot_region_count = sizeof(M55_mpc_locked_rot_regions) / sizeof(cy_stc_mpc_regions_t),
-        .locked_rot_cfg = M55_mpc_locked_rot_cfg,
+        .locked_rot_cfg = &M55_mpc_locked_rot_cfg,
 #endif /* defined(CY_DEVICE_FEATURE_SOME_MPC_ROT_LOCKED) */
     },
     {
@@ -341,7 +341,7 @@ const cy_stc_mpc_unified_t unified_mpc_domains[] =
 #if defined(CY_DEVICE_FEATURE_SOME_MPC_ROT_LOCKED)
         .locked_rot_regions = M33NSC_mpc_locked_rot_regions,
         .locked_rot_region_count = sizeof(M33NSC_mpc_locked_rot_regions) / sizeof(cy_stc_mpc_regions_t),
-        .locked_rot_cfg = M33NSC_mpc_locked_rot_cfg,
+        .locked_rot_cfg = &M33NSC_mpc_locked_rot_cfg,
 #endif /* defined(CY_DEVICE_FEATURE_SOME_MPC_ROT_LOCKED) */
     },
     {
@@ -352,7 +352,7 @@ const cy_stc_mpc_unified_t unified_mpc_domains[] =
 #if defined(CY_DEVICE_FEATURE_SOME_MPC_ROT_LOCKED)
         .locked_rot_regions = M33_M55_mpc_locked_rot_regions,
         .locked_rot_region_count = sizeof(M33_M55_mpc_locked_rot_regions) / sizeof(cy_stc_mpc_regions_t),
-        .locked_rot_cfg = M33_M55_mpc_locked_rot_cfg,
+        .locked_rot_cfg = &M33_M55_mpc_locked_rot_cfg,
 #endif /* defined(CY_DEVICE_FEATURE_SOME_MPC_ROT_LOCKED) */
     },
 };
@@ -903,12 +903,17 @@ const mtb_srf_protection_range_s_t mxsramc_0_mpc_0_srf_protection_range_s[mxsram
 {
     {
         .start = (void *) 0x24001000 ,
-        .length = 0x57000U,
+        .length = 0x35000U,
         .is_secure = true,
     },
     {
-        .start = (void *) 0x24058000 ,
-        .length = 0x28000U,
+        .start = (void *) 0x24036000 ,
+        .length = 0x18000U,
+        .is_secure = false,
+    },
+    {
+        .start = (void *) 0x2404E000 ,
+        .length = 0x32000U,
         .is_secure = false,
     },
 };
@@ -916,12 +921,7 @@ const mtb_srf_protection_range_s_t mxsramc_1_mpc_0_srf_protection_range_s[mxsram
 {
     {
         .start = (void *) 0x24080000 ,
-        .length = 0x3D000U,
-        .is_secure = false,
-    },
-    {
-        .start = (void *) 0x240BD000 ,
-        .length = 0x43000U,
+        .length = 0x80000U,
         .is_secure = false,
     },
 };
@@ -934,12 +934,12 @@ const mtb_srf_protection_range_s_t smif_0_mpc_0_srf_protection_range_s[smif_0_mp
     },
     {
         .start = (void *) 0x60340000 ,
-        .length = 0x240000U,
+        .length = 0x200000U,
         .is_secure = false,
     },
     {
         .start = (void *) 0x60580000 ,
-        .length = 0x300000U,
+        .length = 0x1C0000U,
         .is_secure = false,
     },
     {
@@ -949,12 +949,12 @@ const mtb_srf_protection_range_s_t smif_0_mpc_0_srf_protection_range_s[smif_0_mp
     },
     {
         .start = (void *) 0x60340000,
-        .length = 0x240000U,
+        .length = 0x200000U,
         .is_secure = false,
     },
     {
         .start = (void *) 0x60580000,
-        .length = 0x300000U,
+        .length = 0x1C0000U,
         .is_secure = false,
     },
 };
@@ -1222,7 +1222,7 @@ cy_rslt_t init_cycfg_mpc(void)
     
                 if (region->base != NULL)
                 {
-                    currentResult = _cycfg_mpc_init_regions_nonrot(region, &(domain->locked_rot_cfg));
+                    currentResult = _cycfg_mpc_init_regions_nonrot(region, domain->locked_rot_cfg);
                 }
     
                 if (CY_RSLT_SUCCESS != currentResult)
